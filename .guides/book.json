@@ -130,6 +130,19 @@
    ]
   },
   {
+   "title": "New Chapter",
+   "id": "a5bbba2c-48b9-6498-67a4-737250cca523",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "New Section",
+     "id": "faeef5c0-8008-4d6f-d427-a9ffc4a41b1e",
+     "type": "section",
+     "children": []
+    }
+   ]
+  },
+  {
    "title": "Working with Strings",
    "id": "f1ed779f-d4ec-0093-f03c-afa18fb70e95",
    "type": "chapter",
