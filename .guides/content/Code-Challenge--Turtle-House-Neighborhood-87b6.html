@@ -1,0 +1,45 @@
+<script type="text/markdown" data-class="functions turtle-houses">
+# Code Challenge: Turtle Houses
+
+The javascript file on the left uses the *turtle*{.voc} to draw four houses. But, the program is broken! 
+
+The end of the script calls `drawHouse()` four different times, but the `drawHouse()` function is not defined (you should see an error in the console when you preview the page).
+
+Click "Open Preview" below to open the code preview in a new tab, then switch back to this tab to read the instructions.
+
+[Open Preview](/.guides/p/#preview=/04-functions/turtle-houses.html&consoleOpen=true){.btn .preview data-panel="1"}
+
+**Your goal** is to create a `drawHouse()` function that allows you to draw houses with different colors for the base and roof.
+
+:::infobox
+**Note:** To re-run your program, click the refresh button ![](.guides/images/refresh-preview.png) on the preview panel.
+:::
+## Requirements
+1. Create a function called `drawHouse` and put the house-drawing code
+   inside it. 
+   
+   The house-drawing code is every line between 
+   `// BEGIN HOUSE-DRAWING CODE` and `// END HOUSE-DRAWING CODE`.
+   ::: infobox warning
+   Warning: do not move the `const turtle = new Turtle()` line in your
+   function, as it will clear the drawing each time it is run. Leave
+   that line at the top of the script.` 
+   :::
+2. The result should look like this:  
+   ![turtle houses result](.guides/images/turtle-houses-1.png)
+3. Update your function definition to accept the following parameters:
+   - `baseColor`
+   - `roofColor`
+4. Use `turtle.color(colorName)` in your function to change the color at
+   the appropriate times (before drawing the base, and before drawing
+   the roof). Be sure to use the correct variable name for the color.
+5. Update your function calls to pass different colors for the base and
+   roof. See [here][1] for a list of color names you can use.
+6. Your houses should now all have different color bases and roofs.
+   
+   ![turtle houses w/ colors](.guides/images/turtle-houses-2.png)
+
+
+[1]: https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/
+
+</script>

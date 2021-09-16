@@ -1,0 +1,31 @@
+<script type="text/markdown">
+# Bug #4: The ship can still shoot if it's exploding
+
+The final bug is that the ship can still shoot lasers even while it's
+exploding.
+
+![](.guides/images/bug-4.gif)
+
+We can use the `.isExploding` custom property that we created in the
+last step to fix this bug.
+
+1. In the `updateLasers()` function, we already have an
+   *if-statement*{.voc} around the `createLaser()` call. Instead of
+   creating a new if-statement, change the condition to say "if the key
+   went down AND the ship is not exploding":
+   ```javascript {.numbered data-line-start="126" data-added-lines="129" data-removed-lines="128" data-header="game.js → updateLasers()"}
+   function updateLasers() {
+       // fire a laser if the space key went down
+       if (keyWentDown(KEY.SPACE)) {
+       if (keyWentDown(KEY.SPACE) && ship.isExploding === false) {
+           createLaser();
+       }
+   ```
+   ::: infobox
+   Remember that we use `&&` to represent "AND" in a condition. See the
+   chapter on Logical Operators for more info.
+   :::
+2. Save your code and refresh your preview. Test to make sure you can't
+   fire your lasers while the ship is exploding.
+
+</script>

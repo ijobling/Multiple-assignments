@@ -1,0 +1,65 @@
+<script type="text/markdown">
+# Variables
+
+Imagine you are making a quiz game, and you want to show this message at
+the end.  
+
+You might try something like this: 
+```javascript {.s12 .m8}
+alert("Congratulations, Alex! Your score is 8.");
+```
+
+As a coder, how will you know the name of the person playing your game?
+How would you know their score?
+
+The solution to this problem is to use a *variable*{.voc}
+
+![variable box analogy](.guides/images/variable-box.png){.float-right .s5 .m4}
+## Try it out: Use a variable to store a value
+
+A *variable*{.voc} is like a box. It has a label, and lets you store a
+value. You create a variable using: `let variableName = expression`.
+The result of the expression on the right side of the `=` will be saved 
+in the variable.
+
+1. In the *javascript console*{.voc}, try creating a variable called
+   "name", then use it in a string expression:
+   ```javascript {.console .s12 .m10}
+   > let name = "Alex";
+   > alert(`Hello, ${name}!`);
+     // You should see an alert box that says ("Hello, Alex!");
+   > console.log(`Player ${name} has joined the game.`);
+     Player Alex has joined the game.
+   ```
+{.steps}
+   
+Once a variable is defined using `let`, it can be used as an *expression*{.voc},
+which evaluates to whatever value you assigned to it.
+
+Notice how we can use the variable in different places in our code.
+
+::: infobox warning
+**Don't forget:** When putting variables inside strings, you must use
+backticks instead of quotes, like so: `` `Hello, ${name}` `` (the
+backtick key [[`]] is to the left of [[1]]).
+:::
+
+![variable box analogy](.guides/images/variable-box-reassign.png){.float-right .s5 .m4}
+## Try it out: Change a variable
+
+2. What if we have a new player? Let's re-assign the `name` variable:
+   ```javascript {.console .s6 .m7}
+   > name = "Maia";
+   > alert(`Hello, ${name}!`);
+   ```
+   You should see an alert box that says "Hello, Maia!"
+{.steps .continue}
+
+***Pro Tip:** Press the up arrow key [[↑]] in the javascript console to run previous expressions*.
+
+Notice how we don't use `let` when re-assigning a variable. The `let`
+keyword is only used when _defining_ the variable for the first time.
+
+When you re-assign a variable, the old value is "thrown away" or
+deleted.
+</script>

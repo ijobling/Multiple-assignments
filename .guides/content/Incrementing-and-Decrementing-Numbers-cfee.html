@@ -1,0 +1,79 @@
+<script type="text/markdown">
+# Incrementing and decrementing numbers
+
+*Incrementing*{.voc} means **to increase** something, specifically a
+number. *Decrementing*{.voc} means **to decrease** something.
+
+If we have a variable that contains a number, we can increase it by
+assigning the variable to itself plus 1.
+
+## Try it out!
+Try the following in your console:
+
+```javascript {.console}
+> let n = 0;
+> n = n + 1;
+< 1
+> n = n + 1;
+< 2
+> n = n + 1;
+< 3
+> n = n - 1;
+< 2
+> n = n - 1;
+< 1
+```
+
+Notice how each time we run `n = n + 1`, the number goes up. That's
+because each time, we're adding `1` to the value of `n`, and storing the
+result back into `n`. So, 1 gets replaced with `1+1` which is `2`,
+and so on.
+
+
+## Shortcuts
+A shortcut for `n = n + 1` is `n++`. You can also use `n--`.
+
+Try the following in your console:
+
+```javascript {.console}
+> let i = 0;
+> i++;
+> console.log(i);
+  1
+> i++;
+> console.log(i);
+  2
+> i++;
+> console.log(i);
+  3
+> i--;
+> connsole.log(i);
+  2
+> i--;
+> connsole.log(i);
+  1
+```
+
+## Bigger increments
+You can also increment by bigger numbers using `n += 2` or `n -= 2`:
+
+Try the following in your console:
+
+```javascript {.console}
+> let j = 0;
+> j += 2;
+> console.log(j);
+  2
+> j += 2;
+> console.log(j);
+  4
+> console.log(j);
+  6
+> j -= 2;
+> console.log(j);
+  4
+> j -= 2;
+> console.log(j);
+  2
+```
+</script>

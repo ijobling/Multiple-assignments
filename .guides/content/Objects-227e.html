@@ -1,0 +1,38 @@
+<script type="text/markdown" data-class="objects intro">
+# Objects
+Imagine you want to make a variable in your code that represents a
+student id card:
+
+![student id card example](.guides/images/id-card.png) {.s12 .m8}
+
+How would you put all that information into a single variable?
+
+*Objects*{.voc} let you do just that.
+
+## How to make an object
+In Javascript, an *Object*{.voc} is a collection of variables, which are
+called *properties*{.voc}. Each property has a *key*{.voc} (the property
+name) and a *value*{.voc} (the data being stored).
+
+Here's what an object looks like in code:
+
+![object code diagram](.guides/images/object.png) {.s12}
+
+::: infobox
+Note how the object is defined using opening and closing 
+[[{]] curly brackets [[}]].
+
+Each key is followed by a [[:]], and each item is separated by a [[,]].
+:::
+
+## Using dot notation
+To access the items in our object, we use *dot notation*{.voc}.
+Simply put a dot before the key name you want to access. If our
+object is stored in a variable called `student`, we can access the
+`firstName` key using `student.firstName`: 
+
+```javascript {.console}
+> student.firstName;
+< "Elizabeth"
+```
+</script>

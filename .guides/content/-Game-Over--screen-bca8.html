@@ -1,0 +1,49 @@
+<script type="text/markdown">
+# "Game Over" screen
+
+If we keep getting hit by asteroids, our lives will go negative. Let's
+add a "Game Over" screen that shows when our lives gets to `0`.
+
+This problem can be broken down into small steps:
+
+1. Write a function that draws a "game over" screen
+2. Use a *boolean*{.voc} variable called `gameOver` to represent the
+   "Game Over" state
+3. When the ship gets hit, and it causes the lives to go to 0, switch
+   `gameOver` to `true`
+4. If `gameOver` is true, draw the game over screen. If it's not true,
+   draw the game itself.
+
+## Move the game-drawing code into its own function
+To make things easier, let's move all the code in the `draw()` function
+inside its own function called `drawGame()`. That way, we can call
+`drawGame()` whenever we want to draw the game, and call other functions
+when we want to draw different screens.
+
+1. Re-name the `draw()` function to `drawGame()`. The purpose of this
+   function will only be to draw the ship, asteroids, lasers, etc:
+   ```javascript {.numbered data-line-start="184" data-removed-lines="184" data-added-lines="185" data-header="game.js → draw()"}
+   function draw() {
+   function drawGame() {
+       image(assets.background, 0, 0, screenWidth, screenHeight);
+
+       // update sprites
+   ```
+
+2. Re-create the `draw()` function just below that. Inside it, call
+   `drawGame()`:
+   ```javascript {.numbered data-line-start="192" data-added-lines="197-200" data-header="game.js → draw()"}
+       drawSprites();
+       drawScoreBoard();
+   
+       showSpriteCount();
+   }
+   
+   function draw() {
+       drawGame();
+   }
+   ```
+3. Save your code, refresh your preview, and test your game. Everything
+   should work just as it did before the change.
+
+</script>

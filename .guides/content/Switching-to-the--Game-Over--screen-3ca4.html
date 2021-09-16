@@ -1,0 +1,23 @@
+<script type="text/markdown">
+# Switching to the "Game Over" screen
+
+Now we just need to switch the `gameOver` variable to `true` when we run
+out of lives:
+
+1. In the `shipFinishedExplding()` function, just after we decrement the
+   `lives` variable, add an *if-statement*{.voc} that sets `gameOver` to
+   `0` if `lives` equals `0`:
+   ```javascript {.numbered data-line-start="86" data-added-lines="90-92" data-header="game.js → shipFinishedExplding()"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+       ship.isExploding = false;
+       lives--;
+       if (lives === 0) {
+           gameOver = true;
+       }
+   }
+   ```
+2. Save your code and refresh your preview. Make your ship get hit by an
+   asteroid 3 times. After that, you should see your "Game Over" screen!
+
+</script>

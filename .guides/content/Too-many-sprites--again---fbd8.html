@@ -1,0 +1,51 @@
+<script type="text/markdown">
+# Too many sprites (again)!
+
+As you test out your lasers, you'll notice the sprite count keeps going
+up:
+
+![](.guides/images/laser-sprite-count.gif)
+
+This will slow down our game if too many lasers are created.
+
+## Remove lasers that go off-screen
+Just as we did with the asteroids, we need to remove lasers that have
+gone off the screen.
+
+1. In your `updateLasers()` function, use a *for-of*{.voc} loop to go
+   through each laser in the `lasers` group:
+   ```javascript {.numbered data-header="game.js → updateLasers()" data-line-start="93" data-added-lines="98-101"}
+   function updateLasers() {
+       // fire a laser if the space key went down
+       if (keyWentDown(KEY.SPACE)) {
+           createLaser();
+       }
+
+       // check each laser and remove if it goes off screen
+       for (let laser of lasers) {
+       }
+   }
+   ```
+2. Inside the loop, use an *if-statement*{.voc} to check if the bottom
+   of the laser has gone off screen. If it has, remove the laser:
+   ```javascript {.numbered data-header="game.js → updateLasers()" data-line-start="93" data-added-lines="101-103"}
+   function updateLasers() {
+       // fire a laser if the space key went down
+       if (keyWentDown(KEY.SPACE)) {
+           createLaser();
+       }
+
+       // check each laser and remove if it goes off screen
+       for (let laser of lasers) {
+           if (laser.bottom < 0) {
+               laser.remove();
+           }
+       }
+   }
+   ```
+3. Save your code and refresh your preview. Test your lasers to make
+   sure the sprite count stays low.
+
+   ![](.guides/images/laser-sprite-count-fixed.gif)
+
+</script>

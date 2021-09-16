@@ -1,0 +1,37 @@
+<script type="text/markdown">
+# Updating score and lives
+
+Now the we can see the score board, let's make sure `score` goes up
+when we shoot an asteroid, and that `lives` goes down when an asteroid
+hits the ship.
+
+1. In the `handleLaserAsteroidCollision()` function, *increment*{.voc}
+   the `score` variable:
+   ```javascript {.numbered data-line-start="88" data-added-lines="95" data-header="game.js → handleLaserAsteroidCollision()"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       // Don't collide if the asteroid is exploding
+       if (asteroid.isExploding === false) {
+           laser.remove();
+           asteroid.changeAnimation("explosion");
+           asteroid.isExploding = true;
+           asteroid.animation.onComplete = asteroidFinishedExploding;
+           score++;
+       }
+   }
+   ```
+2. We want the lives to go down only when the ship has finished
+   exploding. In the `shipFinishedExploding()` function,
+   *decrement*{.voc} the `lives` variable:
+   ```javascript {.numbered data-line-start="78" data-added-lines="81" data-header="game.js → shipFinishedExploding()"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+       ship.isExploding = false;
+       lives--;
+   }
+   ```
+3. Save your code and refresh your preview. You should now see score and
+   lives updating appropriately:
+
+   ![](.guides/images/scoreboard-complete.png)
+
+</script>

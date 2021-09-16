@@ -1,0 +1,76 @@
+<script type="text/markdown">
+# Add "play again" functionality
+
+Most players wouldn't want to give up after one game. Let's add an
+option to allow the users to play again by pressing the [[Space]] key.
+
+In order to do this, we need a way to re-set the game so the `score` is
+`0`, `lives` is `3`, and the ship is positioned back in the center.
+
+1. Add a new function called `resetGame()`. Inside the function, set the
+   `score` to `0`, `lives` to `3`, and put the ship in the center of the
+   screen. You'll also need call `asteroids.removeAll()` to remove all
+   asteroids.
+
+   You can put this function just after the `setup()` function:
+   ```javascript {.numbered data-line-start="52" data-added-lines="52-61" data-header="game.js"}
+   function resetGame() {
+       // re-set score, lives, and ship position
+       score = 0;
+       lives = 3;
+       ship.centerX = screenWidth / 2;
+
+       // remove all asteroids
+       asteroids.removeAll();
+   }
+
+   function createLaser() {
+   ```
+2. Save your code and refresh your preview. Play your game until you see
+   the "game over" screen. In your *javascript console*{.voc}, run the
+   `resetGame()` function, and set `gameOver` to `false` to hide the
+   "game over" screen. Your points, lives, and ship position should
+   re-set when you run the function.
+   ```javascript {.console}
+   > resetGame();
+   > gameOver = false;
+   ```
+3. Add some text to the game over screen that says "Press SPACE to try
+   again!":
+   ```javascript {.numbered data-line-start="198" data-added-lines="204-205" data-header="game.js → drawGameOverScreen()"}
+   function drawGameOverScreen() {
+       background("black");
+       textAlign(CENTER);
+       fill("white");
+       textSize(40);
+       text("GAME OVER", screenWidth/2, screenHeight/2);
+       textSize(20);
+       text("Press SPACE to try again!", screenWidth/2, screenHeight/2 + 100);
+   }
+   ```
+3. In the same function, and an *if-statement*{.voc} that calls
+   `resetGame()` if the [[space]] key is pressed, and sets `gameOver` to
+   `false`:
+   ```javascript {.numbered data-line-start="198" data-added-lines="207-211" data-header="game.js → drawGameOverScreen()"}
+   function drawGameOverScreen() {
+       background("black");
+       textAlign(CENTER);
+       fill("white");
+       textSize(40);
+       text("GAME OVER", screenWidth/2, screenHeight/2);
+       textSize(20);
+       text("Press SPACE to try again!", screenWidth/2, screenHeight/2 + 100);
+
+       if (keyWentDown(KEY.SPACE)) {
+           resetGame();
+           gameOver = false;
+       }
+   }
+   ```
+4. Save your code and refresh your preview. Lose the game to test out
+   your game over screen. The game should re-set when you hit the
+   [[Space]] key.
+
+![](.guides/images/game-over-2.png) {.s8}
+
+</script>

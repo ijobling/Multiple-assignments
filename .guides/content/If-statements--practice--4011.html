@@ -1,0 +1,45 @@
+<script type="text/markdown" data-class="conditions if-statements-2">
+# If Statements
+
+## Try it out
+
+1. Type the following code in the editor to the left:
+   ```javascript {.numbered data-header="practice.js"}
+   let temp = Number(prompt("What's the temp?"));
+   
+   if (temp < 50) {
+       alert("Wear something warm");
+   }
+   ```
+   - Line 1 gets the temperature from the user and converts it to
+     a number.
+   - Lines 3-5 define an if-statement. The code between `{` and `}` will
+     only execute if the value of `temp` is less than 50.
+2. Click "Open Preview" below to open the preview and run the script.
+   
+   [Open Preview](.guides/p/#preview=/06-conditions/if-statement.html&consoleSize=75%){.btn .preview data-panel="1"}
+   
+   *Note: to re-run the script, click the refresh button above the preview.*
+3. Input a *low* temperature when prompted.
+4. Re-run the script by clicking the refresh button above the preview. 
+   This time, enter a high number. Notice that that it doesn't tell us
+   what to wear because the condition `temp < 50` is now `false`, 
+   so the `alert` code doesn't run.
+5. Add another if statement that alerts "Wear something light" if the
+   temp is greater than or equal to 50:
+   ```javascript {.numbered data-header="practice.js"}
+   let temp = Number(prompt("What's the temp?"))
+
+   if (temp < 50) {
+       alert("Wear something warm");
+   }
+
+   if (temp >= 50) {
+     alert("Wear something light");
+   }
+   ```
+6. Test your code again to see if it works for temperatures above and
+   below 50.
+{.steps}
+
+</script>

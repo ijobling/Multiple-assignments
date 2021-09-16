@@ -1,0 +1,39 @@
+<script type="text/markdown">
+# Loops
+
+Loops are useful when you want to repeat code over and over again.
+
+Pretend you want to output the numbers 1 through 10. You might do this:
+
+```javascript {data-header="Example: the long way"}
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+console.log(6);
+console.log(7);
+console.log(8);
+console.log(9);
+console.log(10);
+console.log("All done!");
+```
+
+Using a loop, your code can be much shorter:
+```javascript {.allow-copy data-header="Example: the shorter way using a loop}
+for (let i=0; i<10; i++) {
+  console.log(counter);
+}
+console.log('All done!');
+```
+
+There are a few different kinds of loops in Javascript:
+
+- *for loop*{.voc} or *counting loop*{.voc} (shown above): loops through
+  a block of code a given number of times
+- *for/of loop*{.voc}: loops through each value in a list of values
+- *while loop*{.voc}: loops through a block of code while a specific
+  condition is true
+<!-- *for/in loop*{.voc}: loops through the properties of an object -->
+
+</script>

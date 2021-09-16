@@ -1,0 +1,66 @@
+<script type="text/markdown">
+# Creating asteroids automatically 
+
+We don't want to have to call `createAsteroid()` every time we want an
+asteroid to appear, so instead we will make them appear automatically
+about once every 60 frames (which is about once per second).
+
+![](.guides/images/every-60th-frame.png)
+
+## How to do something every Nth frame
+We want to call our `createAsteroid()` function every 60th frame.
+The p5 library has a variable called `frameCount` which is increased by
+1 every time a frame is drawn. 
+
+We can check to see if the *current* frame is divisible by 60 by seeing
+if the remainder of `frameCount / 60` is equal to `0`. To do this, we
+can use the *remainder operator*{.voc} (which looks like: `%`) instead
+of the `/` operator, like so: 
+```javascript
+frameCount % 60
+```
+If the result of that expression is `0`, we can call `createAstroid()`,
+which will result in an asteroid being created every 60 frames.
+
+## Create the `updateAsteroids` function
+
+Just as we did with our ship, we will now create a function called
+`updateAsteroids()` which runs every frame:
+
+1. Define a new function called `updateAsteroids()`. Put this just below
+   the `updateShip()` function. Inside this function, create an asteroid
+   if the `frameCount` is divisible by `60`:
+   ```javascript {.numbered data-header="game.js" data-line-start="54" data-added-lines="54-60"}
+   function updateAsteroids() {
+       // Create an asteroid every 60th frame
+       if (frameCount % 60 === 0) {
+           createAsteroid();
+       }
+   }
+
+   function draw() {
+   ```
+   ::: infobox
+   If you want your asteroids to be created more slowly, increase the
+   number in your `updateAsteroids()` function. For example, `if
+   (frameCount % 120 === 0)` will create an asteroid every 120 frames
+   (about every two seconds).
+   :::
+2. Call `updateAsteroids()` in the `draw()` function to make it run
+   every frame:
+   ```javascript {.numbered data-header="game.js → draw()" data-line-start="61" data-added-lines="66"}
+   function draw() {
+       background("black");
+
+       // update sprites 
+       updateShip();
+       updateAsteroids();
+
+       drawSprites();
+   }
+   ```
+4. Save your code and refresh your preview. You should now see your
+   asteroids being created automatically, at the rate of 1 per second.
+
+
+</script>

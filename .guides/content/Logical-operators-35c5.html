@@ -1,0 +1,52 @@
+<script type="text/markdown" data-class="conditions logical-operators">
+![robot true-or-false](.guides/images/robot-true-false.png){.float-right .s6 .m5}
+# Logical Operators
+
+The following statements are either `true` or `false`:
+
+| statement                                | value        |
+| ---------------------------------------- | ------------ |
+| [Water is wet]{.true-statement}          |  **`true`**  | 
+| [Water is dry]{.false-statement}         |  **`false`** | 
+| [Venus is a planet]{.true-statement}     |  **`true`**  | 
+| [The moon is a planet]{.false-statement} |  **`false`** | 
+
+{.table}
+
+These statements can be combined using **AND** or **OR**.  
+For example:
+
+> [Water is wet]{.true-statement} **and** [the moon is a planet]{.false-statement}
+
+::: infobox question
+Is the above statement `true` or `false`?
+:::
+
+* When we combine two boolean statements with **AND**, the entire
+  statement is true only if _both_ statements are true.
+* When we combine two boolean statements with **OR**, the entire statement
+  is true if _either_ of the statements are true;
+
+{.tips}
+
+## Test your logic skills!
+Read each statement aloud and decide whether it is `true` or `false`
+by clicking the appropriate button. Then click "Check my answers" to see
+how you did!
+
+| statement                                                                             | value |
+| ------------------------------------------------------------------------------------- | ----- |
+| [Venus is a planet]{.true-statement} **AND** [water is wet]{.true-statement}          | true  |
+| [Venus is a planet]{.true-statement} **AND** [the moon is a planet]{.false-statement} | false |
+| [Water is dry]{.false-statement} **AND** [The moon is a planet]{.false-statement}     | false | 
+| [Venus is a planet]{.true-statement} **OR** [water is wet]{.true-statement}           | true  |
+| [The moon is a planet]{.false-statement} **OR** [water is dry]{.false-statement}      | false |
+| [Water is dry]{.false-statement} **OR** [Venus is a planet]{.true-statement}          | true  |
+
+{.table .boolean-quiz}
+</script>
+
+<script src=".guides/js/activities.js"></script>
+<script>
+  onDocReady(initBooleanQuiz);
+</script>

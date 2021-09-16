@@ -1,0 +1,45 @@
+<script type="text/markdown">
+# `alert()` and `promt()`
+Use your *javascript console*{.voc} to try the following examples.
+
+## console.log()
+The `console.log()` function takes an expression and shows its resulting
+value in the console:
+
+You can pass any expression to the `console.log()` function:
+
+```javascript {.console}
+> console.log(4 + 2);
+> let petName = "fido";
+> console.log(petName);
+  fido
+```
+
+## alert()
+The `alert()` function lets us show a pop-up message in the browser:
+
+```javascript {.console}
+> alert("Hello world!");
+```
+![alert example](.guides/images/alert-chrome.png)
+
+You can also pass any expression to the `alert()` function:
+```javascript {.console}
+> alert(4 + 2);
+> let petName = "fido";
+> alert(petName);
+```
+
+## prompt()
+The `prompt()` function allows the user to type in a response:
+
+![input example](.guides/images/prompt-chrome.png)
+
+To capture the user's response, we need to create a *variable*{.voc}:
+
+```javascript {.console}
+let name = prompt("Please enter your name");
+alert(`Welcome, ${name}!`);
+```
+
+</script>

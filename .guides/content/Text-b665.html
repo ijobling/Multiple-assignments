@@ -1,0 +1,30 @@
+<script type="text/markdown">
+# Text
+
+You can draw text on the screen using `text()` and `textSize()`
+functions. Use `fill()` to set the text color.
+
+## Try it out!
+
+Type the following in your *javascript console*{.voc}
+```javascript {.console}
+> clear();
+> textSize(32);
+> fill("purple");
+> text("Hello, world!", 100, 100);
+```
+::: infobox
+The last two parameters of the `text()` function are the X and Y
+coordinates of the bottom-left part of the text.
+:::
+
+## Constrain text to a box
+You can make text wrap inside a box by adding a `width` and `height`
+parameter:
+```javascript {.console}
+> clear();
+> let s = 'The quick brown fox jumped over the lazy dog';
+> textSize(12);
+> text(s, 10, 10, 100, 100);
+```
+</script>

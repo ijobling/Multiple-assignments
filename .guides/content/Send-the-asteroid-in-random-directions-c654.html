@@ -1,0 +1,62 @@
+<script type="text/markdown">
+# Send the asteroid in random directions
+
+Now let's make the game more challenging by making the asteroids
+more random! 
+
+We'll make our asteroid appear at a random position at the top of the
+screen, and with random speed, direction, and rotation.
+
+## Try it out: the `random()` function
+
+The p5 library gives us a handy function called `random()` that we can
+use to randomize anything. You can pass two parameters, a low number and
+a high number, and it will give you a random number between the low and
+high numbers.
+
+1. Use the *javascript console*{.voc} to practice random numbers:
+   ```javascript {.console data-header="Javascript console"}
+   > random(0, 10);
+   < 4.1249769478
+   > random(0, 10);
+   < 9.305860439
+   > random(50, 60);
+   < 53.5049830586
+   ```
+
+## Make the asteroid appear at a random location
+1. First, let's make our asteroid start off the screen (asteroids don't
+   appear out of thin air, do they?)
+   ```javascript {.numbered data-line-start="21" data-removed-lines="23" data-added-lines="24" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.bottom = 0;
+       asteroid.centerX = screenWidth / 2;
+   ```
+2. Next, instead of appearing in the center, we want to pick a random
+   number between `0` and `screenWidth` so the asteroid appears at a
+   random location:
+   ```javascript {.numbered data-line-start="21" data-removed-lines="25" data-added-lines="26" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.bottom = 0;
+       asteroid.centerX = screenWidth / 2;
+       asteroid.centerX = random(0, screenWidth);
+   ```
+3. Save your code and refresh your preview. Use the 
+   *javascript console*{.voc} to create multiple asteroids:
+   ```javascript {.console data-header="Javascript console"}
+   > createAsteroid();
+   > createAsteroid();
+   > createAsteroid();
+   ```
+   ::: infobox
+   You can repeat the last command in the javascript console by pressing
+   the up arrow key [[🠕]], followed by [[Enter]]
+   :::
+   You should see asteroids coming straight down from random positions:
+   ![asteroids appearing randomly](.guides/images/random-x.gif)
+
+</script>

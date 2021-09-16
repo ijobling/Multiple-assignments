@@ -1,0 +1,27 @@
+<script type="text/markdown">
+# Using if-statements to keep the ship in bounds
+
+Now we can add some *if-statements*{.voc} to our code that keeps the
+ship in bounds. We put this in our `updateShip()` function because we
+want to perform this check every frame.
+
+1. If the ship's *left* edge is *lower* than `0`, update the ship's
+   position so that it's left edge *equals* `0`:
+   ```javascript {.numbered data-line-start="24" data-added-lines="27-31" data-header="game.js → updateship() function" data-caption="If the ship's left edge is lower than 0, update the ship's position so that it's left edge equals 0."}
+       if (keyIsDown(KEY.LEFT_ARROW)) {
+           ship.centerX += 10;
+       }
+
+       // don't allow the ship to go out of bounds
+       if (ship.left < 0) {
+           ship.left = 0;
+       }
+   }
+   ```
+2. Save and refresh your preview. Click on game screen, and try to make
+   the ship go off the left side of the screen. You should now see that
+   the ship won't go off the left side no matter how much you try.
+
+   ![ship boundary test](.guides/images/ship-boundary-test.gif)
+
+</script>

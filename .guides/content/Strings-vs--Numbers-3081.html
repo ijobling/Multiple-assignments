@@ -1,0 +1,44 @@
+<script type="text/markdown">
+# Strings vs. Numbers
+
+Use your *javascript console*{.voc} to try the following examples.
+
+When you add two numbers together you will get the sum of those numbers.
+```javascript {.console}
+> let a = 2;
+> let b = 4;
+> a + b;
+< 6
+```
+
+When you add two strings together, they will be "glued" together to give
+you a new string:
+```javascript {.console}
+> let word1 = "hot";
+> let word2 = "dog";
+> word1 + word2;
+< "hotdog"
+```
+
+Next, see what happens when you add a string and a number:
+```javascript {.console}
+> let myString = "The number is: ";
+> let myNumber = 4;
+> myString + myNumber;
+< "The number is 4"
+```
+
+When you add a string and a number, it will always treat the number as
+if it were a string. The result is two strings are glued together.
+
+Now let's try adding two strings that are numbers (be sure to put quotes
+around these numbers):
+```javascript {.console}
+> let num1 = "4";
+> let num2 = "2";
+> num1 + num2;
+< "42";
+```
+Because we're adding two strings together, the result is two strings
+glued together.
+</script>

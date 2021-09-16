@@ -1,0 +1,44 @@
+<script type="text/markdown">
+# Adding a starfield backdrop
+
+Let's improve the look-and-feel of our game by adding a background
+image: 
+
+![](.guides/images/background.gif)
+
+The `image()` function from the p5 library can be used to draw
+arbitrary images on the screen. We can use this to draw our background.
+
+The `image()` function takes five parameters:
+- the loaded image
+- x (where to place the top edge of the image)
+- y (where to place the left edge of the image)
+- width
+- height
+
+We'll use `0,0` for the x,y coordinates to put the image in the top-left
+corner. We'll use the `screenWidth` and `screenHeight` variables to set
+the width and height of the image, since we want it to fill the whole
+screen.
+
+1. First, we need to load the `starfield.png` background image in our
+   `preload()` function:
+   ```javascript {.numbered data-line-start="10" data-added-lines="15" data-header="game.js → preload()"}
+   function preload() {
+       // images
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+       assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+       assets.laser = loadImage("assets/laserBlue01.png");
+       assets.background = loadImage("assets/starfield.png");
+   ```
+2. In the `draw()` function, use `background()` to set the background
+   image instead of filling the screen with black.
+   ```javascript {.numbered data-line-start="164" data-removed-lines="165" data-added-lines="166" data-header="game.js → draw()"}
+   function draw() {
+       background("black");
+       image(assets.background, 0, 0, screenWidth, screenHeight); 
+   ```
+3. Save your game and refresh your preview. You should now see a
+   starfield background!
+
+</script>

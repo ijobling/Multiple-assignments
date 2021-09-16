@@ -1,0 +1,87 @@
+<script type="text/markdown">
+# String Methods
+*String methods*{.voc} can be used to modify strings in many different
+ways.
+
+Try these examples in your *javascript console*{.voc}:
+
+## `.toLowerCase()` &amp; `.toUpperCase()`
+:::: narrated-code
+```javascript {.console .no-overflow}
+> let text1 = "The Old Man and the Sea";
+> text1.toUpperCase();
+< "THE OLD MAN AND THE SEA";
+> text1.toLowerCase();
+< "the old man and the sea";
+> text1
+< "The Old Man and the Sea";
+```
+::: div
+`.toUpperCase()` converts all of the characters to uppercase, while
+`.toLowerCase()` converts all of the characters to lowercase.
+
+_Remember_: string methods always return a value. They don&apos;t
+change the original value.
+:::
+::::
+
+## `startsWith()` & `endsWith()`
+::: narrated-code
+```javascript {.console .no-overflow}
+> let text2 = "Dr. Martin Luther King, Jr.";
+> text2.startsWith("Dr.");
+< true
+> text2.endsWith("Junior");
+< false
+```
+`startsWith()` and `endsWith()` return `true` if the string starts/ends
+with the given text, otherwise they return `false`.
+:::
+
+## `.trim()`
+:::: narrated-code
+```javascript {.console .no-overflow}
+> let text3 = " the final frontier ";
+> text3.trim();
+< "the final frontier";
+```
+::: div
+`.trim()` removes any whitespace from the beginning and end of the
+string.
+:::
+::::
+
+## `.split()` & `.join()`
+:::: narrated-code
+```javascript {.console .no-overflow}
+> let text4 = "one-two-three-four";
+> text4.split("-");
+< ["one", "two", "three", "four"]
+> let letters = ["a", "b", "c", "d"];
+> letters.join(":");
+< "a:b:c:d"
+```
+::: div
+`.split()` returns an *array*{.voc} based on the given delimiter (the
+separating string).
+
+`.join()` takes an *array*{.voc} of strings and "glues" them together
+using the given delimiter.
+:::
+::::
+
+
+## `.repeat()`
+:::: narrated-code
+```javascript {.console .no-overflow}
+> let text5 = 'abc';
+> text5.repeat(12);
+< "abcabcabcabcabcabcabcabcabcabcabcabc"
+```
+::: div
+`.repeat()` returns a new string that is repeated based on the number
+you pass in.
+:::
+::::
+
+</script>

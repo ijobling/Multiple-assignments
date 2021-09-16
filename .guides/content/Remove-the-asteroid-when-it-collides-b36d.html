@@ -1,0 +1,33 @@
+<script type="text/markdown">
+# Remove the asteroid when it collides
+
+Our first goal is to make the asteroid disappear when it hits the ship.
+
+When your collision handler is called, the two sprites that collided are
+passed to the function as *parameters*{.voc}. This helps us know _which_
+sprites collided. 
+
+1. Update your collision handler function to accept two
+   *parameters*{.voc}, one for the ship, and the other for the asteroid
+   that's colliding.
+   ```javascript {.numbered data-header="game.js → handleShipAsteroidCollision()" data-line-start="37" data-removed-lines="37" data-added-lines="38"}
+   function handleShipAsteroidCollision() {
+   function handleShipAsteroidCollision(ship, asteroid) {
+       console.log("An asteroid is overlapping the ship");
+   }
+   ```
+2. Next, replace the `console.log()` line with `asteroid.remove()` to
+   remove the asteroid sprite.
+   ```javascript {.numbered data-header="game.js → handleShipAsteroidCollision()" data-line-start="37" data-removed-lines="38" data-added-lines="39"}
+   function handleShipAsteroidCollision(ship, asteroid) {
+       console.log("An asteroid is overlapping the ship");
+       asteroid.remove()
+   }
+   ```
+3. Save your code and refresh the preview. Try colliding with an
+   asteroid. The asteroid should now disappear as soon as it touches
+   your ship:
+
+   ![](.guides/images/collision-disappear.gif)
+
+</script>

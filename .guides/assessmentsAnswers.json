@@ -1,0 +1,18 @@
+[
+ {
+  "taskId": "test-2861968347",
+  "points": 0,
+  "results": [
+   {
+    "points": 0,
+    "guidance": "Your code should look like this:\n```js\nlet address = \"101 Coffeeway St\";\n\nlet priceForSmall = 1.25;\nlet priceForMed = 2.00;\nlet priceForLarge = 3.25;\n\nlet isOpen = true;\n\nlet numOfCustomersToday;\n```\nIt is important to make sure the variable names are correct and the assigned values are correct. The order in which the variables are created doesn't matter, and whitespace also doesn't matter.",
+    "attemptsCount": 0,
+    "timestamp": "2021-08-18T18:32:32.623Z",
+    "format": null,
+    "code": 127,
+    "output": "/usr/share/rpc/bash-proxy.sh: line 12: node: command not found",
+    "state": "fail"
+   }
+  ]
+ }
+]

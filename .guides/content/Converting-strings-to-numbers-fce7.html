@@ -1,0 +1,53 @@
+<script type="text/markdown">
+# Converting from strings to numbers 
+Let's write a small program that asks the user for two numbers and
+returns the sum of those numbers.
+
+1. Open your `practice.js` file and add the following code:
+   ```javascript {.numbered data-header="practice.js"}
+   let a = prompt("Enter a number");
+   let b = prompt("Enter another number");
+   let sum = a + b;
+   alert(`The sum is ${sum}`);
+   ```
+2. Re-fresh your preview to run the program. 
+
+3. Enter the numbers `2` and `4`. The program will give you `24` as the
+   answer. That's not right! Why do you think this happened?
+
+## prompt() always returns a string
+4. Let's use our *javascript console*{.voc} to see what happens when we use
+   the `prompt()` function to ask the user for a number:
+   ```javascript {.console}
+   > prompt("Enter a number");
+   < "5"
+   ```
+   Notice how the resulting number is surrounded by quotes? That means it's
+   a string. The `prompt()` function always returns a string.
+{.continue}
+
+## Use `Number()` to convert a string to a number
+5. We can use the `Number()` function to convert a string to a number. Try
+   the following in the javascript console:
+
+   ```javascript {.console}
+   > let myNumber = "5";
+   > Number(myNumber);
+   < 5
+   ```
+   The number no longer has quotes around it, so we can now use it in math
+   expressions.
+{.continue}
+
+## Fixing our program
+6. Let's fix our program by using the `Number()` function to convert
+   the user input to numbers that can be added:
+   ```javascript {.numbered data-header="practice.js"}
+   let a = prompt("Enter a number");
+   let b = prompt("Enter another number");
+   let sum = Number(a) + Number(b);
+   alert(`The sum is ${sum}`);
+   ```
+7. Run your program by refreshing the preview and see if it works!
+{.continue}
+</script>

@@ -1,0 +1,49 @@
+<script type="text/markdown">
+# Removing the asteroid after the explosion
+
+We need to make it so that the asteroid sprite is removed *after* the
+explosion finishes playing. We can use the `Animation.onComplete`
+property to trigger a custom function when the animation completes. 
+
+When the animation reaches the last frame, this function will be called
+with a parameter that represents the animation itself. This allows you
+to access the sprite associated with the animation using
+`animation.sprite`.
+
+1. Write a new function called `asteroidFinishedExploding` with a
+   parameter called `animation` (you can put this below the
+   `shipFinishedExploding()` function:
+   ```javascript {.numbered data-header="game.js" data-line-start="68" data-added-lines="72-73"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+   }
+
+   function asteroidFinishedExploding(animation) {
+   }
+   ```
+2. Inside that function, get the asteroid from the `animation.sprite`
+   property, then remove the sprite.
+   ```javascript {.numbered data-header="game.js → asteroidFinishedExploding()" data-line-start="72" data-added-lines="73-74"}
+   function asteroidFinishedExploding(animation) {
+       let asteroid = animation.sprite;
+       asteroid.remove();
+   }
+   ```
+3. In the collision handler, delete the `asteroid.remove()` line.
+   Instead, set the `onComplete` property of the asteroid animation to
+   point to your function:
+   ```javascript {.numbered data-header="game.js → handleLaserAsteroidCollision()" data-line-start="77" data-added-lines="81" data-removed-lines="80"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       laser.remove();
+       asteroid.changeAnimation("explosion");
+       asteroid.remove();
+       asteroid.animation.onComplete = asteroidFinishedExploding;
+   }
+   ```
+4. Save your code and refresh the preview. Try shooting an asteroid with
+   one laser blast. The asteroid should now explode and then disappear.
+
+   ![](.guides/images/asteroid-explosion.gif)
+   
+
+</script>

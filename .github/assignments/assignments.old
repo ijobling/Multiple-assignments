@@ -1,0 +1,44 @@
+- assignment: 069aecb6b77c8e7cae45c97ad8196980
+  section:  ["Intro to Javascript"]
+  paths: ["01-intro-to-javascript/**"]
+  
+- assignment: d7e0a0454edee2705722f56833fc8963
+  section:  ["Expressions and Variables"]
+  paths: ["02-expressions-and-variables/**"]
+
+- assignment: aeda6e75731fed3e32fe05f1d5cad82d
+  section: ["Working with Strings"]
+  paths: ["03-working-with-strings/**"]
+
+- assignment: 911f981641b75dc485691d99788067fb
+  section: ["Functions"]
+  paths: ["04-functions/**"]
+
+- assignment: 3d862c76dea9438ac2d46c875fa7e012
+  section: ["Drawing Graphics with p5.js"]
+  paths: ["05-drawing/**"]
+
+- assignment: e207465cddf263732787276692dc8477
+  section: ["Conditions"]
+  paths: ["06-conditions/**"]
+
+- assignment: 6a07d55da12d16f5c0a83acba9234faf
+  section: ["Objects"]
+  paths: ["07-objects/**"]
+
+- assignment: 7359d5ce760e4be174e3313bae88b85e
+  section: ["Arrays and Loops"]
+  paths: ["08-arrays-and-loops/**"]
+
+- assignment: 5886420c9d778aa8a103bf25ca5f63c1
+  section:
+    - "Making Sprites w/ p5.game.js"
+    - "Adding asteroids to the game"
+    - "Collision detection"
+    - "Adding sprite animations"
+    - "Shooting lasers"
+    - "Fixing some bugs"
+    - "Adding a background image and a score board"
+    - "Adding sound effects"
+    - "Game Over screen"
+    - "Extra features"

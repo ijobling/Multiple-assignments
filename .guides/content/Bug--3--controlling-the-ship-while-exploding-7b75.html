@@ -1,0 +1,87 @@
+<script type="text/markdown">
+# Bug #3: controlling the ship while exploding
+
+If your ship gets hit by an asteroid, there's nothing to stop you from
+controlling the ship, even when your ship is exploding. Also, your ship
+is still vulnerable to asteroid collisions while it's exploding, which
+could cause the player to lose more lives than they should).
+
+![](.guides/images/bug-3.gif)
+
+## Add the `ship.isExploding` custom property
+
+You can fix this bug in the same way you fixed the asteroid bugs by
+adding a custom property called `.isExploding` to the ship.
+
+1. In the `setup()` function, set `ship.isExploding` to false after
+   creating the ship:
+   ```javascript {.numbered data-line-start="23" data-added-lines="31-33" data-header="game.js → setup()"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+   
+       ship = createSprite(assets.ship);
+       ship.bottom = screenHeight - 20;
+       ship.centerX = screenWidth / 2;
+       ship.setCollider("circle");
+       ship.addAnimation("explosion", assets.sonicExplosion);
+
+       // Add a custom property to tell if the ship is exploding 
+       ship.isExploding = false;
+    ```
+2. When the ship is hit by an asteroid, set `ship.isExploding` to `true`:
+   ```javascript {.numbered data-line-start="93" data-added-lines="98" data-header="game.js → handleShipAsteroidCollision()"}
+   function handleShipAsteroidCollision(ship, asteroid) {
+       // only explode the ship if the asteroid is not exploding
+       if (asteroid.isExploding === false) {
+           asteroid.remove();
+           ship.changeAnimation("explosion");
+           ship.isExploding = true;
+           ship.animation.onComplete = shipFinishedExploding;
+       }
+   }
+   ```
+3. When the ship finishes exploding, we need to set `ship.isExploding`
+   back to false:
+   ```javascript {.numbered data-line-start="74" data-added-lines="76" data-header="game.js → shipFinishedExploding()"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+       ship.isExploding = false;
+   }
+   ```
+4. Finally, let's wrap the keyboard control and ship collision check in
+   an *if-statement*{.voc} to prevent the ship from moving while it's
+   exploding. Be sure to indent all the code inside the
+   *if-statement*{.voc}!
+   ```javascript {.numbered data-line-start="104" data-added-lines="105-106,124" data-header="game.js → updateShip()"}
+   function updateShip() {
+       // don't allow ship control or collisions while it is exploding
+       if (ship.isExploding === false) {
+           if (keyIsDown(KEY.RIGHT)) {
+               ship.centerX += 10;
+           }
+           if (keyIsDown(KEY.LEFT)) {
+               ship.centerX -= 10;
+           }
+
+           // don't allow ship to go out of bounds
+           if (ship.left < 0) {
+               ship.left = 0;
+           }
+           if (ship.right > screenWidth) {
+               ship.right = screenWidth;
+           }
+
+           // Check for collisions between the ship and asteroids 
+           ship.overlap(asteroids, handleShipAsteroidCollision);
+       }
+   }
+   ```
+   ::: infobox .warning
+   Don't forget to indent all of the lines within the
+   *if-statement*{.voc}!
+   :::
+5. Save your code and refresh your preview. Move your ship so that it
+   gets hit by an asteroid. Make sure you're not able to control your
+   ship while it's exploding.
+
+</script>

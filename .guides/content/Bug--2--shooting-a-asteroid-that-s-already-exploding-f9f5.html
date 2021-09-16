@@ -1,0 +1,30 @@
+<script type="text/markdown">
+# Bug #2: shooting a asteroid that's already exploding
+
+If you shoot a asteroid that's already exploding, it will explode again.
+This could allow the player to get more points than they should.
+
+![](.guides/images/bug-2.gif)
+
+To fix this, we can simply check our `.isExploding` property when the
+laser hits the asteroid. We'll only run the asteroid-exploding code if
+the asteroid is not already exploding.
+
+1. Wrap the lines inside the `handleLaserAsteroidCollision()` function in
+   an *if-statement*{.voc} that checks if the asteroid sprite is
+   NOT exploding:
+   ```javascript {.numbered data-line-start="80" data-added-lines="81-82,87"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+    // Don't collide if the asteroid is exploding
+    if (asteroid.isExploding === false) {
+        laser.remove();
+        asteroid.changeAnimation("explosion");
+        asteroid.isExploding = true;
+        asteroid.animation.onComplete = asteroidFinishedExploding;
+    }
+    ```
+    ***Don't forget** to indent the lines inside the if-statement!*
+2. Save your code and refresh your preview. Test by shooting an asteroid
+   multiple times, making sure it explodes only once.
+
+</script>

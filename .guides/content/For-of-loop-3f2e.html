@@ -1,0 +1,47 @@
+<script type="text/markdown">
+# For-of loop
+A *for-of loop*{.voc} is one of the most common loops you will use in
+Javascript. It allows you to run a block of code for each item of an
+array.
+
+![for-of loop diagram](.guides/images/for-of-loop.png)
+
+
+## Try it out!
+Copy-and-paste the following code snippet in your javascript console and
+press [[Enter]]:
+
+```javascript {.allow-copy .for-of-example .no-overflow}
+let people = ["Jim", "Pam", "Michael", "Dwight"];
+
+for (let person of people) {
+    console.log(`Hello, ${person}!`);
+}
+```
+
+The console should output a sentence for each word.
+
+Press the "show me" button below to see how it works!
+
+[Show me](){.btn .start-introjs data-target=".for-of-example"}
+
+1. Here we've defined an array of people. {data-select=".line-1"}
+2. This is our loop. It has the keyword "for" followed by parentheses,
+   and then a code block. {data-select-lines="3-5"}
+3. The syntax is "for (a of b)", where "a" is a variable declaration and
+   "b" is the list we want to loop over. {data-select=".line-3"}
+4. Here we've defined the variable name we want to use for each item.
+   This variable will change to the next item on each 
+   iteration. {data-select=".line-3" data-select-re="/\<[^\>]+\>let\<\/.+\> person/"}
+5. Here we put the name of the array we want to loop through. {data-select=".line-3" data-select-re="/\<[^\>]+\>of\<\/.+\> people/"}
+6. This is our code block. We can put as much code in here as we want.
+   This code will run 4 times because there are 4 items in the 
+   array. {data-select=".line-4"}
+{.tour-steps data-target=".for-of-example"}
+</script>
+<script src=".guides/js/activities.js"></script>
+<script>
+  onDocReady(() => {
+    initTours();
+  });
+</script>

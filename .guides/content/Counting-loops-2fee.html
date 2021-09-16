@@ -1,0 +1,37 @@
+<script type="text/markdown">
+# Counting loops
+A counting loop is used to repeat something a given number of times. It
+uses the `for` keyword followed by parenthesis and a code block.
+
+![counting-loop diagram](.guides/images/counting-loop.png) {.s12}
+
+The stuff in parenthesis is in 3 parts:
+1: the initializer - runs at the beginning of the loop
+2: the condition - tells the loop when to stop
+3: the incrementer - runs at the end of each iteration
+
+
+## Try it out!
+Copy-and-paste the following code snippet into your javascript console
+and press [[Enter]] to run it:
+
+```javascript {.allow-copy .counting-loop-example .no-overflow}
+for (let i=0; i<10; i++) {
+  console.log(i);
+}
+console.log('All done!');
+```
+
+<!-- FIXME: this is not working well.
+Press "Show me" below to see how the loop works:
+
+[Show me](){.btn .start-introjs data-target=".counting-loop-example"}
+1. We start with the `for` keyword {data-select=".line-1" data-select-re="/for/"}
+2. This is how we control the loop. It's defined in three parts. {data-select=".line-1" data-select-re="/\\(.+\\)/"}
+3. For the initializer, we set a variable i equal to 0. {data-select=".line-1" data-select-re="/\<.+\>let.+ i=[^;]+;/"}
+4. For the condition, we want to loop to run only if i is less than 10.
+5. For the incrementer, we increase i by 1 each time
+6. This code will be run each time i is incremented
+{.tour-steps data-target=".counting-loop-example"}
+-->
+</script>

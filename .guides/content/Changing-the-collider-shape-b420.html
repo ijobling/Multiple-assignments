@@ -1,0 +1,60 @@
+<script type="text/markdown">
+# Changing the collider shape
+
+In video game design, we use simple shapes for collision detection
+because it's easy for the computer to calculate. This keeps our games
+running nice and fast.
+
+The p5.game library gives us two different types of colliders:
+`"rectangle"` and `"circle"`. By default, all sprites use a
+`"rectangle"` collider.
+
+Compare the two collider shapes below. The ship and asteroid are in the
+same position in each image. In the top image, we're using the
+`"rectangle"` collider, while in the bottom image we're using a
+`"circle"` collider.
+
+![](.guides/images/collider-rectangle.png)
+
+![](.guides/images/collider-circle.png)
+
+As you can see, with the rectangle collider, the sprites overlap, even
+when they aren't very close. With the circle collider, the sprites can
+get much closer before they overlap.
+
+## Use circle collider for the ship and asteroid
+
+You can set the collider shape using `Sprite.setCollider()`. The best
+place to do this is immediately after creating the sprite.
+
+1. In the `setup()` function, just after you create the ship sprite, set
+   the collider to `"circle"`:
+   ```javascript {.numbered data-header="game.js → setup()" data-line-start="14" data-added-lines="20"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+
+       ship = createSprite(assets.ship);
+       ship.bottom = screenHeight - 20;
+       ship.centerX = screenWidth / 2;
+       ship.setCollider("circle");
+   ```
+ 2. Do the same for the asteroid in the `createAsteroid()` function:
+    ```javascript {.numbered data-header="game.js → createAsteroid()" data-line-start="26" data-added-lines="33"}
+    function createAsteroid() {
+        let asteroid = createSprite(assets.bigAsteroid);
+        asteroid.top = 0;
+        asteroid.centerX = random(0, screenWidth);
+        asteroid.setSpeed(random(1, 5));
+        asteroid.setDirection(random(60, 120));
+        asteroid.rotationSpeed = random(-2, 2);
+        asteroid.setCollider("circle");
+    ```
+ 3. Save your code and refresh your preview. In your 
+    *javascript console*{.voc}, enable debug mode on all sprites:
+    ```javascript {.console}
+    > allSprites.debug = true;
+    ```
+    Make sure your ship and asteroid sprites are all using the circle
+    collider.
+
+</script>

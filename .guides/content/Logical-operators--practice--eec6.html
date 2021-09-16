@@ -1,0 +1,42 @@
+<script type="text/markdown" data-class="conditions logical-operators-practice">
+# Logical Operators
+
+## Practice using logical operators in Javascript
+
+In javascript, we use different symbols for **AND** and **OR**:
+
+|          |                |
+| -------- | -------------- |
+| AND      | &rarr; `&&`    |
+| OR       | &rarr; `\|\|`  |
+
+{.operators-in-js}
+
+Here are some examples of using the `&&` and `||` operators:
+```javascript
+// rating is > 3 AND the genre is sci-fi
+if (rating > 3 && genre === "sci-fi") {
+    alert("Sci-fi fans love this movie!");
+}
+
+// genre is either comedy OR romantic-comedy
+if (genre === "comedy" || genre === "romantic-comedy") {
+    alert("This movie will make you laugh!");
+}
+```
+
+## Try it out: Write a program that recommends activities based on weather
+1. In the editor on the left is a file called `weather.js`. 
+   Each if-statement in this code a comment above it explaining the
+   condition. However, the conditional part of the if statement, the
+   part between parentheses `()`, is missing.
+2. Add the missing conditional expressions using logical operators such
+   as `&&` and `||`. The first one has been done for you!
+3. When you're ready to test, click the "Open Preview" button below to run 
+   your code and test with different temperatures / weather types to see if 
+   each response works as expected.
+   
+   [Open Preview](.guides/p/#preview=/06-conditions/weather.html&consoleSize=75%){.btn .preview data-panel="1"}
+   
+   *Note: to re-run the script, click the refresh button above the preview.*
+</script>

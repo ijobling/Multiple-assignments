@@ -1,0 +1,33 @@
+<script type="text/markdown">
+# Getting Started
+In the remaining lessons, we will work step-by-step to build a "space
+shooter" game, where you control a ship that's flying through a
+field of asteroids flying in random directions:
+
+![space-shooter-demo](.guides/images/space-shooter.gif)
+
+## Project files
+
+On the left, you'll see two files. One is `index.html` (top) and the other is `game.js` (bottom). 
+
+### index.html
+
+The `index.html` file is what gets loaded first by the browser. That file then loads `game.js` file using a `<script>` element.
+
+::: infobox
+Notice how we have a couple of new scripts in our HTML file, one
+called `p5.sound.min.js`, and another called `p5.game.js`. These are
+extensions to p5.js that makes it easier to build games.
+:::
+
+This basic set up contains everything need to build a simple 2D game. You won't have to make any changes to `index.html` until you're ready to move onto more advanced stuff. 
+
+### game.js
+
+We'll do our game coding inside `game.js`. You'll see that it we've added the basic *p5.js* structure, including the `preload()`, `setup()`, `draw()` functions.
+
+Our game's screen size is 600 x 800. You can change this later once you've finished building the game and want to customize it, but for now we recommend keeping it as-is.
+
+[1]: https://boldideainc.github.io/p5.game/
+[2]: https://docs.google.com/document/d/1KAw9jg_dH_nxUMm3VU_ZNw3htcSJ-8OZGlQ0OEWvkQ0/edit?usp=sharing
+</script>

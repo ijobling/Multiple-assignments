@@ -1,0 +1,35 @@
+<script type="text/markdown">
+# Randomize all the things!
+
+1. Use the same technique to set a random speed (between 1 and 10), a
+   random direction (between 60° and 120°), and a random rotation speed
+   (between -2 and 2):
+   ```javascript {.numbered data-line-start="21" data-removed-lines="26,28,30" data-added-lines="27,29,31" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.bottom = 0;
+       asteroid.centerX = random(0, screenWidth);
+       asteroid.setSpeed(5);
+       asteroid.setSpeed(random(1, 10));
+       asteroid.setDirection(90);
+       asteroid.setDirection(random(60, 120));
+       asteroid.rotationSpeed = 2;
+       asteroid.rotationSpeed = random(-2, 2);
+   ```
+3. Save your code and refresh your preview. Use the 
+   *javascript console*{.voc} to create multiple asteroids:
+   ```javascript {.console data-header="Javascript console"}
+   > createAsteroid();
+   > createAsteroid();
+   > createAsteroid();
+   ```
+   ::: infobox
+   You can repeat the last command in the javascript console by pressing
+   the up arrow key [[🠕]], followed by [[Enter]]
+   :::
+   You should see asteroids coming at random directions and speeds!
+
+   ![asteroids appearing randomly](.guides/images/random-everything.gif)
+
+</script>

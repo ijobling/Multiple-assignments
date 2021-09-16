@@ -1,0 +1,33 @@
+<script type="text/markdown">
+# Changing the asteroid's direction
+
+The asteroid is moving to the right, because its default direction is 0
+degrees.
+
+When direction is set to `0` degrees, it will move to the right. `90`
+degrees is down, `180` is left, and `270` is up. You can set direction
+to any number between `0` and `360`:
+
+![sprite direction](.guides/images/direction.png){.s9 .m7}
+
+To set a sprite's direction, use the `.setDirection()` function.
+
+1. Add the following line to your `createAsteroid()` function:
+   ```javascript {.numbered data-line-start="21" data-added-lines="26"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.centerX = screenWidth / 2;
+       asteroid.setSpeed(5);
+       asteroid.setDirection(90);
+   }
+   ```
+2. Save your code and refresh your preview. Use the *javascript
+   console*{.voc} to create another asteroid:
+   ```javascript  {.console}
+   > createAsteroid();
+   ```
+   You should now see your asteroid moving downward.
+
+   ![asteroid moving to the right](.guides/images/asteroid-direction.gif)
+</script>

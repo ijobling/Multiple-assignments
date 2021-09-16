@@ -1,0 +1,44 @@
+<script type="text/markdown" data-class="objects/practice-1">
+# Objects
+
+## Try it out!
+
+Copy-and-paste the following code into your javascript console, and
+press [[Enter]].
+
+```javascript {.console .allow-copy}
+let student = {
+  firstName: "Elizabeth",
+  lastName: "Brown",
+  grade: 6,
+  age: 12,
+  email: "liz@example.com"
+};
+```
+
+The above code assigns an object to a variable named `student`.
+
+Now that you've now defined an object, you can access the
+*properties*{.voc} of the object using *dot notation*{.voc}. You can use
+these properties just as you would any other variable.
+
+Use dot notation to access the `student` object's properties in your
+javascript console:
+
+```javascript {.console}
+> student;
+< Object { age: 12, grade: 6, email: "liz@example.com", ... }
+> student.firstName;
+< Elizabeth
+> console.log(`${student.firstName} ${student.lastName}`);
+  Elizabeth Brown
+> student.firstName = "Liz";
+> console.log(`${student.firstName} ${student.lastName}`);
+< "Liz Brown";
+> student.grade;
+< 6
+> student.grade += 1;
+> student.grade;
+< 7
+```
+</script>

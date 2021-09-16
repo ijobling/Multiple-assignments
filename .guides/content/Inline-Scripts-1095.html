@@ -1,0 +1,44 @@
+<script type="text/markdown">
+# Inline scripts
+1. In the editor on the far left, you will see a basic HTML file with the `<html>` and `<body>` elements.
+2. Add some other html content, such as a `<h1>` heading:
+   ```html {.m8 .s12 .numbered data-header="javascript-practice.html"}
+   <!DOCTYPE html>
+   <html>
+    <body>
+       <h1>Javascript Practice</h1>
+     </body>
+   </html>
+   ```
+3. Click the "refresh" button ![preview button](.guides/images/refresh-preview.png) in the preview panel below the editor.  
+  You should now see your heading in the preview.
+   
+4. Add a `<script>` element just before the closing `</body>` tag. 
+5. Write `console.log('Hello World!');` inside the `<script>` element:
+   ```html {.m8 .s12 .numbered data-header="javascript-practice.html"}
+   <!DOCTYPE html>
+   <html>
+     <body>
+       <h1>Javascript Practice</h1>
+
+       <script>
+         console.log('Hello world!');
+       <\/script>
+    </body>
+   </html>
+   ```
+6. Click the refresh button on the preview to run your code:
+   ![refresh preview button](.guides/images/refresh-preview.png)
+7. In your Javascript console below the preview, you should 
+   see the message appear: "Hello world!".
+   Any javascript code on the page will automatically run every 
+   time the page loads. 
+{.steps}
+
+::: infobox
+The `console.log()` function takes whatever you put in the parentheses
+and shows its value in your **Javascript Console**{.voc}.
+:::
+
+[1]: .guides/p/#/javascript-practice.html
+</script>

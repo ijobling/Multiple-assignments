@@ -1,0 +1,2021 @@
+{
+ "sections": [
+  {
+   "id": "94a5ace7-2f9d-2913-e9c5-e8245d16a7da",
+   "title": "Welcome",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Welcome-94a5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "25781cbf-d586-7199-cdf3-f42e2e6a5191",
+   "title": "What is Javascript?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/What-is-Javascript--2578.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "75ca7f69-9ce1-e132-f960-0b65454624b5",
+   "title": "The Javascript Console",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: /.guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/The-Javascript-Console-75ca.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "cb47b725-3dfd-874d-11e3-83e65c0ff093",
+   "title": "Running Javascript from a File",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Running-Javascript-from-a-File-cb47.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "1095aba6-2fe7-e244-5e8a-0eab9c2c3749",
+   "title": "Inline Scripts",
+   "files": [
+    {
+     "path": "01-intro-to-javascript/javascript-practice.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/01-intro-to-javascript/javascript-practice.html&consoleSize=115px",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Inline-Scripts-1095.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d7e82ebc-65f5-a6fd-f15e-6bf44a59bed7",
+   "title": "External Scripts",
+   "files": [
+    {
+     "path": "01-intro-to-javascript/javascript-practice.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/01-intro-to-javascript/javascript-practice.html&consoleSize=115px",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/External-Scripts-d7e8.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "299ef57d-6592-558b-c8e0-60af9fea822e",
+   "title": "Semicolons",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Semicolons-299e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "38e1eb8e-0cd3-0d36-970a-96b365ee00a7",
+   "title": "Understanding Error Messages",
+   "files": [
+    {
+     "path": "01-intro-to-javascript/practice.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/01-intro-to-javascript/javascript-practice.html&consoleSize=150px",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Understanding-Error-Messages-38e1.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "cee27749-5970-c322-ce4a-c31e69795ff1",
+   "title": "Comments",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Comments-cee2.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0130e4fc-236c-d1f2-eca2-0a28af3c111c",
+   "title": "Multi-line Comments",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Multi-line-Comments-0130.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5269cc76-6f23-88d3-5388-b05f12364dac",
+   "title": "Expressions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Expressions-5269.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c31c95b9-8c58-90a4-b18a-43bef31848e8",
+   "title": "Math Expressions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Math-Expressions-c31c.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "85bd33d1-3dad-0a14-2c8a-85149d47ce9a",
+   "title": "String Expressions",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/String-Expressions-85bd.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6631822f-e1d4-8e9a-dbc8-917294b51ca0",
+   "title": "Variables",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Variables-6631.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "101e1ee1-063c-2af0-07de-f51610d99527",
+   "title": "Declaring and Re-assigning Variables",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Declaring-and-Re-assigning-Variables-101e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "cfeebf3e-22be-6ecf-79f6-ebeb7b901917",
+   "title": "Incrementing and Decrementing Numbers",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Incrementing-and-Decrementing-Numbers-cfee.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9d106a77-628a-cc23-b678-e433d0fcab49",
+   "title": "Naming",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Naming-9d10.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d77e9669-02d3-c85b-15b4-dee029719eea",
+   "title": "alert() and prompt()",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/alert---and-prompt---d77e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "63e459b2-6ffb-0bcf-0089-53a603dbda6b",
+   "title": "Code Challenge: Turtle Squares",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "02-expressions-and-variables/turtle-squares.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Code-Challenge--Turtle-Squares-63e4.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "31d24dc8-64ff-65c6-284c-15d7465949b4",
+   "title": "Working with Strings",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Working-with-Strings-31d2.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6b4baca4-8795-f35c-74ac-20398b7b941f",
+   "title": "String Methods",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/String-Methods-6b4b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3081a701-dc28-b64f-0079-4c79ea82572c",
+   "title": "Strings vs. Numbers",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Strings-vs--Numbers-3081.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "fce78673-a2ee-6135-a03d-dc35e058face",
+   "title": "Converting strings to numbers",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "03-working-with-strings/practice.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/03-working-with-strings/javascript-practice.html&consoleSize=75%25",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Converting-strings-to-numbers-fce7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "1e69dc2f-439c-fd1c-7cfb-b571ec6f235e",
+   "title": "Code Challenge - Age Predictor",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "03-working-with-strings/age-predictor.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Code-Challenge---Age-Predictor-1e69.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "08de67c0-1ee3-f448-2297-b8149ff231c6",
+   "title": "Functions intro",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Functions-intro-08de.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "031427ee-c789-1b5e-402d-8833bc3d1c8f",
+   "title": "Defining Functions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "04-functions/pbj-function.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: /.guides/p/#preview=/04-functions/pbj-function.html&consoleSize=90%25",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Defining-Functions-0314.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "67000ce0-2444-d57b-63c8-3714f80096ab",
+   "title": "Calling Functions",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Calling-Functions-6700.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7b8a9f85-7984-8f29-e99f-7ff5e71c613d",
+   "title": "Function Parameters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Function-Parameters-7b8a.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "71947624-296f-75ae-d7f6-a6b397810206",
+   "title": "Using Parameters",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "04-functions/pbj-function.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/04-functions/pbj-function.html&consoleSize=90%25",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Using-Parameters-7194.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3222709a-179f-44de-1799-3ace5bd27658",
+   "title": "What happened here?",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/What-happened-here--3222.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "77b5c9d4-3746-6265-874b-0b98774f0800",
+   "title": "Adding more parameters",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-more-parameters-77b5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "87b6cc4b-f132-98fb-200d-fb5206960fb3",
+   "title": "Code Challenge: Turtle House Neighborhood",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "04-functions/turtle-houses.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Code-Challenge--Turtle-House-Neighborhood-87b6.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "efd1edcd-d534-3497-5c4e-8ba3bfbde6f6",
+   "title": "Drawing graphics with p5.js",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Drawing-graphics-with-p5-js-efd1.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "dde74c31-2e76-a522-b72b-9fbe2c6bac83",
+   "title": "Coordinate Systems",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Coordinate-Systems-dde7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5f4e4d28-fd80-7218-9f1f-cc84feacaf7e",
+   "title": "Getting started with p5.js",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "05-drawing/drawing.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "05-drawing/drawing.js",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Getting-started-with-p5-js-5f4e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0f892c31-fa53-90a6-79f0-40325f4443b5",
+   "title": "Drawing shapes",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: /.guides/p/#preview=/05-drawing/drawing.html&consoleOpen=true&consoleSize=25%25",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Drawing-shapes-0f89.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2ca75684-8468-492f-51db-520ff51db0fc",
+   "title": "Colors",
+   "files": [],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Colors-2ca7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b6658359-c976-7fc3-60ea-307231e9ece0",
+   "title": "Text",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Text-b665.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a410da03-527b-5632-d2ca-78803621c6ec",
+   "title": "Special p5 functions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "05-drawing/drawing.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Special-p5-functions-a410.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0bf21094-1fb0-b031-f07a-38e4984bd1fa",
+   "title": "Animation using the draw() function",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "05-drawing/drawing.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/05-drawing/drawing.html&consoleOpen",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Animation-using-the-draw---function-0bf2.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3fb98cc7-ba27-164a-299e-9140d1e71d15",
+   "title": "Loading and displaying images",
+   "files": [
+    {
+     "path": "05-drawing/drawing.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/05-drawing/drawing.html&showConsole",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Loading-and-displaying-images-3fb9.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "191f802a-a75c-800e-5649-cee41dc514a0",
+   "title": "Anatomy of a p5 script",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "05-drawing/drawing.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Anatomy-of-a-p5-script-191f.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0c93d5e1-fb19-3a37-4092-175c6354ddba",
+   "title": "Variable scope",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Variable-scope-0c93.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "11a0f345-d1cf-6d79-6ca8-3a6d5338381c",
+   "title": "Code Challenge: Snowman Sunset",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "05-drawing/snowman-sunset.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Code-Challenge--Snowman-Sunset-11a0.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "e42f85da-086e-4596-1e3c-aeab6663f764",
+   "title": "Boolean expressions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Boolean-expressions-e42f.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bda12056-936e-f562-2e2f-575a1e843a88",
+   "title": "Comparison operators",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Comparison-operators-bda1.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c4d2f923-7a4d-e5f3-dd8b-124350b58510",
+   "title": "If statements",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/If-statements-c4d2.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "4011f525-3509-0571-a333-0f8f24a7c2da",
+   "title": "If statements (practice)",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "06-conditions/if-statement.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/If-statements--practice--4011.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "184baaee-7464-9533-6226-595d001eced4",
+   "title": "If-else statements",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "06-conditions/if-statement.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/If-else-statements-184b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "35c53d47-ef61-28ac-0acb-dd7cc1d5034f",
+   "title": "Logical operators",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Logical-operators-35c5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "eec6eab2-fd59-591e-f6b0-11b04943df48",
+   "title": "Logical operators (practice)",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "06-conditions/weather.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Logical-operators--practice--eec6.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "24f3a213-33f5-1b1b-b7d6-7d502a885c8f",
+   "title": "Negation operator",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Negation-operator-24f3.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "992bdb78-ffdf-5d0f-227e-6e133129f113",
+   "title": "Code challenge: Pets",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "06-conditions/pets.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Code-challenge--Pets-992b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "227eb856-a886-e1a6-5342-868574739742",
+   "title": "Objects",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Objects-227e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "db71d767-fcf1-0b08-63a0-10c4b0176ad8",
+   "title": "Objects (practice)",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly&2",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Objects--practice--db71.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "36b7ff98-b3b5-a1ca-0394-ad449151cb93",
+   "title": "Adding properties",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly&3",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-properties-36b7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "606cf98a-81d6-616e-de67-2bb852d66e5a",
+   "title": "Arrays",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Arrays-606c.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "871c3455-1836-3226-5258-baba646d093f",
+   "title": "Array Indexes",
+   "files": [],
+   "layout": "",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Array-Indexes-871c.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b7d0d9d1-d850-4d99-edd9-ee866f570b69",
+   "title": "Adding and removing values at the end",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-and-removing-values-at-the-end-b7d0.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "08455e0d-48f5-aaa9-e673-206f5e339b81",
+   "title": "Adding and removing values at the beginning",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-and-removing-values-at-the-beginning-0845.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b9705102-eeee-64a7-712e-e2556ee22365",
+   "title": "More array methods",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/More-array-methods-b970.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "9484860e-002b-a00a-e4f9-656d78502c1a",
+   "title": "Loops",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Loops-9484.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2feec3dd-3791-6f4f-912c-0dbb7c2a2dbd",
+   "title": "Counting loops",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: .guides/p/#consoleOnly",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Counting-loops-2fee.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3f2e5664-7ef7-a9e9-370d-51811bb028c7",
+   "title": "For-of loop",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/For-of-loop-3f2e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "1a8b13e9-dbc5-574a-b779-734c0bae02ab",
+   "title": "Coding challenge: Loops",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "08-arrays-and-loops/loops-challenge.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: .guides/p/#preview=/08-arrays-and-loops/loops-challenge.html&consoleSize=75%25",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Coding-challenge--Loops-1a8b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "4aaabbf4-a258-7dff-38c9-c65b1b43e306",
+   "title": "Getting started",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "index.html",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "game.js",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Getting-started-4aaa.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "2978964e-7f88-3219-1355-c9f3267f0511",
+   "title": "Making sprites",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "game.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Making-sprites-2978.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ce807cdc-1823-8006-b7d0-cd152ea50dd5",
+   "title": "Game assets",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "game.js",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Game-assets-ce80.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "faa08d23-6fbc-c28c-37c9-83972729409f",
+   "title": "Adding a ship sprite to the game",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-a-ship-sprite-to-the-game-faa0.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "54bb6d06-3e50-94e1-c8bf-f644f8d39c3c",
+   "title": "Using the preview panel",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Using-the-preview-panel-54bb.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "1cb52a3f-93d0-8e2c-e4c0-ce1398130fbf",
+   "title": "Positioning sprites",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Positioning-sprites-1cb5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "5c3d4796-d00c-56f5-07a1-3812a29c611a",
+   "title": "Using \"update functions\" for sprites",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Using--update-functions--for-sprites-5c3d.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "dc453ddf-aca7-c4be-f099-83744ca6ade1",
+   "title": "Adding keyboard controls",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-keyboard-controls-dc45.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "0dee86d2-1ba7-64c3-834c-cb2d4cae06ed",
+   "title": "Keeping the ship on the screen",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Keeping-the-ship-on-the-screen-0dee.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "83a1b3af-aec4-6460-4b9b-d846d25ad77d",
+   "title": "Using if-statements to keep the ship in bounds",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Using-if-statements-to-keep-the-ship-in-bounds-83a1.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "eb45de32-a662-2693-b33b-2c30e5c91c25",
+   "title": "Detecting the right side of the screen",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Detecting-the-right-side-of-the-screen-eb45.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "ccbc043a-4ef6-1250-57b4-e75c07699523",
+   "title": "Adding asteroids to the game",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-asteroids-to-the-game-ccbc.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "eb62ee4b-f61e-5b3b-6bd1-9fc1dfadd0ff",
+   "title": "Putting sprites into motion",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Putting-sprites-into-motion-eb62.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "47948093-27da-c391-22be-b1498ead93a0",
+   "title": "Changing the asteroid's direction",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Changing-the-asteroid-s-direction-4794.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7b085542-44c1-d7f8-dfa2-3882ee6f46bb",
+   "title": "Send the asteroid spinning",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Send-the-asteroid-spinning-7b08.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "c6545b1d-d7b7-d570-e289-4dbcd9385def",
+   "title": "Send the asteroid in random directions",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Send-the-asteroid-in-random-directions-c654.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6f202e1d-98db-1cf6-eb23-155753572dfe",
+   "title": "Randomize all the things!",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Randomize-all-the-things--6f20.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "cab1725e-e44a-b558-12ed-532a9e9886b1",
+   "title": "Managing multiple sprites with Sprite Groups",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Managing-multiple-sprites-with-Sprite-Groups-cab1.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "83231515-8b60-0ccb-77b2-6215f5f7be79",
+   "title": "Creating asteroids automatically ",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Creating-asteroids-automatically--8323.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7b4f07bc-f345-f8f7-9129-79c44289ee7f",
+   "title": "Too many sprites?",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Too-many-sprites--7b4f.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bd4b15e9-787e-ec61-469f-15c59953117c",
+   "title": "Performance tuning",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Performance-tuning-bd4b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "695e0907-d1d0-7f48-7b29-c13284b46333",
+   "title": "Collision detection",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Collision-detection-695e.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b36d069b-4431-010c-5827-891ea91e5993",
+   "title": "Remove the asteroid when it collides",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Remove-the-asteroid-when-it-collides-b36d.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a139d42c-e567-32d8-e36a-234dcacd84cb",
+   "title": "More precise collisions",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/More-precise-collisions-a139.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b42088bd-2c07-9909-f919-d7bc9cc5349f",
+   "title": "Changing the collider shape",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Changing-the-collider-shape-b420.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d61fcc07-d423-a8a5-0d0e-da80527e5f8c",
+   "title": "Adding sprite animations",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-sprite-animations-d61f.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "33789e45-7d94-5b2b-7ad3-c934af1a04e9",
+   "title": "Loading animations",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Loading-animations-3378.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "8dad2518-ac85-9871-6ac4-5d928ec3c0a2",
+   "title": "Changing animations on a sprite",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Changing-animations-on-a-sprite-8dad.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3baa1b21-9c3c-2a28-cd8a-3f0b9c6f389e",
+   "title": "Explode the ship when hit by an asteroid",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Explode-the-ship-when-hit-by-an-asteroid-3baa.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bf34664c-3816-df89-f44a-26bad237db07",
+   "title": "Shooting lasers",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Shooting-lasers-bf34.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bcf7389d-81e7-b699-7110-077b7f5b873d",
+   "title": "Firing lasers using the space key",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Firing-lasers-using-the-space-key-bcf7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "fbd845ad-3d11-93c8-209b-b2bd6198a223",
+   "title": "Too many sprites (again)!",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Too-many-sprites--again---fbd8.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "dd1cc2d4-5802-928d-abcc-fa31736993bd",
+   "title": "Lasers colliding with asteroids",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Lasers-colliding-with-asteroids-dd1c.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "d666c6f7-907c-2238-c606-e89453c2df9c",
+   "title": "Exploding asteroids",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Exploding-asteroids-d666.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "08c0803c-076a-5d3b-25c9-532958328afd",
+   "title": "Removing the asteroid after the explosion",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Removing-the-asteroid-after-the-explosion-08c0.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f6b96779-b3a2-8c10-7cc1-3ab406cd658f",
+   "title": "Explosion Bugs",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Explosion-Bugs-f6b9.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "405c79c0-9fce-75cd-7a08-4ba7cd1f5f50",
+   "title": "Using custom properties on sprites",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Using-custom-properties-on-sprites-405c.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f9f5f6c2-d3bf-3427-62ec-2ae6c55730a3",
+   "title": "Bug #2: shooting a asteroid that's already exploding",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Bug--2--shooting-a-asteroid-that-s-already-exploding-f9f5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7b751472-601b-7af1-748c-1e77042c7bd0",
+   "title": "Bug #3: controlling the ship while exploding",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Bug--3--controlling-the-ship-while-exploding-7b75.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "30820e23-67e0-f666-0ee1-5a96990b8919",
+   "title": "Bug #4: The ship can still shoot if it's exploding",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Bug--4--The-ship-can-still-shoot-if-it-s-exploding-3082.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "14d2c9dc-eae8-fd7d-77b0-01e4a79260a9",
+   "title": "Adding a starfield backdrop",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-a-starfield-backdrop-14d2.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "b3e75f11-8111-1eff-ab63-1ab825df2839",
+   "title": "Adding a score board",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-a-score-board-b3e7.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "149b91d4-d854-896e-d6a4-341c19cdd97c",
+   "title": "Updating score and lives",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Updating-score-and-lives-149b.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "558fd5d5-a1bc-02a4-0752-19abc84eae8a",
+   "title": "Adding Sound Effects",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-Sound-Effects-558f.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "f6ddb995-8327-aeac-a8e8-9a666545686c",
+   "title": "Uploading sound assets to your IDE",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Uploading-sound-assets-to-your-IDE-f6dd.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "e2c5bdfa-bc1c-af6a-614f-91b98bdd74cd",
+   "title": "Adding sounds to the game",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Adding-sounds-to-the-game-e2c5.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bca854f1-e744-e932-ade7-a17291e5d2d2",
+   "title": "\"Game Over\" screen",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/-Game-Over--screen-bca8.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "a485cce2-206c-5ada-2b9e-b0eaeabde4cc",
+   "title": "Drawing the \"Game Over\" screen",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Drawing-the--Game-Over--screen-a485.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "3ca48e30-f727-895d-c9d9-637e36776677",
+   "title": "Switching to the \"Game Over\" screen",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Switching-to-the--Game-Over--screen-3ca4.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "91779805-217a-a592-a988-719652b1e068",
+   "title": "Add \"play again\" functionality",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Add--play-again--functionality-9177.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  },
+  {
+   "id": "7d400502-bcfe-7d6d-f388-e014ac2e6599",
+   "title": "Extra Features",
+   "files": [],
+   "path": [],
+   "type": "html",
+   "content-file": ".guides/content/Extra-Features-7d40.html",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": "",
+ "suppressPageNumbering": true,
+ "useSubmitButtons": false,
+ "useMarkAsComplete": false,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": false,
+ "protectLayout": false
+}

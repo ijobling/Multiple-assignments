@@ -1,0 +1,31 @@
+<script type="text/markdown">
+![p5.js program flow](.guides/images/p5-flow.png){.float-right .s6 .med-and-up}
+# Anatomy of a p5 script
+
+It's important to understand the purpose of the different functions in
+your script, and how they are used by the p5 library.
+
+1. As soon as the script loads, p5 calls the `preload()` function. All
+   assets loaded in this function will begin downloading.  
+
+2. When all assets have finished loading, the `setup()` function is
+   called. This is where you'll create your canvas, and perform anything
+   that needs to be done before drawing.  
+
+3. The `draw()` function is then called repeatedly every 60 seconds.
+
+![p5.js program flow](.guides/images/p5-flow.png){.small-only}
+
+<!--
+4. Here we define our "global variables". These are variables that can
+   be accessed from any function. {data-select-lines="1-6"}
+5. For example, we declare `robotImage` here using "let"... {data-select-lines="6"}
+6. ...and we assign robot image here in the preload function. {data-select-lines="9"}
+7. We later access the robot image in the draw() function {data-select-lines="20"}
+8. Notice how we didn't use "let" here. The "let" keyword declares the
+   variable. If we declare a variable inside a function, it can ONLY be
+   used inside that function. {data-select-lines="9"}
+9. But since we're also using the variable in the `draw()` function... {data-select-lines="20"}
+10. we must declare it here as a "global variable". {data-select-lines="6"}
+-->
+</script>

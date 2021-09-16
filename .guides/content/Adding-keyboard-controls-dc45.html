@@ -1,0 +1,99 @@
+<script type="text/markdown">
+![keys](.guides/images/keyboard-controls.png){.s6 .float-right}
+# Adding keyboard controls
+
+Next, we want to control the ship using our keyboard.
+We'll use the left and right arrow keys to change the ship's position
+on the **x-axis**.
+
+That means we'll need to run some code that checks for the key press in
+our update function, which runs on each frame (60 times per second).
+
+To do this we use an *if-statement*{.voc} to check if the arrow key is
+pressed. If it is, then we **update** the ship's position.
+
+## Detecting keys using key codes
+The p5 library gives us a special function called `keyIsDown()`, which
+evaluates to `true` if a key is pressed. The first parameter is a
+special variable called a *key code*{.voc}.
+
+Here are some examples of *key codes*{.voc}:
+
+| key         | key code            |
+| ----------- | ------------------- |
+| left arrow  | `KEY.LEFT_ARROW`    |
+| right arrow | `KEY.RIGHT_ARROW`   |
+| space       | `KEY.SPACE`         |
+| ctrl key    | `KEY.CTRL`          |
+
+For example, the statement `keyIsDown(KEY.SPACE)` evaluates to `true` if
+the space key is down, otherwise it is `false`.
+
+## Using if-statements to control the ship
+
+Let's update our code so that the ship only moves right if
+`KEY.RIGHT_ARROW` is pressed down:
+
+1. In your `updateShip()` function, put the line that updates the
+   position in an *if-statement*{.voc}:
+   ```javascript {.numbered data-line-start="20" data-removed-lines="21" data-added-lines="22-23" data-caption="“If the right arrow key is down, add 1 to the ship's position on the X axis.”"}
+   function updateShip() {
+       ship.centerX += 1;
+       if (keyIsDown(KEY.RIGHT_ARROW)) {
+           ship.centerX += 1;
+       }
+   }
+   ```
+    
+2. Save your code & refresh your preview. Click on your game screen,
+   then hold down the right arrow key. You should see your ship move to
+   the right when you press the key. It should stop moving when you
+   release the key.
+
+   ::: infobox .warning
+   **Important:** You must always click on your game screen before
+   trying out controls. This is called "focusing". If the game is not
+   focused, your code can't detect the keyboard.
+   :::
+3. Next, let's update the code so that our ship moves a little faster.
+   Instead of moving by 1 pixel per frame, let's make it move 10 pixels:
+   ```javascript {.numbered data-line-start="20" data-removed-lines="22" data-added-lines="23"}
+   function updateShip() {
+       if (keyIsDown(KEY.RIGHT_ARROW)) {
+           ship.centerX += 1;
+           ship.centerX += 10;
+       }
+   }
+   ```
+4. Test your code again by saving and refreshing your preview. The ship
+   should now move faster when you press the key.
+5. Finally, let's add the same code for the left arrow key, but instead
+   of adding 10, we'll subtract 10:
+   ```javascript {.numbered data-line-start="20" data-added-lines="24-26"}
+   function updateShip() {
+       if (keyIsDown(KEY.RIGHT_ARROW)) {
+           ship.centerX += 10;
+       }
+       if (keyIsDown(KEY.LEFT_ARROW)) {
+           ship.centerX -= 10;
+       }
+   }
+   ```
+6. Test your code. The ship should move left when the left arrow key is
+   pressed, and right when the right arrow key is pressed.
+   ![keyboard control test](.guides/images/keyboard-controls-test.gif)
+
+   ::: infobox .warning
+   **Trouble with scroll bars?** 
+
+   If your preview screen is not wide enough, and you see scroll bars at
+   the bottom of your screen, you might have trouble controlling your
+   ship.
+
+   Try resizing your preview pane so that the scroll bars go away.
+   Alternatively, you can change the `screenWidth` and `screenHeight`
+   variables at the top of `game.js` to something that fits better on
+   your screen.
+   :::
+
+</script>

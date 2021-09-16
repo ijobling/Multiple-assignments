@@ -1,0 +1,68 @@
+<script type="text/markdown">
+# Positioning Sprites
+
+By default, sprites are positioned with their center at the top-left of
+the screen. To fix this, we need to set the sprite's *position*{.voc}.
+
+## Position properties
+Sprite objects have the following properties that can be used for
+setting position on the screen:
+
+![sprite position properties](.guides/images/sprite-position-properties.png)
+
+| Property   | Description                            |
+| ---------- | -------------------------------------- | 
+| `.centerX` | The sprite's center on the x-axis      |
+| `.centerY` | The sprite's center on the y-axis      |
+| `.left`    | The sprite's left edge on the x-axis   |
+| `.top`     | The sprite's top edge on the y-axis    |
+| `.right`   | The sprite's right edge on the x-axis  |
+| `.bottom`  | The sprite's bottom edge on the y-axis |
+
+{.table}
+
+## Try it out!
+Try some of the following commands in your *javascript console*{.voc} to
+see how these properties work! You should see your ship update as you
+type each command into the console.
+
+::: infobox .warning
+In order to see the effect of typing a command, you may need to switch
+back-and-forth between this lesson guide and your preview.
+
+Type the command in the console, switch to your preview, then click back
+in the console and hit [[Enter]] to run the command and see the effect.
+:::
+
+| Command                            | Description                                                          |
+| ---------------------------------- | -------------------------------------------------------------------- |
+| `ship.left = 0;`                   | Put the ship's left edge at the far left of the screen               |
+| `ship.top = 0;`                    | Put the ship's edge top at the top of the screen                     |
+| `ship.left = 150;`                 | Put the ship's left edge `150` pixels from the left of the screen    |
+| `ship.bottom = 400;`               | Put the ship's bottom edge `400` pixels from the top of the screen   |
+| `ship.bottom = screenHeight - 20;` | Put the ship's bottom edge `20` pixels from the bottom of the screen |
+| `ship.centerX = screenWidth / 2;`  | Put the ship's center in the middle of the screen                    |
+
+{.table}
+
+## Set your ship's initial position
+1. Now that you know how to use position properties, update your code to position
+   the ship in the center of the screen, 20 pixels from the bottom:
+
+   ```javascript {.numbered data-line-start="12" data-added-lines="16-17" data-header="game.js → setup()"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+       
+       ship = createSprite(assets.ship);
+       ship.bottom = screenHeight - 20;
+       ship.centerX = screenWidth / 2;
+   }
+   ```
+   ::: infobox
+   Any time you want to calculate the center position of the screen, you
+   can use `screenWidth / 2` to get the center on the x-axis, and
+   `screenHeight / 2` to get the center on the y-axis.
+   :::
+2. Refresh your preview. You should now see the ship positioned at the bottom
+   of the screen in the center.
+</script>

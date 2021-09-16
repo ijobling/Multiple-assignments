@@ -1,0 +1,17 @@
+<script type="text/markdown">
+# Explosion Bugs
+
+As we make more and more changes to our game, we increase the chance for
+bugs to pop up. When we added our explosion animation feature, we
+introduced four new bugs!
+
+## Bug #1: The ship explodes when hit by an exploding asteroid
+If you destroy an asteroid as it gets close to your ship, there's a
+chance that the asteroid can hit the ship while it's exploding. 
+
+![](.guides/images/bug-1.gif)
+
+We don't want to punish the player for a close call. We need to make
+it so that asteroids can't hurt the ship if they're exploding.
+
+</script>

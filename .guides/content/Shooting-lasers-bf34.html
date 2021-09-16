@@ -1,0 +1,116 @@
+<script type="text/markdown">
+# Shooting lasers
+
+Now that our ship is in danger of exploding, we can't leave it
+defenseless! Let's outfit our ship with some high-powered lasers so it
+stands a fighting chance against those asteroids.
+
+## Creating multiple sprites
+The ship will be shooting lasers pretty fast, meaning we'll have
+multiple lasers on the screen at the same time.
+
+Creating our lasers is very similar to how we created asteroids. To
+recap, the steps to create multiple sprites are:
+
+1. Load the sprite *asset*{.voc}
+2. Create a *sprite group*{.voc} in your `setup()` function (be sure to
+   declare the variable at the top first);
+3. Write a *function*{.voc} that creates a sprite and adds it to the
+   *sprite group*{.voc}
+4. Position the sprite and set its speed and direction
+5. Call the creation function somewhere in your code
+
+## Creating a laser
+
+1. In your `preload()` function, load the laser image into your `assets`
+   object:
+   ```javascript {.numbered data-header="game.js → preload()" data-line-start="9" data-added-lines="13"}
+   function preload() {
+        // images
+        assets.ship = loadImage("assets/playerShip1_blue.png");
+        assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+        assets.laser = loadImage("assets/laserBlue01.png");
+
+        // animations
+        assets.sonicExplosion = loadAnimation("assets/sonicExplosion00.png", "assets/sonicExplosion08.png");
+   }
+   ```
+2. Next, declare a variable for a `lasers` sprite group:
+   ```javascript {.numbered data-header="game.js" data-line-start="6" data-added-lines="8"}
+   let ship;
+   let asteroids;
+   let lasers;
+   ```
+3. Create the *sprite group*{.voc} in the `setup()` function:
+   ```javascript {.numbered data-header="game.js → setup()" data-line-start="30" data-added-lines="32-34"}
+       // create the sprite group for asteroids
+       asteroids = createGroup();
+
+       // create the sprite group for lasers
+       lasers = createGroup();
+   }
+   ```
+4. Just below your `setup()` function, make a `createLaser()` function.
+   Inside the function, create a sprite and add it to the `lasers`
+   group.
+   ```javascript {.numbered data-header="game.js" data-line-start="34" data-added-lines="36-40"}
+       lasers = createGroup();
+   }
+
+   function createLaser() {
+       let laser = createSprite(assets.laser);
+       lasers.add(laser);
+   }
+   ```
+5. We want the laser to fire from the top-center of the ship, regardless
+   of where the ship is on the screen. We can use the ship's positioning
+   properties to position the laser.
+
+   When the laser is fired, we'll align the bottom of the laser with the
+   top of the ship, and the center of the laser with the center of the
+   ship:
+   ```javascript{.numbered data-header="game.js" data-line-start="37" data-added-lines="40-43"}
+   function createLaser() {
+       let laser = createSprite(assets.laser);
+       lasers.add(laser);
+
+       // position the bottom of the laser at the top of the ship
+       laser.bottom = ship.top;
+       laser.centerX = ship.centerX;
+   }
+   ```
+6. Finally, set the speed and direction of the laser. The speed will be
+   about 20 pixels per second, and the direction will be straight up
+   (270°):
+   ```javascript{.numbered data-header="game.js" data-line-start="37" data-added-lines="44-47"}
+   function createLaser() {
+       let laser = createSprite(assets.laser);
+       lasers.add(laser);
+
+       // position the bottom of the laser at the top of the ship
+       laser.bottom = ship.top;
+       laser.centerX = ship.centerX;
+
+       // make the laser shoot straight up
+       laser.setSpeed(20);
+       laser.setDirection(270);
+   }
+   ```
+7. Save your code and refresh your preview. Test your `createLaser()`
+   function using the *javascript console*{.voc}. Call the function
+   multiple times!:
+   ```javascript {.console}
+   > createLaser();
+   > createLaser();
+   > createLaser();
+   ```
+   ::: infobox
+   **Pro tip:**: You can temporarily disable the asteroids while testing
+   by commenting out the `updateAsteroids()` line inside the `draw()`
+   function.
+   :::
+   You should now see a laser shoot from your ship whenever you call
+   `createLaser()`:
+   ![](.guides/images/create-laser-console.gif)
+
+</script>

@@ -1,0 +1,33 @@
+<script type="text/markdown">
+# Putting sprites into motion
+
+Every sprite has different properties that can be used to control their
+motion automatically. This makes things much easier because you don't
+have to do the animations yourself.
+
+We want our asteroids to move straight down. We can do this by
+controlling its *speed*{.voc} and *direction*{.voc}.
+
+## Setting the asteroid's speed
+
+1. In your `createAsteroid()` function, use `asteroid.setSpeed(5)` to
+   set the asteroid's speed to `5`. This will automatically move the
+   asteroid by 5 pixels every frame.
+   ```javascript {.numbered data-line-start="21" data-added-lines="25"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.centerX = screenWidth / 2;
+       asteroid.setSpeed(5);
+   }
+   ```
+2. Save your code and refresh your preview. Use the *javascript
+   console*{.voc} to create another asteroid:
+   ```javascript  {.console}
+   > createAsteroid();
+   ```
+   You should see your asteroid moving to the right.
+
+   ![asteroid moving to the right](.guides/images/asteroid-speed.gif)
+
+</script>

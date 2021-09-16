@@ -1,0 +1,30 @@
+<script type="text/markdown">
+# More precise collisions
+
+Watch the animation below. Notice how the asteroid disappears before it
+touches the ship. Why is that?
+
+![](.guides/images/collision-bad-collider.gif)
+
+## Debug mode
+
+We can get a better look at what's happening if we enable "debug mode"
+on our sprites. Sprites and sprite groups have a property called `debug`
+that, when set to `true`, shows an outline around each sprite. This
+outline is the sprite's *collider*{.voc} shape.
+
+1. Run the following command in your console to enable debug mode on all
+   sprites:
+   ```javascript {.console}
+   > allSprites.debug = true;
+   ```
+2. Now watch as asteroids collide on the corner of the ship:
+
+   ![](.guides/images/collision-bad-collider-debug.gif)
+
+   As you can see, a rectangle is used to determine whether or not two
+   sprites are overlapping. Collisions are detected based on the 
+   *collider shape*{.voc}. The default collider shape for sprites is a
+   rectangle.
+
+</script>

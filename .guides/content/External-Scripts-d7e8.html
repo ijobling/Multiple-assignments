@@ -1,0 +1,32 @@
+<script type="text/markdown">
+# External Scripts
+You can also put your javascript code in another file. Sometimes it's
+easier to keep your javascript code and HTML code separate.
+
+1. Create a new file called `practice.js` by clicking "File" then "New File".
+2. Cut-and-paste the javascript code you created earlier into
+   "practice.js". Don't copy the `<script>` tags, just the code between
+   them:
+   ```javascript {.m8 .s12 .numbered data-header="practice.js"}
+   console.log('Hello world!');
+   ```
+3. Change the `<script>` tag in your HTML file to load the javascript
+   file by setting the `src` attribute to your javascript file.
+   Make sure there's nothing between the tags.
+   ```html {.m8 .s12 .numbered data-header="javascript-practice.html"}
+   <!DOCTYPE html>
+   <html>
+    <body>
+       <h1>Javascript Practice</h1>
+
+       <script src="practice.js"><\/script>
+    </body>
+   </html>
+   ```
+   The `src` attribute of the `<script>` element loads javascript code from
+   another file. Your javascript files should always end in `.js`. 
+   If your javascript file is in a folder called "js", you would use
+   `<script src="js/practice.js">`.
+
+4. Click the refresh button in your preview. If it worked, you should see the message in the console!
+</script>

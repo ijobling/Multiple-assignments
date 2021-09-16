@@ -1,0 +1,57 @@
+<script type="text/markdown" data-class="functions parameters2">
+# Function Parameters
+
+It would be much better if we didn't have to repeat code any time we
+want our function to behave differently. That's why we have *function
+parameters*{.voc}.
+
+## Using Parameters
+Function *parameters*{.voc} allow us to pass values into a function to
+make it behave differently.
+
+1. First, let's update our **function call** at the bottom of our
+   script. Here we'll pass the flavor `"grape"` to the function:
+
+   ```javascript {.numbered data-removed-lines="9" data-line-start="7"}
+   }
+   
+   makeSandwich();
+   makeSandwich("grape");
+   ```
+
+2. Next, we need to update our *function definition*{.voc} to accept a
+   *parameter*{.voc} named `jellyType`:
+
+   ```javascript {.numbered data-removed-lines="1" data-line-start="1"}
+   function makeSandwich() {
+   function makeSandwich(jellyType) {
+   ```
+
+   ::: infobox 
+   *Parameters*{.voc} are just variable names that go in the parentheses
+   of the function definition. You can put as many parameters as you
+   want, separated by commas.
+   :::
+
+3. Finally, let's update the "jelly" step to include the `jellyType`
+   variable. You'll need to use a *template string*{.voc} with backticks
+   to use the variable in the string:
+
+   ```javascript {.numbered data-line-start="4" data-removed-lines="4"}
+   console.log('Put jelly on the other slice');
+   console.log(`Put ${jellyType} jelly on the other slice`);
+   ```
+
+4. Save and preview your page. The Javascript console should now show
+   the steps with grape jelly.
+
+5. Add a second *function call*{.voc}, but this time with strawberry:
+   ```javascript {.numbered data-line-start="7" data-added-lines="10"}
+   }
+   
+   makeSandwich("grape");
+   makeSandwich("strawberry");
+   ```
+   After running your code again you should see the steps repeated, once
+   for grape, and again for strawberry.
+</script>

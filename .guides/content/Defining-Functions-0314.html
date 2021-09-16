@@ -1,0 +1,30 @@
+<script type="text/markdown" data-class="functions defining-functions">
+# Defining Functions
+
+Let's put this `makeSandwich()` function in a file so we can test it:
+
+1. Copy your `makeSandwich()` function below and paste it inside the
+   the javascript file on the left:
+    ```javascript {.numbered .allow-copy .pbjcode}
+    ```
+    ::: infobox warning
+    **Note:** When you paste code into the IDE, sometimes the
+    indentation won't be correct. To fix this, right-click anywhere in
+    your code, and select "Format Document" from the menu.
+    :::
+2. Re-fresh the preview page below and make sure there are no error messages in the
+   Javascript console. 
+
+   ::: infobox
+   Notice how we don't see anything output in the console. This is because
+   we've only defined the function. We have not yet *called*{.voc} the
+   function.
+   :::
+</script>
+<script src=".guides/js/activities.js"></script>
+<script>
+    onDocReady(() => {
+      const codeBox = document.querySelector('.pbjcode');
+      updatePBJFunctionBox(codeBox, doc);
+    });
+</script>

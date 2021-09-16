@@ -1,0 +1,349 @@
+body {
+  min-width: 520px;
+}
+.language-js-error {
+  color: var(--color-red-berry);
+}
+
+/**
+ * Misc helper classes
+ */
+
+code.no-overflow {
+  overflow-x: visible;
+}
+.flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pad-small {
+  padding: 4px;
+}
+
+.pad-med {
+  padding: 10px;
+}
+
+.pad-big {
+  padding: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Hide intro.js step lists */
+.tour-steps {
+  display: none;
+}
+
+/* make tour-wrapper inline-block */
+.tour-wrapper {
+  display: inline-block;
+}
+
+/**
+ * classes used on the expressions lesson to match the calculator example
+ */
+.expression { color: var(--color-dark-orange-1); }
+.value { color: var(--color-cornflower-blue); }
+.operator { color: var(--color-purple); }
+.evaluate { color: var(--color-dark-green-1); }
+
+/**
+ * Mad-libs game
+ */
+.chapter.madlibs .blank {
+  border-bottom: 1px solid var(--color-dark-gray-3);
+  color: var(--color-dark-gray-3);
+  font-size: .9em;
+  font-style: italic;
+  padding: 0 1em;
+  margin: 0 .5em;
+  white-space: nowrap;
+}
+
+/**
+ * Logical operators activity
+ */
+
+@keyframes attention {
+  25% {
+    background: var(--flash-color);
+  }
+  50% {
+    background: none;
+  }
+  75% {
+    background: var(--flash-color);
+  }
+  100% {
+    background: none;
+  }
+}
+
+.chapter.logical-operators blockquote {
+  font-size: 1.2em;
+}
+.chapter.conditions .flash {
+  --flash-color: var(--color-light-yellow-2);
+  animation: attention 2s 6.5s forwards;
+  animation-delay: 0s;
+}
+.chapter.conditions .true-statement,
+.chapter.conditions .false-statement {
+  display: inline-block;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+.chapter.conditions .true-statement {
+  border-color: var(--color-dark-green-1);
+}
+.chapter.conditions .false-statement {
+  border-color: var(--color-red);
+}
+
+.chapter.conditions .boolean-quiz button.boolean {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  margin: 4 8px;
+  background: white;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+}
+.chapter.conditions .boolean-quiz button.boolean span {
+  padding-left: 4px;
+}
+.chapter.conditions .boolean-quiz button:focus {
+  outline: none;
+}
+.chapter.conditions .boolean-quiz button.active {
+  background: var(--color-light-cornflower-blue-3);
+}
+/*
+.chapter.conditions .boolean-quiz button.true.active {
+  background: var(--color-light-green-3);
+}
+.chapter.conditions .boolean-quiz button.false.active {
+  background: var(--color-light-red-3);
+}
+*/
+.chapter.conditions .boolean-quiz .check-answer {
+  text-align: center;
+}
+.chapter.conditions .boolean-quiz .check-answer button {
+  font-size: 1.2em;
+}
+.chapter.conditions .boolean-quiz .check-answer td div.correct {
+  color: var(--color-dark-green-1);
+  font-weight: bold;
+}
+.chapter.conditions .boolean-quiz .check-answer td div.incorrect {
+  color: var(--color-dark-red-1);
+}
+
+.chapter.logical-operators-practice .operators-in-js {
+  font-size: 2em;
+}
+
+/**
+ * Functions activity
+ */
+.chapter.functions.intro .functions-activity {
+}
+.chapter.functions.intro .functions-activity .input-steps {
+  margin-bottom: 20px;
+}
+.chapter.functions.intro .functions-activity code {
+}
+
+/**
+ * DOM Manipulation chapter
+ */
+.chapter.dom-manipulation .change-color-example {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+  outline: none;
+}
+
+/**
+ * Quizzes
+ */
+.quiz-question, .quiz-final {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--color-light-gray-1);
+}
+.quiz-question .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.quiz-question > h1 {
+  font-size: 1.2em;
+  color: inherit;
+  line-height: 1.5em;
+}
+.chapter .quiz-question ul.choices {
+  --bullet-width: 0;
+}
+.quiz-question ul.choices li * {
+  cursor: pointer;
+}
+.quiz-question ul.choices li:before {
+  display: none;
+}
+.quiz-question ul.choices li input {
+  margin-right: 10px;
+}
+.quiz-question.correct {
+  border-color: var(--color-green);
+}
+.quiz-question.correct .btn.submit {
+  background: var(--color-light-gray-3);
+  color: var(--color-dark-green-2);
+}
+.quiz-question.incorrect {
+  border-color: var(--color-red);
+}
+.quiz-question.incorrect .btn.submit {
+  background: var(--color-light-gray-3);
+  color: var(--color-dark-red-2);
+}
+.quiz-question.result li.selected:not(.correct) {
+}
+.quiz-question.result li.correct {
+  background: var(--color-light-green-3);
+  border: 1px solid var(--color-light-green-1);
+}
+.quiz-question:not(.incorrect) .show-incorrect {
+  display: none;
+}
+
+/**
+ * Events demo
+ */
+.events.intro .event-box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-light-gray-2);
+  user-select: none;
+}
+
+.events.intro .event-box.active {
+  background: var(--color-light-blue-2);
+}
+
+.events.intro .event-box:not(.active) > .active {
+  display: none;
+}
+.events.intro .event-box.active > :not(.active) {
+  display: none;
+}
+
+.events.intro .event-console {
+  box-sizing: border-box;
+  width: 400px;
+  height: 150px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.events.intro .event-console .output {
+  padding: 10px;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  white-space: pre;
+  overflow-y: auto;
+}
+
+.events.keyboard-events .keypress-event-demo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+  padding: 20px;
+}
+
+.events.keyboard-events .keypress-event-demo p {
+  margin-bottom: 0;
+}
+.events.keyboard-events .keypress-event-demo p span {
+  color: blue;
+}
+
+.events.keyboard-events .keypress-event-demo input {
+  padding: 4px 10px;
+}
+
+img.shadow {
+  margin: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+}
+
+img.border {
+  border: 1px solid #ccc;
+}
+
+/* -- table -- */
+.chapter table {
+  font-size: inherit;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.chapter table th, .chapter table td {
+  border: 1px solid var(--box-border-color);
+  padding: .4em;
+}
+.chapter table thead th {
+  background-color: var(--color-dark-gray-1);
+  color: white;
+}
+.chapter table tbody th {
+  background-color: var(--color-light-gray-2);
+  text-align: left;
+}
+
+/**
+.events.intro .event-console:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: red;
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+*/
+
+.events.shorthand .event-listener-shorthand-animation[data-step="1"] {
+}
+.events.shorthand .event-listener-shorthand-animation[data-step="1"] {
+}
+.events.shorthand .event-listener-shorthand-animation[data-step="1"] {
+}
+.events.shorthand .event-listener-shorthand-animation[data-step="1"] {
+}
+
+footer {
+  margin: 1em;
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+<script type="text/markdown">
+# Firing lasers using the space key
+
+Now that we have our `createLaser()` function, we can easily make the
+lasers fire when we press the [[Space]] key.
+
+## `keyIsDown()` vs `keyWentDown()`
+For the controls that move our ship left and right, we're using the
+`keyIsDown()` function in our if-statement because we *hold the key
+down* to move the ship. So the ship will move as long as the *key is
+down*.
+
+For our lasers, we want the laser to fire **once** each time the space
+key is pressed. In other words, we want it fire if the *key went down*.
+For that, we use the `keyWentDown()` function in our if-statement.
+
+## Write the `updateLasers()` function
+Keyboard control code should always go in an *update function*{.voc} (a
+function that is called each frame during `draw()`).
+
+1. Let's go ahead and create an *update function*{.voc} for our lasers.
+   You can put this just above the `updateAsteroids()` function.
+   ```javascript {.numbered data-header="game.js" data-line-start="93" data-added-lines="93-94"}
+   function updateLasers() {
+   }
+
+   function updateAsteroids() {
+   ```
+2. Inside the function, create an if-statement to detect if the space
+   key *went down*. If the key did go down, call your `createLaser()`
+   function:
+   ```javascript {.numbered data-header="game.js → updateLasers()" data-line-start="93" data-added-lines="94-97"}
+   function updateLasers() {
+       // fire a laser if the space key went down
+       if (keyWentDown(KEY.SPACE)) {
+           createLaser();
+       }
+   }
+   ```
+3. Finally, call the *update function*{.voc} inside `draw()`:
+   ```javascript {.numbered data-header="game.js → draw()" data-line-start="120" data-added-lines="126"}
+   function draw() {
+       background("black");
+
+       // update sprites
+       updateShip();
+       updateAsteroids();
+       updateLasers();
+
+       drawSprites();
+   ```
+4. Save your code and refresh your preview. Click on the game screen to
+   focus it. Hit the [[Space]] key to fire a laser!
+</script>

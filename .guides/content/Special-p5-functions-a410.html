@@ -1,0 +1,38 @@
+<script type="text/markdown">
+# Special p5 functions
+
+Your `drawing.js` file is shown on the left. You'll notice there are two 
+functions in there. One called `setup()`, and another called `draw()`. 
+Every p5 project must have one or both of these functions.
+
+These are "special" functions, because they are **called
+automatically** by the p5 library. You don't need to call these functions
+yourself. You just need to define them.
+
+## The `setup()` function
+This function is automatically run once as soon as the page loads. 
+This is where you put any code in here that you want to run in order
+to set up your drawing or game.
+
+```javascript {data-header="Example: the setup() function"}
+function setup() {
+    createCanvas(600, 800);
+}
+```
+The `createCanvas()` function creates the canvas on which you'll do all
+of your drawing. The parameters are the `width` and `height` of the
+canvas.
+
+## The `draw()` function
+The other function, called `draw()`, is run once every "frame", or about
+60 times per second. This allows you to make really cool animations.
+
+```javascript {data-header="Example: the draw() function"}
+function draw() {
+    // draw one frame
+}
+```
+
+In the next section, we'll learn how to animate using the `draw()`
+function.
+</script>

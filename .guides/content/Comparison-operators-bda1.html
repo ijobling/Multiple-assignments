@@ -1,0 +1,48 @@
+<script type="text/markdown" data-class="conditions comparison-operators">
+# Comparison Operators
+
+There are many operators you can use in an expression to compare two
+values. 
+
+Try making some boolean expressions using the following comparison
+operators in your javascript console:
+
+| Operator | Expression is true if...                                       |
+| -------- | -------------------------------------------------------------- |
+| `===`    | Both values are **equal**                                      |
+| `!==`    | Both values are **not equal**                                  |
+| `<`      | The left value is **less than** the right value                |
+| `>`      | The left value is **greater than** the right value             |
+| `<=`     | The left value is **less than or equal to** the right value    |
+| `>=`     | The left value is **greater than or equal to** the right value |
+
+{.table}
+
+```javascript {.console}
+> let a = 2;
+> let b = 5;
+> let c = 5;
+> a === b
+< false
+> a !== b
+< true
+> a < b
+< true
+> a > b
+< false
+> a >= c
+< false
+> b >= c
+< true
+> b > c
+< false
+```
+
+::: infobox warning
+Notice how `===` uses 3 equal signs, and `!==` uses 2 equal signs. This
+is different from other programming languages. You can use the shorter
+versions, `==` and `!=`, but these behave a bit differently and may give
+you unexpected results. It's usually best to use `===` and `!==`.
+:::
+
+</script>

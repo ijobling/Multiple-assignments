@@ -1,0 +1,54 @@
+<script type="text/markdown">
+# Array Indexes
+
+You can access a single item in your array using square brackets like
+so: `myArray[2]`. The number in brackets is called the *index*{.voc}.
+The first item in an array is index **0**. The second item is **1**.
+
+![array index diagram](.guides/images/array-index.png)
+
+## Try it out!
+
+1. Think of some items to put in a list, and use each item as if it were
+   any other variable:
+
+   ```javascript {.console}
+   > let animals = ["cat", "bat", "mouse", "elephant"];
+   > animals[0];
+   < "cat"
+   > animals[2];
+   < "mouse"
+   > animals[1] = "dog";
+   > animals;
+   < ["cat", "dog", "mouse", "elephant"]
+   > `Hello ${animals[0]}`;
+   < "Hello cat"
+   > `The ${animals[0]} chased the ${animals[2]}`;
+   < "The cat chased the mouse"
+   ```
+
+2. If you try to use an index that exceeds the number of values in your
+   list, the value will be `undefined`:
+   ```javascript {.console}
+   > console.log(animals[5]);
+   < undefined;
+   ```
+ 
+3. You can get the length of an array using `.length`:
+   ```javascript {.console}
+   > animals.length;
+   < 4
+   ```
+   
+4. Using `.length` allows you to get the last item in an array. Remember
+   that the 4th item in our `animals` array has the index `3` (because
+   indexes start at 0). If the length of the array is unknown, you can
+   use `animals.length - 1` to get the last index.
+   ```javascript {.console}
+   > animals.length - 1;
+   < 3
+   > animals[animals.length - 1];
+   < "elephant"
+   ```
+
+</script

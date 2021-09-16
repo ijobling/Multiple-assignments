@@ -1,0 +1,45 @@
+<script type="text/markdown">
+# Adding and removing values at the beginning
+
+The `.unshift()` and `.shift()` methods will add and remove items at the 
+**beginning** of an array.
+
+Calling `.unshift()` *adds* an item to the beginning, while calling
+`.shift()` *removes* it from the beginning.
+
+:::infobox
+The `shift()` and `unshift()` methods can be a bit hard to remember
+sometimes. Even professional coders get these mixed up. One way to
+remember is that `unshift` has more letters than `shift`. So `unshift`
+results in *more* items in the array, while `shift` results in *fewer*
+items.
+:::
+
+Try the following in your javascript console:
+
+## `Array.unshift()`
+Calling `.unshift(value)` on an array adds a value at the **beginning**
+and returns the new length of the array
+```javascript {.console}
+> console.log(animals);
+  ["cat", "bat", "mouse", "elephant"];
+> animals.unshift("pig");
+> console.log("animals")
+  ["pig", "cat", "bat", "mouse", "elephant"]
+```
+![array shift](.guides/images/array-unshift.png)
+
+## `Array.shift()`
+Calling `.shift()` on an array removes a value from the **beginning**
+and returns that value.
+```javascript {.console}
+> console.log(animals);
+  [ "pig", "cat", "bat", "mouse", "elephant" ];
+> removed = animals.shift();
+> console.log(removed);
+"pig"
+> console.log(animals);
+  [ "cat", "bat", "mouse", "elephant" ];
+```
+![array unshift](.guides/images/array-shift.png)
+</script>

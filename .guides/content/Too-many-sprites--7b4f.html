@@ -1,0 +1,44 @@
+<script type="text/markdown">
+# Too many sprites?
+
+When you create a sprite, that sprite will continue to exist in the
+game's memory, even if it's not visible on the screen. Because your
+computer is calculating the position of every sprite on every frame,
+this can slow down your whole system after running the game for a while!
+
+The following function can be used in any game code to show the total
+number of sprites that are currently in the game:
+```javascript {.allow-copy}
+function showSpriteCount() {
+   textSize(24);
+   fill("white");
+   text(`sprite count: ${allSprites.length}`, 10, screenHeight - 10);
+}
+
+```
+
+1. Copy-and-paste the above function above into your game, just before
+   the `draw()` function.
+2. Then, at the end of your draw function, call the `showSpriteCount()` function:
+
+   ```javascript {.numbered data-line-start="67" data-added-lines="75-76" data-header="game.js → draw()"}
+   function draw() {
+       background("black");
+
+       // update sprites
+       updateShip();
+       updateAsteroids();
+
+       drawSprites();
+
+       showSpriteCount();
+   }
+   ```
+3. Save your code and update your preview. You should see the sprite
+   count at the bottom of your screen:
+
+   ![](.guides/images/sprite-count.gif)
+4. Leave the game running for a bit and notice how the sprite count
+   keeps increasing.
+
+</script>

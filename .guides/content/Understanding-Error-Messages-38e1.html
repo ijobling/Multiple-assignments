@@ -1,0 +1,42 @@
+<script type="text/markdown">
+# Understanding Error Messages
+
+Sometimes the computer will encounter an error in your code. An error
+will cause your program to stop immediately.
+
+## Try it out: Making mistakes
+Try causing an error to see what happens:
+
+1. In the `practice.js` file, pretend you misspelled the word "console" by 
+   changing the line to:
+   ```javascript
+   konsole.log("Hello world!");
+   ```
+2. Refresh your preview.
+3. When the page loads, you should see an error in your javascript
+   console that looks like this:
+   ![javascript-error-example](.guides/images/js-error.png)
+
+   ::: infobox
+   `ReferenceError` usually happens when something isn't defined. That
+   means the computer can't find what you've typed. If you get this, 
+   be sure to check your spelling!
+   :::
+4. Experiment by trying to cause different errors! What error messages
+   did you see? What do you think they mean?
+ 
+## What to do in case of an error:
+Sometimes error messages can be really long, but don’t worry! You
+don’t need to understand the whole thing. Here are some tips to help
+you find the bug quickly:
+
+- Carefully read the first line of the error message.
+- Look at the file and line number in the error message. Check your code on that line.
+- Use `console.log()` statements to inspect variables, or use your
+  browser's debugging feature (if available).
+- If you’re still stuck, look at the "Troubleshooting" chapter in your
+  javascript reference.
+- Copy-and-paste the last line of the error into the search bar on
+  [stackoverflow.com](https://stackoverflow.com).
+- Ask a friend or mentor for help!
+</script>

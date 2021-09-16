@@ -1,0 +1,47 @@
+<script type="text/markdown">
+# Working with Strings
+
+![string of letters](.guides/images/string-letters.png){.float-right .s12 .m6}
+In programming, a *string* is any combination of letters, numbers, or
+symbols that are "strung" together into one value. In Javascript, we put
+strings inside quotation marks.
+
+## Try it out!
+Try these examples in your *javascript console*{.voc}:
+
+:::: narrated-code
+```javascript {.console .no-overflow}
+> let text = "Hello";
+> text = 'Hello';
+> text = "I'm fine";
+> text = 'The cow says "moo".';
+```
+Strings are surrounded by single quotes [[']] or double quotes [["]]. {.narration}
+::::
+
+## Template Strings
+::: narrated-code
+```javascript {.console .no-overflow}
+> let name = "Lorene";
+> alert(`Hello, ${name}!`);
+  Hello, Lorene!
+> let score = 20;
+> let lives = 3;
+> alert(`Score: ${score} / Lives: ${lives}`);
+```
+*Template strings*{.voc} allow you to put any Javascript expression
+inside a text string. A template string uses _backticks_ ([[\`]]) instead of
+quotation marks. The backtick key [[\`]] is to the left of [[1]]. {.narration}
+:::
+
+## Getting the length of a string
+::: narrated-code
+```javascript {.console .no-overflow}
+> let title = "The Mississippi River";
+> title.length;
+< 21
+```
+The *length* property gives you the number of characters in in a string.
+:::
+
+</script>

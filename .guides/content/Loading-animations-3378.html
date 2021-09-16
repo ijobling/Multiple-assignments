@@ -1,0 +1,75 @@
+<script type="text/markdown">
+# Loading animations
+
+The first step is to load each frame image as a single animation asset.
+This will be done in the `preload()` function. But instead of using
+`loadImage()`, we'll use the function `loadAnimation()`.
+
+The `loadAnimation()` function is similar to `loadImage()`, except it
+takes two parameters. The first parameter is the first image in the
+animation, and the second parameter is the *last* image.
+
+Looking at our *assets* folder, we see these images:
+
+- `sonicExplosion00.png` ← first image
+- `sonicExplosion01.png`
+- `sonicExplosion02.png`
+- `sonicExplosion03.png`
+- `sonicExplosion04.png`
+- `sonicExplosion05.png`
+- `sonicExplosion06.png`
+- `sonicExplosion07.png`
+- `sonicExplosion08.png` ← last image
+
+When you call `loadAnimation(firstImage, lastImage)`, it will
+automatically load all the files between the first and last image.
+
+Once an animation is loaded, you can use `Sprite.addAnimation()` to
+attach the animation to a sprite.
+
+After that, you can use `Sprite.changeAnimation()` to change to an
+animation.
+
+## Load the animation
+
+1. In your `preload()` function add some comments to separate our code
+   into sections, then load the sonic explosion animation using
+   `loadAnimation()`:
+   ```javascript {.numbered data-line-start="9" data-added-lines="10,14-16" data-header="game.js → preload()"}
+   function preload() {
+       // images
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+       assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+
+       // animations
+       assets.sonicExplosion = loadAnimation(
+           "assets/sonicExplosion00.png", "assets/sonicExplosion08.png");
+   }
+   ```
+   ::: infobox
+   **Pro Tip:** You can split long lines of javascript code into
+   multiple lines to make it easier to read. The `loadAnimation()`
+   code shown above has been split into two lines.
+   :::
+2. In your `setup()` function, add the `assets.sonicExplosion` animation
+   to your ship:
+   ```javascript {.numbered data-line-start="19" data-added-lines="26" data-header="game.js → setup()"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+   
+       ship = createSprite(assets.ship);
+       ship.bottom = screenHeight - 20;
+       ship.centerX = screenWidth / 2;
+       ship.setCollider("circle");
+       ship.addAnimation("explosion", assets.sonicExplosion);
+   ```
+   ::: infobox
+   The first parameter to `addAnimation()` is the *animation
+   label*{.voc}. You can call this whatever you want. We're calling this
+   animation `"explosion"`. 
+
+   The second parameter is the animation you loaded earlier. This label
+   is used when changing animations on the sprite.
+   :::
+
+</script>

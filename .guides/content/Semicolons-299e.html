@@ -1,0 +1,27 @@
+<script type="text/markdown">
+# Semicolons
+
+## Semicolon at the end of the line
+In Javascript we put a semicolon at the end of each line. If you type
+a line without the semicolon, it still works, but, it's best
+practice leave them in. Without it, your code may become difficult to
+debug.
+
+Can you spot the missing semicolon below?
+```javascript
+let name = 'Brenna';
+alert('Hello, ' + name)
+console.log(name);
+```
+
+## When to _not_ use semicolons
+We _don't_ put semicolons after code blocks. A code block is a statement
+followed by code surrounded in curly braces `{` and `}`, like this:
+```javascript
+if (temperature < 50) {
+    alert("It's cold outside!");
+}
+```
+Notice how we only put a semicolon after the statements _inside_ the
+code block.
+</script>

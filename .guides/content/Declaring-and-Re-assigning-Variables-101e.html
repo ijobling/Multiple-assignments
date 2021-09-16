@@ -1,0 +1,33 @@
+<script type="text/markdown">
+# Declaring and reassigning variables
+
+In javascript, we must *declare*{.voc} variables before using them. You
+*declare* a variable using the `let` keyword:
+
+```javascript {.console}
+> let score = 0;
+```
+
+## You can only declare variables once
+If you try to declare a variable twice, you will get an error.
+
+Try the following examples in your javascript console!
+```javascript {.console}
+> let score = 0;
+> console.log(score);
+> let score = 5;
+X SyntaxError: Identifier 'score' has already been declared
+```
+
+## Reassigning variables
+If you want to change the variable, you can *reassign*{.voc} it. When
+reassigning, you don't need to use the `let` keyword. Just use
+the equal sign:
+
+```javascript {.console}
+> score = 5;
+> alert(`Your score is: ${score}`);
+> score = 10;
+> alert(`Your new score is: ${score}`);
+```
+</script>

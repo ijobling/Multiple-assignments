@@ -1,0 +1,71 @@
+<script type="text/markdown">
+# Explode the ship when hit by an asteroid
+
+Now you can update your code so that your ship explodes when it collides
+with an asteroid.
+
+1. In your `handleShipAsteroidCollision()` function, change the ship's
+   animation to `"explosion"`:
+   ```javascript {.numbered data-header="game.js → handleShipAsteroidCollision()" data-line-start="45" data-added-lines="47"}
+   function handleShipAsteroidCollision(ship, asteroid) {
+       asteroid.remove();
+       ship.changeAnimation("explosion");
+   }
+   ```
+2. Save your code and refresh your preview. Move your ship so it gets
+   hit by an asteroid. Notice how the explosion doesn't stop! 
+
+   ![](.guides/images/collision-keeps-exploding.gif)
+
+   We need some way to change the ship's animation back to `"normal"` as
+   soon as the explosion finishes.
+
+## Switching back to normal when the animation completes
+Sprite animations have a property called `onComplete`. You can set this
+to reference a custom function. That function will be called when the
+animation has finished playing.
+
+We can use this to switch the ship back to normal when the explosion
+animation finishes.
+
+1. Create a new function called `shipFinishedExploding()`. Inside that
+   function, change the ship's animation back to `"normal"`. You can put
+   this function just before the `handleShipAsteroidCollision()`
+   function.
+   ```javascript {.numbered data-header="game.js" data-line-start="45" data-added-lines="45-48"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+   }
+
+   function handleShipAsteroidCollision(ship, asteroid) {
+       asteroid.remove();
+       ship.changeAnimation("explosion");
+   }
+   ```
+2. Back inside the `handleShipAsteroidCollision()` function, just after
+   setting changing the animation to `"explosion"`, set the animation's
+   `.onComplete` property to reference the function you just created:
+   ```javascript {.numbered data-header="game.js" data-line-start="45" data-added-lines="52"}
+   function shipFinishedExploding() {
+       ship.changeAnimation("normal");
+   }
+
+   function handleShipAsteroidCollision(ship, asteroid) {
+       asteroid.remove();
+       ship.changeAnimation("explosion");
+       ship.animation.onComplete = shipFinishedExploding;
+   }
+   ```
+   ::: infobox
+   When we put parentheses after a function name, the function will be
+   immediately called. In this case, we want to only _reference_ the
+   function, so we don't use parentheses.
+   :::
+3. Save your code and refresh your preview. Move your ship to get hit by
+   an asteroid. The explosion animation should play once, and go
+   immediately back to normal (try not to get hit by another asteroid in
+   the meantime!)
+
+   ![](.guides/images/collision-ship-explode-once.gif)
+
+</script>

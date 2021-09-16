@@ -1,0 +1,35 @@
+<script type="text/markdown">
+# Code Comments
+
+Code *comments*{.voc} are a way to add notes to your code. These can be
+notes for yourself, or for other people who are reading your code.
+
+## Single-line comments
+
+To write a single-line comment in your code, begin the line with two
+forward-slashes `//`. The following is an example of well-commented
+code:
+
+```javascript
+// get the width and height from the user 
+let width = prompt("Enter width");
+let height = prompt("Enter height");
+
+// convert width and height to numbers
+width = Number(width);
+height = Number(height);
+
+// calculate the area, which is width times height
+let area = width * height;
+```
+
+You can also write comments at the end of a line, like so:
+```javascript
+alert(`The area is ${area}`); // display the area in an alert box
+```
+
+::: infobox
+Your IDE will automatically color comments differently from the rest of
+your code, which makes it easier to read.
+:::
+</script>

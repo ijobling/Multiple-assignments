@@ -1,0 +1,71 @@
+<script type="text/markdown" data-class="functions intro">
+# Functions
+
+A *function*{.voc} allows you to run a bunch of code in just one
+expression. You've already used some functions that are built
+into javascript, such as:
+
+* `alert()` - shows a message in a pop-up window
+* `prompt()` - gets input from the user
+* `console.log()` - shows a message in the console
+
+::: infobox question
+What do the statements above each have in common?
+:::
+
+Did you know that you can make your own functions that can do anything
+you want?
+
+## Try it out: Defining functions
+![ChefMaster 2000 robot](.guides/images/chefmaster2000.png){.float-right .s5}
+Pretend you have a robot called the *ChefMaster 2000*. You want to
+program it to make a peanut butter and jelly sandwich on command.
+
+1. Think about what steps are involved in making a PB&J
+   sandwich. 
+2. Write down some steps to make a PB&J sandwich in the boxes
+   below, and watch the code that generates below.
+
+:::: div functions-activity
+::: div input-steps
+
+Step 1. <input type="text" class="pbj-step-1">
+
+Step 2. <input type="text" class="pbj-step-2">
+
+Step 3. <input type="text" class="pbj-step-3">
+
+Step 4. <input type="text" class="pbj-step-4">
+
+Step 5. <input type="text" class="pbj-step-5">
+
+:::
+
+```javascript {.numbered .allow-copy .pbjcode .no-overflow}
+```
+
+::: div show-me
+Click the "Show me how" button to see how to write a function:
+
+[Show me how](){.btn .start-introjs data-target=".functions-activity .pbjcode}
+:::
+
+<!-- intro.js Tour descriptions -->
+1. Use the `function` keyword to define a function {data-select=".hljs-function .hljs-keyword"}
+2. Write the name of the function. This can be anything you want, as 
+   long as it follows the same rules for naming variables (no spaces,
+   use "camelCase"). {data-select=".hljs-function .hljs-title"}
+3. Start a *code block*{.voc} using an opening brace... {data-select=".open-brace"}
+4. ...and a closing brace. {data-select=".closing-brace"}
+4. Write your function code inside the block {data-select=".function-body"}
+{.tour-steps data-target=".functions-activity .pbjcode" data-skip-init="true"}
+
+::::
+</script>
+<script src=".guides/js/activities.js"></script>
+<script>
+  onDocReady(() => {
+    initDefiningFunctionsActivity(window.doc);
+    initTours();
+  });
+</script>

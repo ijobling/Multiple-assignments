@@ -1,0 +1,30 @@
+<script type="text/markdown" data-class="functions parameters">
+# Function Parameters
+
+Right now, our robot can only make one kind of sandwich. What if we want it to use different types of jelly?
+
+We _could_ write two functions, one called `makeGrapePBJ()` and another called `makeStrawberryPBJ()`. But that means we would have to repeat a bunch of code.
+
+Can you spot the difference between both examples below?  Which lines are the same? Which are different?
+
+```javascript {.numbered data-header="This is just an example, no need to type this"}
+function makeSandwich() {
+  console.log('Get 2 slices of bread');
+  console.log('Put peanut butter on one');
+  console.log('Put grape jelly on the other');
+  console.log('Put the two slices together');
+  console.log('Serve w/ a glass of cold milk');
+}
+```
+```javascript {.numbered data-header="This is just an example, no need to type this"}
+function makeSandwich() {
+  console.log('Get 2 slices of bread');
+  console.log('Put peanut butter on one');
+  console.log('Put strawberry jelly on the other');
+  console.log('Put the two slices together');
+  console.log('Serve w/ a glass of cold milk');
+}
+```
+
+As you can see, there is only one word that is different. Imagine if we had a lot of different flavors of jelly. We would have to duplicate a lot of code!
+</script>

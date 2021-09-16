@@ -1,0 +1,40 @@
+<script type="text/markdown">
+# Performance tuning
+
+If our sprite count gets too high, it could really slow down our
+computer! To fix this, we need to check each asteroid's position, and if
+the asteroid is no longer on the screen, we can remove it from the game.
+
+![asteroid out of bounds](.guides/images/asteroid-out-of-bounds.png)
+
+1. In your `updateAsteroids()` function, use a *for-of loop*{.voc} to go
+   through each asteroid and check to see if it has gone off-screen. If
+   it has, call `asteroid.remove()` to remove the sprite:
+   ```javascript {.numbered data-line-start="54" data-added-lines="59-65" data-header="game.js → updateAsteroids()"}
+   function updateAsteroids() {
+       // Create an asteroid every 60th frame
+       if (frameCount % 60 === 0) {
+           createAsteroid();
+       }
+
+       // Remove asteroids that go off-screen
+       for (let asteroid of asteroids) {
+           if (asteroid.top > screenHeight) {
+               asteroid.remove();
+           }
+       }
+   }
+   ```
+2. Save your code and refresh your preview. You should now see the
+   sprite count doesn't go very high (it likely won't go above 10):
+   
+   ![](.guides/images/performance-tuning.gif)
+
+
+::: infobox .warning
+Whenever your game creates sprites automatically, be sure to add code
+that checks to see if the sprites are no longer needed, and removes them
+if necessary. Otherwise you may slow down the player's computer!
+:::
+
+</script>

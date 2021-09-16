@@ -1,0 +1,14 @@
+{
+  // Configure your Run and Preview buttons here.
+
+  // Run button configuration
+  "commands": {
+  },
+
+  // Preview button configuration
+  "preview": {
+    "Preview with console": "https://{{domain}}/.guides/p/#preview=/",
+    "Preview without console": "https://{{domain}}/",
+    "Standalone JS console": "https://{{domain}}/.guides/p/#consoleOnly"
+  }
+}

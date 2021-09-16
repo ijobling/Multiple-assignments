@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.4/split.min.js" integrity="sha512-HwVfwWgxD3SrpYgpIEGapjIid6YzmKiY4lwoc55rbO/6Y/2ZSgy6PX7zYUV5wqBD4hTsHzDovN6HqEzc/68lUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="./jsconsole/static/js/main.js"></script>
+  <link href="./jsconsole/static/css/main.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div id="frameWrapper"></div>
+    <div id="console">
+      <h1>JavaScript Console</h1>
+      <div class="container"></div>
+    </div>
+  </main>
+  <script>
+    let path;
+    let insideIDE;
+    let consoleOnly = false;
+    
+    // if opening in new window, redirect to actual page.
+    try {
+      insideIDE = window.self !== window.top;
+    } catch (e) {
+      insideIDE = true;
+    }
+    params = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    
+    if (params.has('consoleOnly')) {
+      consoleOnly = true;
+    } else {
+      path = params.get('preview');
+    }
+
+    if (!insideIDE && path) {
+      window.location.href = path;
+    }
+
+    function createConsole(container, frame) {
+      return new Promise((resolve, reject) => {
+        // override default load action (don't show intro)
+        container.addEventListener('jsconsole-loaded', event => {
+          event.preventDefault();
+          const jsConsole = event.detail.app;
+          resolve(jsConsole);
+        });
+
+        // scroll to the bottom when we type anything
+        container.addEventListener('jsconsole-input-keypress', () => {
+            container.scrollTop = container.scrollHeight;
+        });
+
+        // auto-scroll as new messages are pushed to the console
+        container.addEventListener('jsconsole-push', () => {
+          // only auto-scroll if we're already scrolled to the bottom
+          if (container.scrollHeight - container.scrollTop === container.offsetHeight) {
+            // do it on next js-frame to allow scrollHeight to change
+            setTimeout(() => container.scrollTop = container.scrollHeight);
+          }
+        });
+
+        JSConsole.init(container, frame);
+      });
+    }
+
+    let panes;
+
+    function getSizePercent(size) {
+      const fullHeight = document.body.offsetHeight;
+      let percentage;
+      if (match = size.match(/(\d+)%/)) {
+        percentage = parseInt(match[1]);
+      } else if (match = size.match(/(\d+)px/)) {
+        percentage = (parseInt(match[1]) / fullHeight) * 100;
+      } else {
+        size = parseInt(size);
+        if (isNaN(size)) {
+          throw new Error('Invalid size: ' + size);
+        }
+        percentage = (size / fullHeight) * 100;
+      }
+      return percentage;
+    }
+
+    function collapse() {
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const frameWrapper = document.querySelector('#frameWrapper');
+      const consoleDiv = document.querySelector('#console');
+      const consoleContainer = document.querySelector('#console .container');
+      const minSize = 25;  // px
+      const startSize = getSizePercent(params.get('consoleSize') || '25%');
+
+      let p;
+      let lastSize = startSize;
+
+      if (!consoleOnly) {
+        panes = Split(['#frameWrapper', '#console'], {
+          direction: 'vertical',
+          minSize: minSize,
+          sizes: [100 - startSize, startSize],
+          onDragEnd: function(sizes) {
+            if (sizes[1] > minSize) {
+              lastSize = sizes[1];
+            }
+            // scroll input into view
+            consoleContainer.scrollTop = consoleContainer.scrollHeight; 
+          }
+        });
+      
+        const frame = document.createElement('iframe');
+        frame.src = path;
+        frame.setAttribute('id', 'previewFrame');
+        frame.style.width = '100%';
+        frame.style.height = '100%';
+        frame.setAttribute(
+          'sandbox',
+          'allow-forms allow-pointer-lock allow-popups ' +
+            'allow-same-origin allow-scripts allow-modals',
+        );
+        frame.setAttribute('frameborder', 0);
+
+        frameWrapper.appendChild(frame);
+        
+        p = createConsole(consoleContainer, frame);
+
+        if (params.has('collapsed')) {
+          panes.collapse(1);
+        }
+      } else {
+        document.body.classList.add('console-only');
+        consoleDiv.style.height = '100%';
+        p = createConsole(consoleContainer);
+      }
+
+      p.then(jsConsole => {
+        // Set dark theme by default
+        jsConsole.onRun(':theme dark');
+      });
+
+      consoleDiv.querySelector('h1').addEventListener('click', () => {
+        if (panes) {
+          const currentSize = consoleDiv.offsetHeight;
+          if (currentSize > minSize) {
+            panes.collapse(1);
+          } else {
+            panes.setSizes([100 - lastSize, lastSize]);
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

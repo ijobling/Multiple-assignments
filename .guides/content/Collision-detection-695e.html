@@ -1,0 +1,58 @@
+<script type="text/markdown">
+# Detecting Collisions
+
+![collision](.guides/images/collision.png){.float-right}
+
+The asteroids are currently passing right through our ship. This game
+won't be much fun if our ship doesn't blow up when it hits an asteroid.
+
+The p5.game library gives us an easy way to detect collisions. You
+simply define a function that you want to be called when two sprites
+collide (the "collision handler"), and then use the `Sprite.overlap()`
+or `Group.overlap()` method to make the game watch for collisions. When
+a collision does happen, your function gets called with the colliding
+sprites as arguments.
+
+You can detect collisions between the following objects:
+
+- Between two individual sprites
+- Between an individual sprite and any sprite in a *sprite group* 
+- Between any sprite in two different sprite groups
+
+## A simple collision handler for ship-to-asteroid collisions
+
+We want to handle a collision between the ship and any sprite in the
+`asteroids` group.
+
+1. To do this, create a *collision handler*{.voc} function just before
+   your `updateShip()` function.
+   ```javascript {.numbered data-header="game.js" data-line-start="37" data-added-lines="37-40"}
+   function handleShipAsteroidCollision() {
+       console.log("An asteroid is overlapping the ship");
+   }
+
+   function updateShip() {
+   ```
+2. Next, we need something that checks every frame to see if an asteroid
+   is overlapping the ship, and executes our handler function if
+   something is overlapping. Add the following line at the end of your
+   `updateShip()` function:
+   ```javascript {.numbered data-header="game.js → updateShip()" data-line-start="53" data-added-lines="56-58"}
+       if (ship.right > screenWidth) {
+           ship.right = screenWidth;
+       }
+
+       // Check for collisions between the ship and asteroids 
+       ship.overlap(asteroids, handleShipAsteroidCollision);
+   }
+   ```
+3. Save your code and refresh your preview. Make your ship collide with
+   an asteroid, and watch the *javascript console*{.voc} during the
+   collision:
+
+   ![](.guides/images/collision-console-log.gif)
+
+   Notice that our collision handler function gets called for **every
+   frame** that an asteroid is overlapping the ship.
+
+</script>

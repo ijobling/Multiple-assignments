@@ -1,0 +1,827 @@
+{
+ "name": "Javascript Game Development",
+ "children": [
+  {
+   "title": "Intro to Javascript",
+   "id": "af7743d1-a62a-834e-421a-1cf3e90e7e61",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Welcome",
+     "id": "94a5ace7-2f9d-2913-e9c5-e8245d16a7da",
+     "type": "page",
+     "pageId": "94a5ace7-2f9d-2913-e9c5-e8245d16a7da"
+    },
+    {
+     "title": "What is Javascript?",
+     "id": "be0919e9-fdc1-5c48-c53c-f0833c9d96d7",
+     "type": "page",
+     "pageId": "25781cbf-d586-7199-cdf3-f42e2e6a5191"
+    },
+    {
+     "title": "The Javascript Console",
+     "id": "23b67f6c-50d4-7271-861f-8f377cd02330",
+     "type": "page",
+     "pageId": "75ca7f69-9ce1-e132-f960-0b65454624b5"
+    },
+    {
+     "title": "Running Javascript from a File",
+     "id": "8277bd53-d5bb-0db3-92ef-0124e000576c",
+     "type": "page",
+     "pageId": "cb47b725-3dfd-874d-11e3-83e65c0ff093"
+    },
+    {
+     "title": "Inline Scripts",
+     "id": "9916867c-5ad5-b8e0-e1e9-94d9f0449660",
+     "type": "page",
+     "pageId": "1095aba6-2fe7-e244-5e8a-0eab9c2c3749"
+    },
+    {
+     "title": "External Scripts",
+     "id": "ea00d6a6-e0d9-b6a4-b63b-ac47a1645a0a",
+     "type": "page",
+     "pageId": "d7e82ebc-65f5-a6fd-f15e-6bf44a59bed7"
+    },
+    {
+     "title": "Semicolons",
+     "id": "0769e1b4-3dd7-3bab-7537-ee95a0196388",
+     "type": "page",
+     "pageId": "299ef57d-6592-558b-c8e0-60af9fea822e"
+    },
+    {
+     "title": "Understanding Error Messages",
+     "id": "a7b817a4-ca26-a5fc-1386-012fc6393ffa",
+     "type": "page",
+     "pageId": "38e1eb8e-0cd3-0d36-970a-96b365ee00a7"
+    },
+    {
+     "title": "Comments",
+     "id": "b1b172a8-8eca-2ce9-7531-189261c57df2",
+     "type": "page",
+     "pageId": "cee27749-5970-c322-ce4a-c31e69795ff1"
+    },
+    {
+     "title": "Multi-line Comments",
+     "id": "85f0f05f-fc1a-64d7-d7db-c27cd62cd966",
+     "type": "page",
+     "pageId": "0130e4fc-236c-d1f2-eca2-0a28af3c111c"
+    }
+   ]
+  },
+  {
+   "title": "Expressions and Variables",
+   "id": "76280acf-d596-c489-df50-ed58f7a0c93d",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Expressions",
+     "id": "7794e756-9fb0-5f5c-b08f-e43127066f54",
+     "type": "page",
+     "pageId": "5269cc76-6f23-88d3-5388-b05f12364dac"
+    },
+    {
+     "title": "Math Expressions",
+     "id": "be3edb8f-c348-c944-2c23-ac290be98356",
+     "type": "page",
+     "pageId": "c31c95b9-8c58-90a4-b18a-43bef31848e8"
+    },
+    {
+     "title": "String Expressions",
+     "id": "fbee1a06-4b91-24f2-1712-dc9fe4ee1d87",
+     "type": "page",
+     "pageId": "85bd33d1-3dad-0a14-2c8a-85149d47ce9a"
+    },
+    {
+     "title": "Variables",
+     "id": "d9b1c161-f4de-b648-20ad-8071e1b9feec",
+     "type": "page",
+     "pageId": "6631822f-e1d4-8e9a-dbc8-917294b51ca0"
+    },
+    {
+     "title": "Declaring and Re-assigning Variables",
+     "id": "0a0f0191-06cb-fe79-0c3a-e7053454cfaa",
+     "type": "page",
+     "pageId": "101e1ee1-063c-2af0-07de-f51610d99527"
+    },
+    {
+     "title": "Incrementing and Decrementing Numbers",
+     "id": "cc06744c-79d5-51c3-60a0-da0c47769241",
+     "type": "page",
+     "pageId": "cfeebf3e-22be-6ecf-79f6-ebeb7b901917"
+    },
+    {
+     "title": "Naming",
+     "id": "37aa7061-316d-d857-ddb0-24221d1ace26",
+     "type": "page",
+     "pageId": "9d106a77-628a-cc23-b678-e433d0fcab49"
+    },
+    {
+     "title": "alert() and prompt()",
+     "id": "2eeb13e0-2d51-a624-4c20-9172eb0aced8",
+     "type": "page",
+     "pageId": "d77e9669-02d3-c85b-15b4-dee029719eea"
+    },
+    {
+     "title": "Code Challenge: Turtle Squares",
+     "id": "3e4cb183-a942-38ee-9853-66db4e551541",
+     "type": "page",
+     "pageId": "63e459b2-6ffb-0bcf-0089-53a603dbda6b"
+    }
+   ]
+  },
+  {
+   "title": "Working with Strings",
+   "id": "f1ed779f-d4ec-0093-f03c-afa18fb70e95",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Working with Strings",
+     "id": "f88f130f-a489-d719-12c6-6814b86de7f5",
+     "type": "page",
+     "pageId": "31d24dc8-64ff-65c6-284c-15d7465949b4"
+    },
+    {
+     "title": "String Methods",
+     "id": "1f017769-bc77-5bf6-1e6b-a2f43adbc7ee",
+     "type": "page",
+     "pageId": "6b4baca4-8795-f35c-74ac-20398b7b941f"
+    },
+    {
+     "title": "Strings vs. Numbers",
+     "id": "60c05e28-7643-9b47-6535-01796c1fed06",
+     "type": "page",
+     "pageId": "3081a701-dc28-b64f-0079-4c79ea82572c"
+    },
+    {
+     "title": "Converting strings to numbers",
+     "id": "b32e06a1-2ea8-6cb1-61ca-54b5d8604d84",
+     "type": "page",
+     "pageId": "fce78673-a2ee-6135-a03d-dc35e058face"
+    },
+    {
+     "title": "Code Challenge - Age Predictor",
+     "id": "e656bf15-5ee2-cac0-a192-589b7fb0779b",
+     "type": "page",
+     "pageId": "1e69dc2f-439c-fd1c-7cfb-b571ec6f235e"
+    }
+   ]
+  },
+  {
+   "title": "Functions",
+   "id": "def38357-ee7c-7840-fc2c-86a5a91e0bef",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Functions intro",
+     "id": "2fc89ca1-e8a1-4874-c31c-4d510b536245",
+     "type": "page",
+     "pageId": "08de67c0-1ee3-f448-2297-b8149ff231c6"
+    },
+    {
+     "title": "Defining Functions",
+     "id": "c34cc908-f7a3-8276-6190-c04003ccc984",
+     "type": "page",
+     "pageId": "031427ee-c789-1b5e-402d-8833bc3d1c8f"
+    },
+    {
+     "title": "Calling Functions",
+     "id": "357d14ed-f6c5-bf85-9d9b-e4d7151b8df4",
+     "type": "page",
+     "pageId": "67000ce0-2444-d57b-63c8-3714f80096ab"
+    },
+    {
+     "title": "Function Parameters",
+     "id": "107bf8e3-4975-80b6-ad84-d090358f54a2",
+     "type": "page",
+     "pageId": "7b8a9f85-7984-8f29-e99f-7ff5e71c613d"
+    },
+    {
+     "title": "Using Parameters",
+     "id": "9b609be1-090f-0184-1f37-05e23b211907",
+     "type": "page",
+     "pageId": "71947624-296f-75ae-d7f6-a6b397810206"
+    },
+    {
+     "title": "What happened here?",
+     "id": "6f527432-2d15-18be-bbf0-f7b867310474",
+     "type": "page",
+     "pageId": "3222709a-179f-44de-1799-3ace5bd27658"
+    },
+    {
+     "title": "Adding more parameters",
+     "id": "89fded7d-e3fb-49a7-59d3-345b781f271b",
+     "type": "page",
+     "pageId": "77b5c9d4-3746-6265-874b-0b98774f0800"
+    },
+    {
+     "title": "Code Challenge: Turtle House Neighborhood",
+     "id": "f2dff811-2cfe-774e-3a0d-23a9c14a90a3",
+     "type": "page",
+     "pageId": "87b6cc4b-f132-98fb-200d-fb5206960fb3"
+    }
+   ]
+  },
+  {
+   "title": "Drawing Graphics with p5.js",
+   "id": "40f0e206-592d-bb71-b086-c010fab92af7",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Drawing graphics with p5.js",
+     "id": "ec501128-20b2-bf1f-5106-6cc65a529651",
+     "type": "page",
+     "pageId": "efd1edcd-d534-3497-5c4e-8ba3bfbde6f6"
+    },
+    {
+     "title": "Coordinate Systems",
+     "id": "34649dc4-bfbb-9c24-b0a6-12ad8df46363",
+     "type": "page",
+     "pageId": "dde74c31-2e76-a522-b72b-9fbe2c6bac83"
+    },
+    {
+     "title": "Getting started with p5.js",
+     "id": "b3114a5d-6453-2cdb-f9f3-28302da4309d",
+     "type": "page",
+     "pageId": "5f4e4d28-fd80-7218-9f1f-cc84feacaf7e"
+    },
+    {
+     "title": "Drawing shapes",
+     "id": "abdcdaac-bfea-532e-29c2-faf73ffafa50",
+     "type": "page",
+     "pageId": "0f892c31-fa53-90a6-79f0-40325f4443b5"
+    },
+    {
+     "title": "Colors",
+     "id": "ff699fcd-9248-5f64-13d7-3376c5f09d82",
+     "type": "page",
+     "pageId": "2ca75684-8468-492f-51db-520ff51db0fc"
+    },
+    {
+     "title": "Text",
+     "id": "5bc7981e-7ac1-25a8-db26-2b17a969da08",
+     "type": "page",
+     "pageId": "b6658359-c976-7fc3-60ea-307231e9ece0"
+    },
+    {
+     "title": "Special p5 functions",
+     "id": "3eb9c3fe-ee87-3aa8-ada4-fa93ba969fe0",
+     "type": "page",
+     "pageId": "a410da03-527b-5632-d2ca-78803621c6ec"
+    },
+    {
+     "title": "Animation using the draw() function",
+     "id": "3d6e60a1-c555-92e7-cb0c-883c600f990d",
+     "type": "page",
+     "pageId": "0bf21094-1fb0-b031-f07a-38e4984bd1fa"
+    },
+    {
+     "title": "Loading and displaying images",
+     "id": "0d2b8ad3-19a7-1cbb-d50c-060ffad3d72f",
+     "type": "page",
+     "pageId": "3fb98cc7-ba27-164a-299e-9140d1e71d15"
+    },
+    {
+     "title": "Anatomy of a p5 script",
+     "id": "23f3ef4b-9658-205b-7e48-344d61e94073",
+     "type": "page",
+     "pageId": "191f802a-a75c-800e-5649-cee41dc514a0"
+    },
+    {
+     "title": "Variable scope",
+     "id": "0eae2ead-c49d-ba9d-d4db-06cf2d7df257",
+     "type": "page",
+     "pageId": "0c93d5e1-fb19-3a37-4092-175c6354ddba"
+    },
+    {
+     "title": "Code Challenge: Snowman Sunset",
+     "id": "fc5e4b81-a0fb-d31d-0081-657871436616",
+     "type": "page",
+     "pageId": "11a0f345-d1cf-6d79-6ca8-3a6d5338381c"
+    }
+   ]
+  },
+  {
+   "title": "Conditions",
+   "id": "dc7e4196-1290-aed2-1ea8-35efba941c17",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Boolean expressions",
+     "id": "dff45894-f58a-011d-1cc7-6541e542eb62",
+     "type": "page",
+     "pageId": "e42f85da-086e-4596-1e3c-aeab6663f764"
+    },
+    {
+     "title": "Comparison operators",
+     "id": "bda12056-936e-f562-2e2f-575a1e843a88",
+     "type": "page",
+     "pageId": "bda12056-936e-f562-2e2f-575a1e843a88"
+    },
+    {
+     "title": "If statements",
+     "id": "d8145c40-582e-0e87-027c-a4b8ef374f52",
+     "type": "page",
+     "pageId": "c4d2f923-7a4d-e5f3-dd8b-124350b58510"
+    },
+    {
+     "title": "If statements (practice)",
+     "id": "f83d8178-1fec-71c7-c473-a494374ad35b",
+     "type": "page",
+     "pageId": "4011f525-3509-0571-a333-0f8f24a7c2da"
+    },
+    {
+     "title": "If-else statements",
+     "id": "cd278b9e-ff4c-1f00-44d5-6c8a4f75b06a",
+     "type": "page",
+     "pageId": "184baaee-7464-9533-6226-595d001eced4"
+    },
+    {
+     "title": "Logical operators",
+     "id": "ac085a9a-344d-5bb9-b6f9-7050ab5d9945",
+     "type": "page",
+     "pageId": "35c53d47-ef61-28ac-0acb-dd7cc1d5034f"
+    },
+    {
+     "title": "Logical operators (practice)",
+     "id": "a6dde549-9da9-2b8c-dd3f-0331ffd9610e",
+     "type": "page",
+     "pageId": "eec6eab2-fd59-591e-f6b0-11b04943df48"
+    },
+    {
+     "title": "Negation operator",
+     "id": "bd4fb53f-a8d9-eed7-b6e0-b5b07488d76c",
+     "type": "page",
+     "pageId": "24f3a213-33f5-1b1b-b7d6-7d502a885c8f"
+    },
+    {
+     "title": "Code challenge: Pets",
+     "id": "e4a7ff96-507d-1a30-ec5a-602b3543174e",
+     "type": "page",
+     "pageId": "992bdb78-ffdf-5d0f-227e-6e133129f113"
+    }
+   ]
+  },
+  {
+   "title": "Objects",
+   "id": "338f7bc3-58c9-9330-7390-9657e65a12b1",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Objects",
+     "id": "96e8c7d2-5891-8df6-7891-30e47ea915b4",
+     "type": "page",
+     "pageId": "227eb856-a886-e1a6-5342-868574739742"
+    },
+    {
+     "title": "Objects (practice)",
+     "id": "e70b314c-b048-b533-cf0d-28fa91cdcd73",
+     "type": "page",
+     "pageId": "db71d767-fcf1-0b08-63a0-10c4b0176ad8"
+    },
+    {
+     "title": "Adding properties",
+     "id": "e778929a-3ad0-78ee-9f0f-030c06d6ad25",
+     "type": "page",
+     "pageId": "36b7ff98-b3b5-a1ca-0394-ad449151cb93"
+    }
+   ]
+  },
+  {
+   "title": "Arrays and Loops",
+   "id": "3496dd8b-651d-6139-4356-451ff4517369",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Arrays",
+     "id": "1e9e87f0-51c8-b96a-1fa0-b60286e78001",
+     "type": "page",
+     "pageId": "606cf98a-81d6-616e-de67-2bb852d66e5a"
+    },
+    {
+     "title": "Array Indexes",
+     "id": "d465b3e6-d867-8d06-0f8a-3c5343ae4c7b",
+     "type": "page",
+     "pageId": "871c3455-1836-3226-5258-baba646d093f"
+    },
+    {
+     "title": "Adding and removing values at the end",
+     "id": "aadbdda6-0920-2f55-5a80-d7e0102b68b5",
+     "type": "page",
+     "pageId": "b7d0d9d1-d850-4d99-edd9-ee866f570b69"
+    },
+    {
+     "title": "Adding and removing values at the beginning",
+     "id": "efc7c7c6-5dfc-ecdb-98ee-81455e676f3a",
+     "type": "page",
+     "pageId": "08455e0d-48f5-aaa9-e673-206f5e339b81"
+    },
+    {
+     "title": "More array methods",
+     "id": "a43ca1d0-1d7c-99a5-ce8f-494ccde09e1a",
+     "type": "page",
+     "pageId": "b9705102-eeee-64a7-712e-e2556ee22365"
+    },
+    {
+     "title": "Loops",
+     "id": "cbf13b2b-e949-d9de-84cb-56e4fa3cb285",
+     "type": "page",
+     "pageId": "9484860e-002b-a00a-e4f9-656d78502c1a"
+    },
+    {
+     "title": "Counting loops",
+     "id": "4d427019-9156-d156-3134-a2a8facfc427",
+     "type": "page",
+     "pageId": "2feec3dd-3791-6f4f-912c-0dbb7c2a2dbd"
+    },
+    {
+     "title": "For-of loop",
+     "id": "9d1b1d15-de47-5d4b-fe40-1eaeb83a07a7",
+     "type": "page",
+     "pageId": "3f2e5664-7ef7-a9e9-370d-51811bb028c7"
+    },
+    {
+     "title": "Coding challenge: Loops",
+     "id": "5a8de5b5-4d53-0c58-1667-8f045d6284b0",
+     "type": "page",
+     "pageId": "1a8b13e9-dbc5-574a-b779-734c0bae02ab"
+    }
+   ]
+  },
+  {
+   "title": "Making Sprites w/ p5.game.js",
+   "id": "db91026a-38e4-1d8c-96e3-d880e3178aa6",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Getting started",
+     "id": "98aee330-8208-9eb3-239d-a756863b4669",
+     "type": "page",
+     "pageId": "4aaabbf4-a258-7dff-38c9-c65b1b43e306"
+    },
+    {
+     "title": "Making sprites",
+     "id": "068774e8-9fc8-6a55-bc24-300ae543cd9a",
+     "type": "page",
+     "pageId": "2978964e-7f88-3219-1355-c9f3267f0511"
+    },
+    {
+     "title": "Game assets",
+     "id": "b547a3d0-d500-c9d2-e62e-161e1329e849",
+     "type": "page",
+     "pageId": "ce807cdc-1823-8006-b7d0-cd152ea50dd5"
+    },
+    {
+     "title": "Adding a ship sprite to the game",
+     "id": "4fd83cf6-e094-41fe-3db4-b48bb0115537",
+     "type": "page",
+     "pageId": "faa08d23-6fbc-c28c-37c9-83972729409f"
+    },
+    {
+     "title": "Using the preview panel",
+     "id": "f36f350e-c0af-4d11-9d71-b6ec3dad2ab7",
+     "type": "page",
+     "pageId": "54bb6d06-3e50-94e1-c8bf-f644f8d39c3c"
+    },
+    {
+     "title": "Positioning sprites",
+     "id": "abdc313d-6589-73dd-e168-bd7bc8e8a927",
+     "type": "page",
+     "pageId": "1cb52a3f-93d0-8e2c-e4c0-ce1398130fbf"
+    },
+    {
+     "title": "Using \"update functions\" for sprites",
+     "id": "b28f022d-2faf-3396-9d7e-c762b14008b2",
+     "type": "page",
+     "pageId": "5c3d4796-d00c-56f5-07a1-3812a29c611a"
+    },
+    {
+     "title": "Adding keyboard controls",
+     "id": "7979c134-acbc-3433-6be4-dac15c41360c",
+     "type": "page",
+     "pageId": "dc453ddf-aca7-c4be-f099-83744ca6ade1"
+    },
+    {
+     "title": "Keeping the ship on the screen",
+     "id": "fa65eab4-cac8-ee97-0ef9-67736e5e29d1",
+     "type": "page",
+     "pageId": "0dee86d2-1ba7-64c3-834c-cb2d4cae06ed"
+    },
+    {
+     "title": "Using if-statements to keep the ship in bounds",
+     "id": "64286db5-f806-a91e-eac0-97f26b4c01dc",
+     "type": "page",
+     "pageId": "83a1b3af-aec4-6460-4b9b-d846d25ad77d"
+    },
+    {
+     "title": "Detecting the right side of the screen",
+     "id": "d2c9d6f0-bb9c-1b58-64ec-bf1f7a985140",
+     "type": "page",
+     "pageId": "eb45de32-a662-2693-b33b-2c30e5c91c25"
+    }
+   ]
+  },
+  {
+   "title": "Adding asteroids to the game",
+   "id": "1abb9437-625c-7c26-3495-4b51a746c90c",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Adding asteroids to the game",
+     "id": "43de4bff-4b65-1cde-7bc4-b388f954cbaf",
+     "type": "page",
+     "pageId": "ccbc043a-4ef6-1250-57b4-e75c07699523"
+    },
+    {
+     "title": "Putting sprites into motion",
+     "id": "8a0d5978-2642-99fc-68bd-6cd235462844",
+     "type": "page",
+     "pageId": "eb62ee4b-f61e-5b3b-6bd1-9fc1dfadd0ff"
+    },
+    {
+     "title": "Changing the asteroid's direction",
+     "id": "057b3bd2-db97-c7a4-8365-eb7b04601a7f",
+     "type": "page",
+     "pageId": "47948093-27da-c391-22be-b1498ead93a0"
+    },
+    {
+     "title": "Send the asteroid spinning",
+     "id": "b97fdb63-29be-39fc-255e-d58e62fa46ee",
+     "type": "page",
+     "pageId": "7b085542-44c1-d7f8-dfa2-3882ee6f46bb"
+    },
+    {
+     "title": "Send the asteroid in random directions",
+     "id": "694c9dcb-d0ba-feb3-2cb5-ab5e4ede930d",
+     "type": "page",
+     "pageId": "c6545b1d-d7b7-d570-e289-4dbcd9385def"
+    },
+    {
+     "title": "Randomize all the things!",
+     "id": "cf2123b9-c00d-0af8-98ba-b80896e5c4c6",
+     "type": "page",
+     "pageId": "6f202e1d-98db-1cf6-eb23-155753572dfe"
+    },
+    {
+     "title": "Managing multiple sprites with Sprite Groups",
+     "id": "2693c0fa-321e-c032-1ce2-2aa942e9b55b",
+     "type": "page",
+     "pageId": "cab1725e-e44a-b558-12ed-532a9e9886b1"
+    },
+    {
+     "title": "Creating asteroids automatically ",
+     "id": "ab8110b5-9211-d6be-84b5-12bcd240a1c9",
+     "type": "page",
+     "pageId": "83231515-8b60-0ccb-77b2-6215f5f7be79"
+    },
+    {
+     "title": "Too many sprites?",
+     "id": "a7aced81-fb96-e1f2-030e-2f8d6aa0d10d",
+     "type": "page",
+     "pageId": "7b4f07bc-f345-f8f7-9129-79c44289ee7f"
+    },
+    {
+     "title": "Performance tuning",
+     "id": "649fef40-e443-36f5-e6f7-a2d5eb76e32a",
+     "type": "page",
+     "pageId": "bd4b15e9-787e-ec61-469f-15c59953117c"
+    }
+   ]
+  },
+  {
+   "title": "Collision detection",
+   "id": "7ddd217f-a130-70ae-5d2e-9bc9b166905f",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Collision detection",
+     "id": "eca4db1e-f154-1f77-61c4-8fedcd0e16b4",
+     "type": "page",
+     "pageId": "695e0907-d1d0-7f48-7b29-c13284b46333"
+    },
+    {
+     "title": "Remove the asteroid when it collides",
+     "id": "20b7b96a-440b-5d53-54ef-c60802d251fe",
+     "type": "page",
+     "pageId": "b36d069b-4431-010c-5827-891ea91e5993"
+    },
+    {
+     "title": "More precise collisions",
+     "id": "1ef13883-1cbc-345c-e9bd-b1bfc1f2f096",
+     "type": "page",
+     "pageId": "a139d42c-e567-32d8-e36a-234dcacd84cb"
+    },
+    {
+     "title": "Changing the collider shape",
+     "id": "1d5f6e06-d8a6-0d0d-9f49-f25fbb77a4d2",
+     "type": "page",
+     "pageId": "b42088bd-2c07-9909-f919-d7bc9cc5349f"
+    }
+   ]
+  },
+  {
+   "title": "Adding sprite animations",
+   "id": "2906b6fc-9836-7fb7-7423-098afc062b1a",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Adding sprite animations",
+     "id": "a76e26fa-34ba-90a0-ba9f-7f7be17cf1f8",
+     "type": "page",
+     "pageId": "d61fcc07-d423-a8a5-0d0e-da80527e5f8c"
+    },
+    {
+     "title": "Loading animations",
+     "id": "3e0c3fa4-7332-f547-f451-7a7e26844d52",
+     "type": "page",
+     "pageId": "33789e45-7d94-5b2b-7ad3-c934af1a04e9"
+    },
+    {
+     "title": "Changing animations on a sprite",
+     "id": "905f74a4-7f71-19dd-eb99-bfe00d3559f7",
+     "type": "page",
+     "pageId": "8dad2518-ac85-9871-6ac4-5d928ec3c0a2"
+    },
+    {
+     "title": "Explode the ship when hit by an asteroid",
+     "id": "2e5e45f6-6732-da85-1b88-a66797159e96",
+     "type": "page",
+     "pageId": "3baa1b21-9c3c-2a28-cd8a-3f0b9c6f389e"
+    }
+   ]
+  },
+  {
+   "title": "Shooting lasers",
+   "id": "020e87d5-81ca-94fa-ef46-0cdd2a03d924",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Shooting lasers",
+     "id": "a4d71e78-bf53-ae22-fcd2-72c4d4f732fc",
+     "type": "page",
+     "pageId": "bf34664c-3816-df89-f44a-26bad237db07"
+    },
+    {
+     "title": "Firing lasers using the space key",
+     "id": "29124597-02b4-1ea0-9351-f4e3ef538b5e",
+     "type": "page",
+     "pageId": "bcf7389d-81e7-b699-7110-077b7f5b873d"
+    },
+    {
+     "title": "Too many sprites (again)!",
+     "id": "59c8113e-6fc8-fc24-2e38-24516c3085a2",
+     "type": "page",
+     "pageId": "fbd845ad-3d11-93c8-209b-b2bd6198a223"
+    },
+    {
+     "title": "Lasers colliding with asteroids",
+     "id": "1e572ae2-8d5c-93fe-6459-f1c82d555e10",
+     "type": "page",
+     "pageId": "dd1cc2d4-5802-928d-abcc-fa31736993bd"
+    },
+    {
+     "title": "Exploding asteroids",
+     "id": "54fa0d69-cfa5-ff2a-935f-1dfc4cfa756b",
+     "type": "page",
+     "pageId": "d666c6f7-907c-2238-c606-e89453c2df9c"
+    },
+    {
+     "title": "Removing the asteroid after the explosion",
+     "id": "d29ae3e4-cd5b-02ef-727f-5f67dd5079aa",
+     "type": "page",
+     "pageId": "08c0803c-076a-5d3b-25c9-532958328afd"
+    }
+   ]
+  },
+  {
+   "title": "Fixing some bugs",
+   "id": "3d7c8c54-5ac5-4d73-db06-ab6f5e5cb27c",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Explosion Bugs",
+     "id": "8167790e-ca12-8ea6-c5f5-93e318e4b610",
+     "type": "page",
+     "pageId": "f6b96779-b3a2-8c10-7cc1-3ab406cd658f"
+    },
+    {
+     "title": "Using custom properties on sprites",
+     "id": "9071c73a-4827-d82b-caaa-bd41e0902b83",
+     "type": "page",
+     "pageId": "405c79c0-9fce-75cd-7a08-4ba7cd1f5f50"
+    },
+    {
+     "title": "Bug #2: shooting a asteroid that's already exploding",
+     "id": "f83d21a8-4bab-9dca-dba2-6ea7e4fb118e",
+     "type": "page",
+     "pageId": "f9f5f6c2-d3bf-3427-62ec-2ae6c55730a3"
+    },
+    {
+     "title": "Bug #3: controlling the ship while exploding",
+     "id": "46f8550a-f75d-8d12-1ec4-41d895ca8b10",
+     "type": "page",
+     "pageId": "7b751472-601b-7af1-748c-1e77042c7bd0"
+    },
+    {
+     "title": "Bug #4: The ship can still shoot if it's exploding",
+     "id": "48686c76-94c2-8392-d3b6-39ce72af9c7f",
+     "type": "page",
+     "pageId": "30820e23-67e0-f666-0ee1-5a96990b8919"
+    }
+   ]
+  },
+  {
+   "title": "Adding a background image and a score board",
+   "id": "3b078a72-08ae-8da6-b0ed-c184a1ea9ea1",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Adding a starfield backdrop",
+     "id": "6cd7083c-a09b-f40b-5bc8-70a933633199",
+     "type": "page",
+     "pageId": "14d2c9dc-eae8-fd7d-77b0-01e4a79260a9"
+    },
+    {
+     "title": "Adding a score board",
+     "id": "2b5c9465-1654-2d6c-f173-dacdf176d426",
+     "type": "page",
+     "pageId": "b3e75f11-8111-1eff-ab63-1ab825df2839"
+    },
+    {
+     "title": "Updating score and lives",
+     "id": "4e063957-3d99-151d-2b3f-d6d12d1e931b",
+     "type": "page",
+     "pageId": "149b91d4-d854-896e-d6a4-341c19cdd97c"
+    }
+   ]
+  },
+  {
+   "title": "Adding sound effects",
+   "id": "e61a3542-fda1-d28d-8eeb-2033a4c72d6b",
+   "type": "chapter",
+   "children": [
+    {
+     "title": "Adding Sound Effects",
+     "id": "e3847f06-ffe4-92d8-1af3-4b9ccf139dc7",
+     "type": "page",
+     "pageId": "558fd5d5-a1bc-02a4-0752-19abc84eae8a"
+    },
+    {
+     "id": "0610761c-93b5-e747-e618-b608d0acbda6",
+     "title": "Uploading sound assets to your IDE",
+     "pageId": "f6ddb995-8327-aeac-a8e8-9a666545686c",
+     "type": "page"
+    },
+    {
+     "id": "5408e5af-f7ba-bda0-095e-d5389026243a",
+     "title": "Adding sounds to the game",
+     "pageId": "e2c5bdfa-bc1c-af6a-614f-91b98bdd74cd",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Game Over screen",
+   "id": "fdbc8657-032c-07d0-12af-da2f3fe9d5e2",
+   "type": "chapter",
+   "children": [
+    {
+     "id": "523c5e85-8f52-e190-7b6c-8436652b7c09",
+     "title": "\"Game Over\" screen",
+     "pageId": "bca854f1-e744-e932-ade7-a17291e5d2d2",
+     "type": "page"
+    },
+    {
+     "id": "10793081-232b-187c-12f5-82572a0c0e04",
+     "title": "Drawing the \"Game Over\" screen",
+     "pageId": "a485cce2-206c-5ada-2b9e-b0eaeabde4cc",
+     "type": "page"
+    },
+    {
+     "id": "cb16dc98-f4ed-d86a-6207-084e871fbb3c",
+     "title": "Switching to the \"Game Over\" screen",
+     "pageId": "3ca48e30-f727-895d-c9d9-637e36776677",
+     "type": "page"
+    },
+    {
+     "id": "071a8d0b-a2db-3d8f-438f-d69a88a42153",
+     "title": "Add \"play again\" functionality",
+     "pageId": "91779805-217a-a592-a988-719652b1e068",
+     "type": "page"
+    }
+   ]
+  },
+  {
+   "title": "Extra features",
+   "id": "63e9e08c-991d-536f-8422-4187a03ff83d",
+   "type": "chapter",
+   "children": [
+    {
+     "id": "b676fe00-7807-3e34-0bce-7e047bc2e5bf",
+     "title": "Extra Features",
+     "pageId": "7d400502-bcfe-7d6d-f388-e014ac2e6599",
+     "type": "page"
+    }
+   ]
+  }
+ ]
+}

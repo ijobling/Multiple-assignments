@@ -1,0 +1,89 @@
+<script type="text/markdown">
+# Animation using the `draw()` function
+![frames example](.guides/images/frames.png){.float-right .s4}
+
+All video games work on the concept of *animation*{.voc}
+
+When you look at a flip-book animation, you're not really seeing
+movement. You're seeing one image after another really, really fast.
+Each image is called a *frame*{.voc}.
+
+When you look at a computer animation, you're seeing about **60** frames
+every second.
+
+
+## Using the `draw()` function to animate
+
+The `draw()` function is automatically called by p5 every frame. That
+means the function runs over and over again, about 60 times every
+second!
+
+The `draw()` function should represent drawing **one** frame. You can
+animate things by creating *variables*{.voc} that change over time.
+
+
+## Try it out!
+Let's move a square across the screen by increasing its `x` and `y`
+coordinates by 5 pixels every second.
+
+1. At the top of your `drawing.js` file, declare two variables named `x`
+   and `y` and set them both to `10`:
+
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="3-5"}
+   let screenWidth = 600;
+   let screenHeight = 800;
+   
+   let x = 10;
+   let y = 10;
+   ```
+2. Inside the draw() function, create a 50 x 50 red square. Use the `x`
+   and `y` variables for the coordinates:
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="12-13" data-line-start="11"}
+   function draw() {
+       fill("red");
+       rect(x, y, 50, 50);
+   }
+   ```
+3. Refresh your preview. You should see a red box on the screen.
+4. Our red box doesn't move because the `x` and `y` variables aren't
+   changing. Let's *increment*{.voc} both variables by 5 in the
+   `draw()` function:
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="13-14" data-line-start="11"}
+   function draw() {
+       fill("red");
+       x += 5;
+       y += 5;
+       rect(x, y, 50, 50);
+   }
+   ```
+   ::: infobox .warning
+   **Remember**: Any time you have variables that change every frame, be
+   sure to declare them **outside** of the `draw()` function (usually at
+   the top of your script). Otherwise, the variables will be re-set
+   every frame.
+
+   **Also**, don't declare them inside the `setup()` function. Variables
+   declared inside a function can't be seen by other functions!
+   :::
+5. Re-fresh the preview. You should now see a red square moving across
+   the screen, but it's leaving a streak behind!!
+   
+   ![](.guides/images/square-anim-1.gif){.border}
+6. Remember that drawings are always placed one on top of the other. To
+   fix this, we need to fill the screen with a background color on every
+   frame (we'll use white):
+
+   ```javascript{.numbered data-header="drawing.js" data-added-lines="12" data-line-start="11"}
+   function draw() {
+       background("white");
+       fill("red");
+       x += 5;
+       y += 5;
+       rect(x, y, 50, 50);
+   }
+   ```
+7. After refreshing your preview, you should now see the square moving
+   across the screen without the streak:
+
+   ![](.guides/images/square-anim-2.gif){.border}
+</script>

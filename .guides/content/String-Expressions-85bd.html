@@ -1,0 +1,37 @@
+<script type="text/markdown">
+# String Expressions
+
+## Try it out: write text expressions using strings
+
+A *string*{.voc} is a type of value that contains letters, numbers, and
+symbols.  Strings are enclosed in either `"`double quotes`"` or
+`'`single quotes`'`.
+
+Try the following in your *javascript console*{.voc}:
+
+1. Use the `+` operator to combine two strings:
+   ```javascript {.console .s12 .m8}
+   > "My name is " + "Sofia"
+   < "My name is Sofia"
+   ```
+2. What happens when you add a string to a number?
+   ```javascript {.console .s12 .m8}
+   > "The number is " + 4
+   < "The number is 4"
+   ```
+3. Try adding multiple numbers to the string.  
+   Why do you think the result is different when using parenthesis?
+   ```javascript {.console .s12 .m8}
+   > "The number is " + 4 + 2
+   < "The number is 42"
+   > "The number is " + (4 + 2)
+   < "The number is 6"
+   ```
+4. You can also put expressions inside strings. Instead of quotes,
+   surround the string in \`*backticks*{.voc}\`. Then you can put expressions
+   inside `${` and `}`, like so:
+   ```javascript {.console .s12 .m8}
+   > `Five pounds equals ${5 * 16} ounces`
+   < "Five pounds equals 80 ounces"
+{.steps .continue}
+</script>

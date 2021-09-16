@@ -1,0 +1,59 @@
+<script type="text/markdown">
+# Managing multiple sprites with Sprite Groups
+
+If you have more than one of the same sprite in your game, it's always
+good idea to create a sprite group. A *sprite group*{.voc} allows you to
+more easily manage multiple sprites.
+
+A sprite group is very similar to an *array*{.voc} -- you can add
+sprites and remove sprites from the group. You can also use them in a
+*for-of*{.voc} loop.
+
+To create a sprite group, use the `createGroup()` function.
+
+## Create a sprite group for asteroids
+
+1. At the top of your script, where you've declared the ship variable,
+   declare another variable called `asteroids`:
+   ```javascript {.numbered data-line-start="4" data-added-lines="7" data-header="game.js"}
+   let assets = {};
+
+   let ship;
+   let asteroids;
+   ```
+   ::: infobox
+   This variable is *declared*{.voc} in the global scope, but will be
+   *assigned*{.voc} in the `setup()` function. This allows us to access
+   the variable anywhere in our script.
+   :::
+2. In your `setup()` function, just after creating the ship, use
+   `createGroup()` to create the sprite group for the asteroids:
+   ```javascript {.numbered data-line-start="14" data-added-lines="20-22" data-header="game.js → setup()"}
+   function setup() {
+      createCanvas(screenWidth, screenHeight);
+
+      ship = createSprite(assets.ship);
+      ship.bottom = screenHeight - 20;
+      ship.centerX = screenWidth / 2;
+
+      // create the sprite group for asteroids
+      asteroids = createGroup();
+   }
+   ```
+3. Now we want to make it so that every time an asteroid is created, it
+   gets added to the sprite group:
+   ```javascript {.numbered data-line-start="31" data-added-lines="32-34" data-header="game.js → createAsteroid()"}
+       asteroid.rotationSpeed = random(-2, 2);
+
+       // Add the newly created asteroid to the sprite group
+       asteroids.add(asteroid);
+   }
+   ```
+
+::: infobox
+The p5.game library automatically creates a group called `allSprites`.
+Any time you use `createSprite()`, the sprite is automatically added to
+this group.
+:::
+
+</script>

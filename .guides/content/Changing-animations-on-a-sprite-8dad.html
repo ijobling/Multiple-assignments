@@ -1,0 +1,40 @@
+<script type="text/markdown">
+# Changing animations on a sprite
+
+Next, let's use our *javascript console*{.voc} to test out the
+animation.
+
+<!--
+::: infobox
+Remember that any code you type into the javascript console
+is *temporary*, meaning everything gets re-set next time you load the
+page. The console is very useful when you want to just test things out
+without changing your code.
+:::
+-->
+
+1. Save your code and refresh your preview. In your *javascript
+   console*{.voc}, change the ship's animation to `"explosion"`:
+   ```javascript {.console}
+   > ship.changeAnimation("explosion");
+   ```
+   You should now see the ship continuously exploding!
+
+   Animations will continue to loop over and over again until they're
+   stopped or changed to something else.
+   ::: infobox
+   The first parameter to `changeAnimation()` is the *animation
+   label*{.voc} that you used in `ship.addAnimation()`.
+   :::
+2. Change your ship's animation back to `"normal"` to stop the
+   explosion:
+   ```javascript {.console}
+   > ship.changeAnimation("normal");
+   ```
+   The `"normal"` animation is the default image for your sprite. Even
+   though the ship image isn't an animation, the game treats it as a
+   single-frame animation.
+
+   ![changing animations demo](.guides/images/change-animation-console.gif)
+
+</script>

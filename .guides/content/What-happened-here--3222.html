@@ -1,0 +1,38 @@
+<script type="text/markdown" data-class="functions parameters-3">
+# Function Parameters
+
+## What happened here?
+
+Press the "Show me" button for an explanation of how parameters work:
+
+[Show me](#){.btn .start-introjs data-target=".pbj-with-params"}
+
+```javascript {.numbered .pbj-with-params .no-overflow}
+// function definition
+function makeSandwich(jellyType) {
+    console.log('Get 2 slices of bread');
+    console.log('Put PB on one slice');
+    console.log(`Put ${jellyType} jelly on the other slice`);
+    console.log('Put the slices together');
+    console.log('Serve with a glass of cold milk');
+}
+
+// calling the function:
+makeSandwich("grape");
+```
+
+<!-- intro.js Tour descriptions -->
+1. We call the function named `makeSandwich` {data-select=".line-11"}
+1. Here we pass the string `"grape"` for the first parameter. {data-select=".line-11 .hljs-string"}
+2. The value `"grape"` is stored in the variable `jellyType`. {data-select=".line-2 .hljs-params"}
+3. When the function runs, any references to `jellyType` will evaluate
+   to `"grape"`. {data-select=".line-5 .hljs-string"}
+{.tour-steps data-target=".pbj-with-params"}
+
+</script>
+<script src=".guides/js/activities.js"></script>
+<script>
+  onDocReady(() => {
+    initTours();
+  });
+</script>

@@ -1,0 +1,44 @@
+<script type="text/markdown">
+# Keeping the ship on the screen
+
+The ship currently moves off the screen if we press the key for too
+long. We can fix that by using if-statements to check if the edge of the
+ship is off the screen, and if it is, update the ship's position to be
+back on the screen.
+
+## Using `.left` and `.right` positioning properties
+
+Let's use the *javascript console*{.voc} to see exactly what's happening
+with the ship's position as it goes off-screen.
+
+1. Open the javascript console if it's not already open.
+2. Inspect the position of the ship's left edge by typing `ship.left`:
+   ```javascript {.console data-header="Javascript console"}
+   > ship.left
+   < 250.5
+   ```
+3. Use your newly added keyboard controls to move the ship to the left,
+   until the left wing of the ship is slightly off the screen.
+4. Check the `ship.left` position again:
+   ```javascript {.console data-header="Javascript console"}
+   > ship.left
+   < -19.5
+   ```
+   ::: infobox
+   Notice how the number is **negative**. The left side of the screen
+   starts at `0`, so if it goes farther than that, the position will
+   become negative.
+   :::
+
+![screen boundary illustration](.guides/images/screen-boundaries.png)
+
+5. Update the ship's position so that it's left edge is aligned with the
+   left edge of the screen.
+   ```javascript {.console data-header="Javascript console"}
+   > ship.left = 0;
+   ```
+   We know the left edge of the screen is 0, so by setting the left edge
+   to 0, that puts the ship back on the screen.
+{.continue}
+
+</script>

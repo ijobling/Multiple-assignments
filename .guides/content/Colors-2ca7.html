@@ -1,0 +1,85 @@
+<script type="text/markdown">
+# Colors
+![RGB](.guides/images/rgb.png){.float-right}
+You can also control what colors are used when drawing shapes.
+
+Using color in p5 is very similar to colors in CSS. You can use either
+the color name, hex code, or a set of RGB (red, green, blue) values:
+
+| color name | hex code    | r, g, b     |
+| ---------- | ----------- | ----------- |
+| `"red"`    | `"#FF0000"` | `255, 0, 0` |
+| `"green"`  | `"#00FF00"` | `0, 255, 0` |
+| `"blue"`   | `"#0000FF"` | `0, 0, 255` |
+
+You can find a list of color names [here](https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/).
+
+If you need a refresher on CSS colors, see
+[here](https://courses.boldidea.org/webdev/css-reference/#colors){target="_blank"}.
+
+
+
+## Try it out > Background color
+You can fill the whole screen with a color using the `background()`
+function.
+
+Try these commands in your *javascript console*{.voc}
+```javascript {.console}
+> background(250, 100, 0);
+> background('lightblue');
+```
+
+::: infobox .warning
+Even though it is called "background", this function will cover up any
+drawings you have previously made.
+:::
+
+You can also clear a screen using the `clear()` function:
+```javascript {.console}
+> clear()
+```
+
+## Try it out > Stroke (outline)
+You can change the outline color of a shape using the `stroke()`, and
+the thickness using `strokeWeight()`:
+::: div .flex
+```javascript {.console}
+> stroke('red');
+> ellipse(100, 100, 100, 100);
+> strokeWeight(5);
+> ellipse(150, 150, 100, 100);
+```
+![](.guides/images/stroke-output.png)
+:::
+
+## Try it out > Fill (inside color)
+
+You can change the inside color of the square using the `fill()`
+function. If you don't want your shapes to have an outline, you can call
+the `noStroke()` function.
+
+![result of shape commands](.guides/images/shapes.png){.float-right .s4}
+
+::: infobox .warning .s8
+Note: color functions must be called **before** drawing the shape.
+:::
+
+Write these commands in your *javascript console*{.voc} to build a
+pretty scene!
+```javascript {.console .s8}
+> background("lightblue");
+> noStroke();
+> fill("yellow");
+> ellipse(75, 75, 50, 50);
+> fill("brown");
+> rect(200, 300, 25, 100);
+> fill("green");
+> triangle(150, 375, 213, 225, 275, 375);
+> triangle(150, 350, 213, 200, 275, 350);
+```
+
+::: infobox
+To make fill transparent again, you can just call the `nofill()`
+function.
+:::
+</script>

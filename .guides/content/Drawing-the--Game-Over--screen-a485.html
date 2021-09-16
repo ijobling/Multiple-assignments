@@ -1,0 +1,57 @@
+<script type="text/markdown">
+# Drawing the "Game Over" screen
+
+Next, we'll create our function that draws the "game over" screen.
+
+1. Create a function called `drawGameOverScreen()`. Put this just above
+   the `drawGame()` function. This function draws a black background,
+   and puts white "GAME OVER" text in the center of the screen.
+   ```javascript {.numbered data-line-start="184" data-added-lines="184-191"}
+   function drawGameOverScreen() {
+       background("black");
+       textAlign(CENTER);
+       fill("white");
+       textSize(40);
+       text("GAME OVER", screenWidth/2, screenHeight/2);
+   }
+
+   function drawGame() {
+   ```
+   ::: infobox
+   Any time you want to calculate the center position of the screen, you
+   can use `screenWidth/2` to get the center on the x-axis, and
+   `screenHeight / 2` to get the center on the y-axis.
+   :::
+2. Declare a variable at the top called `gameOver` and set it `false`:
+   ```javascript {.numbered data-line-start="10" data-added-lines="12"}
+   let score = 0;
+   let lives = 3;
+   let gameOver = false;
+   ```
+3. Inside the `draw()` function, add an *if-statement*{.voc} that draws
+   the "game over" screen if `gameOver` is `true`, and if not, draws the
+   actual game:
+   ```javascript {.numbered data-line-start="207" data-added-lines="209-213" data-removed-lines="208"}
+   function draw() {
+       drawGame();
+       if (gameOver === true) {
+           drawGameOverScreen();
+       } else {
+           drawGame();
+       }
+   }
+   ```
+4. ![](.guides/images/game-over.png){.s4 .float-right}
+   Save your code and refresh your preview. Use your 
+   *javascript console*{.voc} to set the `gameOver` variable to `true`.
+   The game should stop, and you should see the game over screen appear.
+   ```javascript {.console}
+   > gameOver = true;
+   ```
+5. Switch the `gameOver` variable back to `false` to draw the game
+   again:
+   ```javascript {.console}
+   > gameOver = false;
+   ```
+
+</script>

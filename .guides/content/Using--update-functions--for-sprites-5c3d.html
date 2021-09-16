@@ -1,0 +1,45 @@
+<script type="text/markdown">
+# Using "update functions" for sprites
+
+Any time you have a sprite, it's a good idea to create an *update
+function*{.voc} for that sprite. An update function is any function
+called from inside `draw()`. Every frame, the draw function is
+called, which in turn calls your update function.
+
+This technique lets us update our sprites on each frame, 60 times per
+second.
+
+## Try it out!
+Let's test this out by updating the ship's X position by 1 pixel every
+frame.
+
+1. Start by defining a new function called `updateShip()`. Put this just
+   above the `draw()` function. Inside the function, update the ship's
+   position by 1 pixel:
+   ```javascript {.numbered data-line-start="20" data-added-lines="20-23" data-header="game.js"}
+   function updateShip() {
+       ship.centerX += 1;
+   }
+
+   function draw() {
+   ```
+   
+2. If we call our function inside the `draw()` function, it will be
+   called on every frame. We'll be putting other update functions in
+   here as well, so add some space around the function call and add a
+   comment:
+   ```javascript {.numbered data-line-start="24" data-added-lines="26-29" data-header="game.js → draw()"}
+   function draw() {
+       background("black");
+
+       // update sprites
+       updateShip();
+
+       drawSprites();
+   }
+   ```
+   
+3. Save your code and refresh your preview. You should see your ship
+   slowly moving to the right.
+   ![ship moving right](.guides/images/update-function-test.gif)
+</script>

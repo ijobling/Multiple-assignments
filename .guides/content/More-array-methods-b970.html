@@ -1,0 +1,50 @@
+<script type="text/markdown">
+# More Array Methods
+
+Try these other array methods in your javascript console:
+
+## `Array.includes()`
+You can use the `.includes()` method in a conditional statement to test
+if an item is in an array:
+
+```javascript {.console}
+> let colors = ["red", "green", "blue"];
+> colors.includes("purple");
+< false
+> colors.includes("green");
+< true
+```
+
+## `Array.join()`
+This method is handy when you want to convert the items in an array to a
+string which is separated by something (like a comma):
+
+```javascript {.console}
+> let things = [ "lions", "tigers", "bears" ];
+> things.join(", ");
+< "lions, tigers, bears";
+> things.join(" and ");
+> "lions and tigers and bears";
+> console.log(`${things.join(" and ")}, oh my!`);
+  "lions and tigers and bears, oh my!"
+```
+
+## `String.split()`
+You can also split a string into an array. The first argument is the
+character you want to split on:
+```javascript {.console}
+> let sentence = "I am very smart";
+> let words = sentence.split(" ");
+> console.log(words);
+  ["I", "am", "very", "smart"];
+> let groceries = "milk,fruit,bread";
+> let list = groceries.split(",");
+> console.log(list);
+< [ "milk", "fruit", "bread" ];
+> groceries = "milk and fruit and bread";
+> list = groceries.split(" and ");
+> console.log(list);
+< [ "milk", "fruit", "bread" ];
+```
+
+</script>

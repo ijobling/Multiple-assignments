@@ -1,0 +1,67 @@
+<script type="text/markdown">
+# Drawing shapes
+
+Let's start with drawing a square. A square is just a rectangle with
+equal sides. We can draw any rectangle using the `rect()` function from
+the p5 library.
+
+The function takes four *parameters*{.voc}:
+
+![rect parameters](.guides/images/rect.png)
+
+* The `x` coordinate for the **top** edge of the rectangle)
+* The `y` coordinate for the **left** edge of the rectangle)
+* The **width** of the rectangle
+* The **height** of the rectangle
+
+## Try it out!
+On the left side of your screen is a preview of `drawing.html`, with the 
+*javascript console*{.voc} underneath. We'll start out by using just the 
+console to practice drawing some shapes.
+
+1. In the javascript console, call the `rect()` function to draw a 
+   rectangle with the same width and height (also known as a square!):
+   ```javascript {.console}
+   > rect(30, 20, 55, 55);
+   ```
+   ::: infobox
+   If you get an error message here saying "rect is undefined", make
+   sure your `drawing.html` file is saved.
+   :::
+2. Try calling the function again with a different position and size:
+   ::: div .flex
+   ```javascript {.console}
+   > rect(50, 50, 100, 100);
+   ```
+   ![](.guides/images/rect-output.png)
+   :::
+   ::: infobox
+   Notice how the last thing you draw is always drawn **on top** of
+   everything else.
+   :::
+3. Here's how you can draw an ellipse (or a circle), which the same
+   parameters as `rect()`, except that the x and y coordinates are at
+   the **center** of the circle.
+
+   Try making different ellipses of different sizes:
+   ::: div .flex
+   ```javascript {.console}
+   > ellipse(100, 200, 60, 30);
+   > ellipse(130, 200, 30, 30);
+   ```
+   ![](.guides/images/ellipse-output.png)
+   :::
+4. You can also draw triangles by specifying 3 points: 
+   `triangle(x1, y1, x2, y2, x3, y3)`
+   ::: div .flex
+   ```javascript {.console}
+   > triangle(30, 75, 58, 20, 86, 75);
+   ```
+   ![](.guides/images/triangle-output.png)
+   :::
+
+::: infobox .warning
+**Remember:** you can only call p5 functions in your javascript
+console if you are previewing an HTML page that was set up for p5.js.
+:::
+</script>

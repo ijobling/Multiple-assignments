@@ -1,0 +1,78 @@
+<script type="text/markdown">
+# Adding sounds to the game
+
+Once your sounds are uploaded into your `assets` folder, using sounds in
+your game involves two simple steps:
+
+
+1. Load the sounds into the `assets` object in the `preload()`
+   function using `loadSound()`:
+   ```javascript {.numbered data-line-start="13" data-added-lines="25-29" data-header="game.js → preload()"}
+   function preload() {
+       // images
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+       assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+       assets.laser = loadImage("assets/laserBlue01.png");
+       assets.background = loadImage("assets/starfield.png");
+   
+       // animations
+       assets.sonicExplosion = loadAnimation(
+           "assets/sonicExplosion00.png", "assets/sonicExplosion08.png");
+       assets.regularExplosion = loadAnimation(
+           "assets/regularExplosion00.png", "assets/regularExplosion08.png");
+   
+       // sounds
+       assets.laserSound = loadSound("assets/laser.wav");
+       assets.regularExplosionSound = loadSound("assets/regular-explosion.wav");
+       assets.bigExplosionSound = loadSound("assets/big-explosion.wav");
+   }
+   ```
+2. Play the laser sound at the same time a laser sprite is created:
+   ```javascript {.numbered data-line-start="51" data-added-lines="62-63" data-header="game.js → createLaser()"}
+   function createLaser() {
+       let laser = createSprite(assets.laser);
+       lasers.add(laser);
+   
+       // position the bottom laser at the top of the ship
+       laser.bottom = ship.top;
+       laser.centerX = ship.centerX;
+   
+       // make the laser shoot straight up
+       laser.setSpeed(20);
+       laser.setDirection(270);
+   
+       assets.laserSound.play();
+   }
+   ```
+3. Play the regular explosion sound when the laser collides with the asteroid:
+   ```javascript {.numbered data-line-start="96" data-added-lines="104" data-header="game.js → handleLaserAsteroidCollision()"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       // Don't collide if the asteroid is exploding
+       if (asteroid.isExploding === false) {
+           laser.remove();
+           asteroid.changeAnimation("explosion");
+           asteroid.isExploding = true;
+           asteroid.animation.onComplete = asteroidFinishedExploding;
+           score++;
+           assets.regularExplosionSound.play();
+       }
+   }
+   ```
+4. Play the big explosion sound when the ship collides with the
+   asteroid:
+   ```javascript {.numbered data-line-start="108" data-added-lines="114" data-header="game.js → handleShipAsteroidCollision()"}
+   function handleShipAsteroidCollision(ship, asteroid) {
+       if (asteroid.isExploding === false) {
+           asteroid.remove();
+           ship.changeAnimation("explosion");
+           ship.isExploding = true;
+           ship.animation.onComplete = shipFinishedExploding;
+           assets.bigExplosionSound.play();
+       }
+   }
+   ```
+5. Save your code and refresh your preview. Test the different sound
+   effects by firing a laser, shooting an asteroid, and letting an
+   asteroid hit your ship.
+
+</script>

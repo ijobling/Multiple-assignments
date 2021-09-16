@@ -1,0 +1,68 @@
+<script type="text/markdown">
+# Using custom properties on sprites
+
+You might remember from the [objects](#objects) lesson that you can add
+your own *properties*{.voc} to any object. The same is true for
+*sprites*{.voc}.
+
+We can use this to fix the first bug by setting a custom property on the
+asteroid called `.isExploding`. When we first create the asteroid, we'll
+set `asteroid.isExploding = false`. When we start the explosion
+animation, we set `asteroid.isExploding = true`.
+
+That way we can always check whether or not the asteroid is exploding by
+looking at the `isExploding` property.
+
+## Add the `.isExploding` property
+
+1. In the `createAsteroid()` function, set `.isExploding` to `false`:
+   ```javascript {.numbered data-line-start="52" data-added-lines="60-62" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.setCollider("circle");
+       asteroid.top = 0;
+       asteroid.centerX = random(0, screenWidth);
+       asteroid.setSpeed(random(1, 5));
+       asteroid.setDirection(random(60, 120));
+       asteroid.rotationSpeed = random(-2, 2);
+   
+       // Add a custom property to tell if the asteroid is exploding
+       asteroid.isExploding = false;
+   ```
+
+2. In the `handleLaserAsteroidCollision` function, set `.isExploding` to
+   `true`:
+   ```javascript {.numbered data-line-start="80" data-added-lines="83" data-header="game.js → handleLaserAsteroidCollision()"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       laser.remove();
+       asteroid.changeAnimation("explosion");
+       asteroid.isExploding = true;
+       asteroid.animation.onComplete = asteroidFinishedExploding;
+   }
+   ```
+
+## Don't explode the ship if the asteroid is exploding
+3. Update the `handleShipAsteroidCollision()` function so that it only
+   explodes the ship if the asteroid is NOT exploding:
+   ```javascript {.numbered data-line-start="87" data-added-lines="88-89,93" data-header="game.js → handleLaserAsteroidCollision()"}
+   function handleShipAsteroidCollision(ship, asteroid) {
+       // only explode the ship if the asteroid is not exploding
+       if (asteroid.isExploding === false) {
+           asteroid.remove();
+           ship.changeAnimation("explosion");
+           ship.animation.onComplete = shipFinishedExploding;
+       }
+   }
+   ```
+   Be sure to also indent the code inside the *if-statement*{.voc}!
+4. Save your code and refresh your preview. Wait until an asteroid gets
+   close, then destroy it. Test this out a few times to make sure your
+   ship doesn't explode when hit by an exploding asteroid.
+{.continue}
+
+::: infobox
+Custom properties can be very useful for tracking information specific
+to an instance of a sprite.
+:::
+
+</script>

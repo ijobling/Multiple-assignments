@@ -1,0 +1,59 @@
+<script type="text/markdown">
+# Lasers colliding with asteroids
+
+Next, we're going to finally do something about those pesky asteroids.
+Just as we used *collision detection*{.voc} to see when an asteroid hit
+our ship, we can also use to see when a laser hits an asteroid.
+
+## Collision detection steps
+As a recap, here's how we do *collision detection*{.voc}:
+
+1. Create a collision handler function with two *parameters*{.voc}: one
+   for each sprite involved in the collision.
+2. Use `Sprite.overlap(target, callback)` or `Group.overlap(target,
+   callback)` to tell the game to watch for collisions between two
+   sprites, between a sprite and a group, or between two groups.
+   - The `target` parameter is the other sprite or group you want to check for
+     collisions.
+   - The `callback` parameter is a reference to your collision handler function
+     (without parentheses).
+
+## Set up a collision handler for lasers and asteroids
+1. Define a function called `handleLaserAsteroidCollision`. With the
+   parameters for the `laser` and the `asteroid`. Put this before your
+   other collision handler function.
+   ```javascript {.numbered data-header="game.js" data-line-start="67" data-added-lines="67-69"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+   }
+
+   function handleShipAsteroidCollision(ship, asteroid) {
+   ```
+2. Inside the collision handler function, remove both the laser and the
+   asteroid:
+   ```javascript {.numbered data-header="game.js → handleLaserAsteroidCollision()" data-line-start="67" data-added-lines="68-69"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       laser.remove();
+       asteroid.remove();
+   }
+   ```
+3. In the `updateLasers()` function, tell the game to use your collision
+   handler when any sprite laser in the lasers group overlaps any sprite
+   in the asteroids group:
+   ```javascript {.numbered data-header="game.js → updateLasers()" data-line-start="104" data-added-lines="110-112"}
+       // check each laser and remove if it goes off screen
+       for (let laser of lasers) {
+           if (laser.bottom < 0) {
+               laser.remove();
+           }
+       }
+
+       // Check for collisions between lasers and asteroids
+       lasers.overlap(asteroids, handleLaserAsteroidCollision);
+   }
+   ```
+4. Save your code and refresh your preview. Test your lasers to make
+   sure the asteroid and laser disappear when they collide.
+
+   ![](.guides/images/laser-asteroid-collision.gif)
+
+</script>

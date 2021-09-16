@@ -1,0 +1,39 @@
+<script type="text/markdown">
+# Detecting the right side of the screen
+Now we need to do the same thing for the right side of the screen. We
+know the left edge of the screen is `0`, but how do we know the right
+side?
+
+Our screen is currently `600` pixels wide, so if the ship's *right* edge
+goes higher than `600`, we know it's off the screen.
+
+At the top of your script, you'll see we've defined variables for
+`screenWidth` and `screenHeight`. We'll use these variables instead of
+typing the numbers themselves. That way in case we change the size of
+our screen, we won't have to update our code everywhere else.
+
+1. Add another if-statement that uses the `screenWidth` variable to
+   check if the right side of the ship is off-screen:
+   ```javascript {.numbered data-line-start="28" data-added-lines="32-34" data-header="game.js → updateship()" data-caption="If the ship's right edge is greater than the screen width, update the position so that the right edge equals the screen width."}
+       // don't allow the ship to go out of bounds
+       if (ship.left < 0) {
+           ship.left = 0;
+       }
+       if (ship.right > screenWidth) {
+           ship.right = screenWidth;
+       }
+   }
+   ```
+2. Save and refresh your preview. Click on game screen, and try to make
+   the ship go off the right side of the screen. You should now see that
+   the ship won't go off the right side no matter how much you try.
+
+   ![ship boundary test](.guides/images/ship-boundary-test-2.gif)
+
+
+## Up next:
+Next we'll add some asteroids to the game that fly past the ship in
+random directions. But first, we need to learn about some new javascript
+concepts: **arrays** and **loops**.
+
+</script>

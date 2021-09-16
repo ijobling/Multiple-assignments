@@ -1,0 +1,45 @@
+<script type="text/markdown">
+# Send the asteroid spinning
+
+Sprites also have a property called `.rotationSpeed`, which makes them
+constantly rotate in place by a number of degrees every frame.
+
+::: infobox .warning
+**Remember**: You will need to switch to your game preview before
+running each command to see the effect it has on the sprite.
+:::
+
+1. Try using the *javascript console*{.voc} to make the ship rotate:
+   ```javascript {.console data-header="Javascript console"}
+   > ship.rotationSpeed = 1;
+   > ship.rotationSpeed = 2;
+   > ship.rotationSpeed = -2;
+   ```
+   Try experimenting with different numbers!
+   ::: infobox
+   You can use negative numbers to make the sprite rotate
+   counter-clockwise.
+   :::
+2. Now that we know how `rotationSpeed` works, let's make our asteroid
+   more realistic by causing it to rotate. Update your `createAsteroid()`
+   function to set its rotation speed to `2`:
+   ```javascript {.numbered data-line-start="21" data-added-lines="27" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.centerX = screenWidth / 2;
+       asteroid.setSpeed(5);
+       asteroid.setDirection(90);
+       asteroid.rotationSpeed = 2;
+   }
+   ```
+3. Save your code and refresh your preview. Use the 
+   *javascript console*{.voc} to create another asteroid:
+   ```javascript  {.console}
+   > createAsteroid();
+   ```
+   You should now see your asteroid slowly spinning as it moves downward.
+
+   ![asteroid moving to the right](.guides/images/asteroid-rotation.gif)
+
+</script>

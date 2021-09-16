@@ -1,0 +1,64 @@
+<script type="text/markdown">
+# Exploding asteroids
+
+Hitting an asteroid would be much more satisfying if we could watch it
+explode. Let's add a new animation to the asteroid sprite, similar to
+what we did with the ship explosion.
+
+## Steps to add an animation
+As a refresher, here's the steps to add an animation to a sprite:
+
+1. Load the animation assets in the `preload()` function using
+   `loadAnimation()`.
+2. Add the animation to the sprite with an *animation label*{.voc} as
+   soon as the sprite is created.
+3. Change the sprite's current animation using the *animation
+   label*{.voc} somewhere in your code.
+
+## Add the animation to the asteroid
+
+We'll going to use the `regularExplosion` animation for our asteroid.
+
+1. In your `preload()` function, load the `regularExplosion` animation
+   into the `assets` object:
+   ```javascript {.numbered data-header="game.js → preload()" data-line-start="10" data-added-lines="19-20"}
+   function preload() {
+       // images
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+       assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+       assets.laser = loadImage("assets/laserBlue01.png");
+   
+       // animations
+       assets.sonicExplosion = loadAnimation(
+           "assets/sonicExplosion00.png", "assets/sonicExplosion08.png");
+       assets.regularExplosion = loadAnimation(
+           "assets/regularExplosion00.png", "assets/regularExplosion08.png");
+   }
+   ```
+2. In the `createAsteroid()` function, add an animation with the label
+   `"explosion"`:
+   ```javascript {.numbered data-header="game.js → createAsteroid()" data-line-start="61" data-added-lines="63-65"}
+       // Add the newly created asteroid to the sprite group
+       asteroids.add(asteroid);
+
+       // Add the explosion animation
+       asteroid.addAnimation("explosion", assets.regularExplosion);
+   }
+   ```
+3. Next, let's change to the `"explosion"` animation when the laser hits
+   the asteroid.
+   ```javascript {.numbered data-header="game.js → handleLaserAsteroidCollision()" data-line-start="72" data-added-lines="74"}
+   function handleLaserAsteroidCollision(laser, asteroid) {
+       laser.remove();
+       asteroid.changeAnimation("explosion");
+       asteroid.remove();
+   }
+   ```
+4. Save your code and refresh the preview.
+
+   Notice how if you shoot an asteroid, it still just disappears without
+   exploding. That's because we removed the asteroid immediately after
+   starting the animation. We didn't even get a chance to see the first
+   frame of the explosion.
+
+</script>

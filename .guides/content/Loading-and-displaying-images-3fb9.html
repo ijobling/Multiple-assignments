@@ -1,0 +1,62 @@
+<script type="text/markdown">
+# Loading and Displaying Images
+
+You can also display images in your drawing. To do this, you'll first
+need to make sure you have an image uploaded to your project.
+
+Images are displayed using 3 steps:
+
+1. Declare a variable to store the image data
+2. Use `loadImage()` to load the image data into the variable
+3. Use `image()` to display the image data on the screen
+
+## Try it out!
+1. On the left side of your screen, you'll see we've opened the *file tree*{.voc}. 
+2. Click the small triangle next to the `05-drawing` folder to see the files inside it. 
+   You should see `drawing.html`, `drawing.js`, and `robot.png`.
+3. Click on `robot.png` to preview the image.  
+   ![example image](.guides/images/robot.png)
+   :::infobox
+   We've uploaded the `robot.png` image for you. If you ever want to use your own image in 
+   a project, you'll need to upload the file to your project. 
+   :::
+5. If you have an image uploaded to your project, you can use it in your code. 
+   First, we need to *declare*{.voc} a variable at the top of our script. We won't set it to 
+   anything just yet, so we just use `let` without the equals sign:
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="6" data-line-start="4"}
+   let x = 10;
+   let y = 10;
+   let robotImage;
+   ```
+6. Next, we need to add a new function called `preload()`. This is
+   another "magic" p5 function. It is automatically called *before* the
+   `setup()` function: 
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="7-10" data-line-start="6"}
+   let robotImage;
+
+   function preload() {
+       robotImage = loadImage("robot.png");
+   }
+   ```
+   ::: infobox
+   `preload()` is another "special" p5 function. Use `preload()`
+   to load any assets in your game, such as images or sound
+   effects.
+   :::
+7. Finally, in our `draw()` function we can draw our image. Let's
+   replace the red square with our robot!
+   ```javascript {.numbered data-header="drawing.js" data-added-lines="22" data-removed-lines="18,21" data-line-start="16"}
+   function draw() {
+       background("white");
+       fill("red");
+       x += 5;
+       y += 5;
+       rect(x, y, 50, 50);
+       image(robotImage, x, y);
+   }
+   ```
+8. Refresh your preview, and you should now see the robot flying across
+   the screen!
+
+   ![](images/robot-anim.apng){.border}
+</script>

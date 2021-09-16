@@ -1,0 +1,105 @@
+<script type="text/markdown">
+# Adding a ship sprite to the game
+Now that you've uploaded all your assets, you can add a spaceship to our game.
+
+## Choose your ship!
+
+There are several different ship assets to choose from. Open the
+"space-shooter-assets" folder that you downloaded on your computer
+to view the images. **Make a note of the filename** of the ship image you
+want to use. In the following examples, we'll use
+`playerShip1_blue.png`.
+
+:::: div .flex .justify-space-between .flex-wrap
+::: div .center-text .pad-small
+![ship 1](.guides/images/playerShip1_blue.png)  
+`playerShip1_blue.png`
+:::
+::: div .center-text .pad-small
+![ship 2](.guides/images/playerShip2_green.png)  
+`playerShip2_green.png`
+:::
+::: div .center-text .pad-small
+![ship 3](.guides/images/playerShip3_red.png)  
+`playerShip3_red.png`
+:::
+::: div .center-text .pad-small
+![ship 4](.guides/images/playerShip1_orange.png)  
+`playerShip1_orange.png`
+:::
+::::
+
+*You can find more ship images in the space-shooter-assets folder
+you downloaded on your computer*
+
+::: infobox .warning
+Most of the images in this project end in `.png`. Your computer might
+hide the file extension (the `.png` part), so be sure to include that
+in your code.
+:::
+
+## Load the ship asset into the game
+Our game is going to have a lot of assets such as images and sounds.
+We don't want to have to declare a lot of variables to manage all those
+assets, so we'll create a single *object*{.voc} called `assets` at the top of
+the script. We can then assign all our assets as properties of that
+object.
+
+1. In your `game.js` file, add the following line at the top, just
+   beneath the `screenWidth` and `screenHeight` variables:
+   ```javascript {.numbered data-added-lines="3-4" data-header="game.js"}
+   let screenWidth = 600;
+   let screenHeight = 800;
+
+   let assets = {};
+   ```
+2. In the `preload()` function, add the following line to load the
+   image asset into the game:
+   ```javascript {.numbered data-line-start="6" data-added-lines="7" data-header="game.js → preload()"}
+   function preload() {
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+   }
+   ```
+   ::: infobox
+   Be sure to use the file name of your ship. For example, if you
+   chose the player 3 red ship, use `"assets/playerShip3_red.png"`.
+   :::
+
+## Create the sprite
+3. Declare a new variable called `ship` at the top of your script. We
+   won't assign it to anything yet:
+   ```javascript {.numbered data-line-start="1" data-added-lines="5-6" data-header="game.js"}
+   let screenWidth = 600;
+   let screenHeight = 800;
+
+   let assets = {};
+
+   let ship;
+   ```
+4. In the `setup()` function, use `createSprite()` to create a sprite
+   object. The first parameter to the function is the asset to use for
+   your sprite:
+   ```javascript {.numbered data-line-start="12" data-added-lines="14-15" data-header="game.js → setup()"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+
+       ship = createSprite(assets.ship); 
+   }
+   ```
+{.continue}
+
+## Draw all sprites
+5. Inside the `draw()` function, add a black background, then call
+   `drawSprites()` to draw all sprites:
+   ```javascript {.numbered data-line-start="16" data-added-lines="17-18" data-header="game.js → draw()"}
+   function draw() {
+       background("black");
+       drawSprites();
+   }
+   ```
+6. Click the "Preview with console" button in the main menu. You should now see part of
+   your spaceship at the top-left corner of your screen. Part of it is
+   off-screen, but we'll fix that next!
+{.continue}
+
+</script>

@@ -1,0 +1,40 @@
+<script type="text/markdown">
+# Multi-line comments
+
+Sometimes you need longer code comments that don't fit on one line. To
+make multi-line comments, start the comment with `/*` and end it with
+`*/`, like so:
+
+```javascript
+/*
+The getArea() function accepts two parameters, width and height.
+It returns the total area by multiplying both numbers.
+  
+Example usage: let size = getArea(10, 20);
+*/
+function getArea(width, height) {
+    return width * height;
+}
+```
+
+Here's the same thing, but using a different "style". Notice how the
+comment still starts with `/*` and ends with `*/`:
+
+```javascript
+/**
+ * The getArea() function accepts two parameters, width and height.
+ * It returns the total area by multiplying both numbers.
+ * 
+ * Example usage: let size = getArea(10, 20);
+ **/
+function getArea(width, height) {
+    return width * height;
+}
+```
+
+::: infobox
+Whenever you write code, try to re-read what you've written as if you
+were another coder. Is it immediately obvious what your code does? In
+most cases, it's best to write comments to explain what your code does.
+:::
+</script>

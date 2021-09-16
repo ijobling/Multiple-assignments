@@ -1,0 +1,25 @@
+<script type="text/markdown">
+# Variable Scope
+
+When creating variables in javascript, a very important rule to remember is:
+
+## Variables declared inside a code block can only be used inside that block. {.big}
+
+A *code block*{.voc} is any code between curly-brackets: `{` and `}`.
+The most common type of code block is a function (there are other types
+such as conditions and loops which you'll learn about later).
+
+::: infobox
+Remember: A variable is *declared*{.voc} using the `let` keyword.
+:::
+
+The following example causes an error because `x` and `y` were declared
+inside the `setup()` function.
+
+![variable-scope-example](.guides/images/variable-scope.png){.border}
+
+The fix is to move the variable scope outside of the function so they
+can be used anywhere:
+
+![variable-scope-example](.guides/images/variable-scope-fixed.png){.border}
+</script>

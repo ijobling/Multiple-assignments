@@ -1,0 +1,37 @@
+<script type="text/markdown">
+# Adding and removing values at the end of an array
+
+The `.push()` and `.pop()` methods will add and remove items at the
+**end** of an array.
+
+Think of this as an item being "pushed" onto a stack of items, or
+"popping" an item off of the stack.
+
+Try the following code examples in your javascript console:
+
+## `Array.push()`
+Calling `.push(value)` on an array adds a value at the **end** and
+returns the new length of the array.
+```javascript {.console}
+> console.log(animals);
+  ["cat", "bat", "mouse", "elephant"];
+> animals.push("pig");
+> console.log(animals);
+  [ "cat", "bat", "mouse", "elephant", "pig" ]
+```
+![array push](.guides/images/array-push.png)
+
+## `Array.pop()`
+Calling `.pop()` on an array removes the last value from the **end** and
+returns that value.
+```javascript {.console}
+> console.log(animals);
+  [ "cat", "bat", "mouse", "elephant", "pig" ];
+> let removed = animals.pop();
+> console.log(removed);
+  "pig"
+> console.log(animals);
+  [ "cat", "bat", "mouse", "elephant" ];
+```
+![array push](.guides/images/array-pop.png)
+</script>

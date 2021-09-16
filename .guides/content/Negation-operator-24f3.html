@@ -1,0 +1,54 @@
+<script type="text/markdown" data-class="conditions negation">
+# Negation operator
+
+Sometimes it's useful to flip a true statement to false one. You can use
+the *negation operator* to do this:
+
+```javascript
+let isCloudy = false;
+
+if (!isCloudy) {
+    console.log("It's NOT cloudy -- perfect for stargazing!");
+}
+```
+
+## Try it out!
+Try experimenting with the negation operator in the javascript console:
+```javascript {.console}
+> let isCloudy = false;
+> console.log(isCloudy);
+  false
+> console.log(!isCloudy);
+  true
+```
+
+## Check your understanding
+Given the following variables:
+```javascript
+let isCloudy = true;
+let isRaining = false;
+```
+What is the output of each expression?
+
+| statement                  | value |
+| ------------------------   | ----- |
+| `isRaining`                | false |
+| `!isRaining`               | true  |
+| `isCloudy && !isRaining`   | true  |
+| `!isCloudy \|\| isRaining` | false |
+
+{.boolean-quiz}
+
+::: infobox .tips
+If you're having trouble solving the statements with logical operators
+(`&&` and `||`), break it down into smaller pieces. Think about whether
+the left side is true or false, then think about the right side. Then,
+combine the two together using the operator.
+:::
+
+</script>
+
+<script src=".guides/js/activities.js"></script>
+<script>
+  onDocReady(initBooleanQuiz);
+</script>

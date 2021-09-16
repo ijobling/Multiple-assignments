@@ -1,0 +1,70 @@
+<script type="text/markdown">
+# Adding a score board
+
+Next we're going to add a score board to our game that keeps track of two
+things:
+
+- `score`: How many asteroids we've hit
+- `lives`: How many times we can be hit before our game is over
+
+## Drawing text on the screen
+The p5 library gives us the `text()` function which is used to draw text
+on the screen. We can use this to draw a simple scoreboard.
+
+The `text()` function takes three parameters:
+- The text to draw (a string)
+- x (the baseline position of the text)
+- y (the left position of the text)
+
+You can use the `textSize()` function to set the font size of the text,
+and the `fill()` function to set the color.
+
+1. First, let's add the `score` and `lives` our variables to the game so we
+   can keep track of them. We'll start the score at `0`, and we'll give
+   the player `3` lives:
+   ```javascript {.numbered data-line-start="4" data-added-lines="10-11" data-header="game.js"}
+   let assets = {};
+   
+   let ship;
+   let asteroids;
+   let lasers;
+   
+   let score = 0;
+   let lives = 3;
+   ```
+2. Next, define a new function called `drawScoreBoard()` (you can put
+   this just above the `draw()` function):
+   ```javascript {.numbered data-line-start="167" data-added-lines="167-172" data-header="game.js"}
+   function drawScoreBoard() {
+       textSize(24);
+       fill("white");
+       text(`Score: ${score} / Lives: ${lives}`, 24, 40);
+   }
+
+   function draw() {
+   ```
+   ::: infobox
+   Notice how the text string uses *backticks*{.voc}. Be sure to use
+   these instead of quotes so that the variables inside the string can
+   be evaluated.
+   :::
+3. Next, call the `drawScoreBoard()` function at the end of the
+   `draw()` function:
+   ```javascript {.numbered data-line-start="181" data-added-lines="182" data-header="game.js → draw()"}
+       drawSprites();
+       drawScoreBoard();
+
+       showSpriteCount();
+   }
+   ```
+   ::: infobox
+   We draw the text after everything else so that it appears on top of
+   everything.
+   :::
+4. Save your code and refresh your preview. You should see the
+   score board at the top of the screen that says "Score: 0 / Lives: 3":
+
+   ![](.guides/images/scoreboard.png)
+
+
+</script>

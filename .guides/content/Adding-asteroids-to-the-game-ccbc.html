@@ -1,0 +1,53 @@
+<script type="text/markdown">
+# Adding asteroids to the game
+
+Next we will add asteroids to our game. Our asteroids will appear at a
+random location at the top of the screen and fly in random directions
+toward the bottom of the screen.
+
+## Add a `createAsteroid()` function
+
+We're going to make a function called `createAsteroid()`, that way any
+time we want to make an asteroid, we can just call that function. 
+
+1. In your `preload()` function, add a line that loads the asteroid
+   image into the `assets` object:
+   ```javascript {.numbered data-line-start="8" data-added-lines="10" data-header="game.js → preload()"}
+   function preload() {
+       assets.ship = loadImage("assets/playerShip1_blue.png");
+       assets.bigAsteroid = loadImage("assets/asteroid_big1.png");
+   }
+   ```
+2. Create a new function called `createAsteroid()`, just after the
+   `setup()` function:
+   ```javascript {.numbered data-line-start="12" data-added-lines="19-21" data-header="game.js"}
+   function setup() {
+       createCanvas(screenWidth, screenHeight);
+   
+       ship = createSprite(assets.ship);
+       ship.bottom = screenHeight - 20;
+       ship.centerX = screenWidth / 2;
+   }
+
+   function createAsteroid() {
+   }
+   ```
+3. Inside the function, create a new asteroid sprite and place at the
+   top of the screen in the middle. You can easily get the middle of the
+   screen by dividing `screenWidth` in half:
+   ```javascript {.numbered data-line-start="20" data-added-lines="21-23" data-header="game.js → createAsteroid()"}
+   function createAsteroid() {
+       let asteroid = createSprite(assets.bigAsteroid);
+       asteroid.top = 0;
+       asteroid.centerX = screenWidth / 2;
+   }
+   ```
+4. Save and refresh the preview. You won't see the asteroid yet, because
+   your `createAsteroid()` function isn't being called.
+5. Open your *javascript console*{.voc}, and test your function:
+   ```javascript {.console}
+   > createAsteroid();
+   ```
+   You should now see an asteroid appear at the top of the screen.
+
+</script>
