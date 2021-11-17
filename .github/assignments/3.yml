@@ -7,6 +7,3 @@
 - assignment: a82c86ed788d337c1b234c44de3a5e4d
   section: "Collision detection"
   paths: ["assets/**"]
-- assignment: a82c86ed788d337c1b234c44de3a5e4d
-  section: 
-  paths: [".jshintrc"]
